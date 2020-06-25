@@ -9,8 +9,8 @@ namespace CatAttack
         private Vector2 m_XFlipVector2 = new Vector2(-1f, 1f);  //multiply this any vector to reverse horizontal component
 
         [SerializeField] private float m_MaxGroundSpeed = 1f;                    // The fastest the player can travel in the x axis.
-        [SerializeField] private Vector2 m_JumpForce = new Vector2(100f, 300f);                  // Amount of force added when the player jumps.
-        [SerializeField] private Vector2 m_StarDashForce = new Vector2(100f, 300f);         // Amount of force added when the player jumps.
+        [SerializeField] private Vector2 m_JumpSpeed = new Vector2(10f, 30f);  // Initial speed of a jump
+        [SerializeField] private Vector2 m_StarDashSpeed = new Vector2(10f, 30f);  // Initial speed of a dash
         [SerializeField] private float m_MaxStarDashSpeed = 2f;         // Amount of force added when the player jumps.
         [SerializeField] private float m_MinimumAirControl = 0.5f;         // minimum air control when airborne
         [SerializeField] private float m_JumpCooldown = 0.1f;         // Time in seconds between jump activations
@@ -114,12 +114,12 @@ namespace CatAttack
                 //perform a jump from the ground 
                 if (m_Grounded && m_Animator.GetBool("Ground"))
                 {
-                   Jump();
+                   Jump(move);
                 }
                 //or dash if airborne and enough stars
                 else if (m_StarpowerReservoir.DrainStarpower())
                 {
-                    StarDashJump();
+                    StarDashJump(move);
                 }
                 m_JumpTimer = m_JumpCooldown;
                 m_JumpFlag = false;
@@ -132,23 +132,26 @@ namespace CatAttack
             m_Animator.SetFloat("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
         }
 
-        private void StarDashJump()
+        private void StarDashJump(float move)
         {
             m_Grounded = false;
             m_Animator.SetBool("Ground", false);
             //m_Animator.SetFloat("StarDashing", 1f);
             m_Animator.Play("Base Layer.StarDash", -1, 0f);
-            //correct jumpforce for orientation and apply to character
-            m_Rigidbody2D.AddForce((m_FacingRight) ? m_StarDashForce : m_StarDashForce * m_XFlipVector2);
+
+            //Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with input
+            m_Rigidbody2D.velocity = new Vector2 (m_StarDashSpeed.x * move, m_StarDashSpeed.y);
         }
 
-        private void Jump()
+        private void Jump(float move)
         {
          // Add a vertical force to the player.
             m_Grounded = false;
             m_Animator.SetBool("Ground", false);
-            //correct jumpforce for orientation and apply to character
-            m_Rigidbody2D.AddForce((m_FacingRight) ? m_JumpForce : m_JumpForce * m_XFlipVector2);
+
+
+            //Set the rigidbody's vertical velocity to jump speed, and scale horizontal velocity with input
+            m_Rigidbody2D.velocity = new Vector2 (m_JumpSpeed.x * move, m_JumpSpeed.y);  
         }
 
 
