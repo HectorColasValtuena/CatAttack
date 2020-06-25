@@ -156,8 +156,7 @@ namespace CatAttack
 
 
         private void CheckFlip(float move)
-        {
-            // If the input is moving the player right and the player is facing left...
+        { // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
                 {
                     // ... flip the player.
@@ -171,19 +170,14 @@ namespace CatAttack
                 }
         }
         private void Flip()
-        {
-            // Switch the way the player is labelled as facing.
+        {   //flip the character
             m_FacingRight = !m_FacingRight;
-
             m_SpriteRenderer.flipX = !m_FacingRight;
+        }
 
+        private void AttemptSleep ()
+        {
 
-            /*
-            // Multiply the player's x local scale by -1.
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
-            //*/
         }
     }
 }

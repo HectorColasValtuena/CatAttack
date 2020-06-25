@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bed
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Solids
+  - Triggers
   - 
   - 
   - 
@@ -38,9 +39,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: DecorBackground
+    uniqueID: 1904779381
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Cat
     uniqueID: 2446213299
+    locked: 0
+  - name: DecorForeground
+    uniqueID: 1426982183
     locked: 0
