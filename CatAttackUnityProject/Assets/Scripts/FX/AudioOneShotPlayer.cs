@@ -1,13 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AudioOneShotPlayer : MonoBehaviour
+namespace CatAttack.FX
 {
-	public AudioSource[] audioSources;
-
-	public void PlayAudio (int index)
+	public class AudioOneShotPlayer : MonoBehaviour
 	{
-		audioSources[index].Play();
+		public AudioSource[] audioSources;
+
+		public void PlayAudio (int index)
+		{
+			audioSources[index].Play();
+		}
 	}
 }
