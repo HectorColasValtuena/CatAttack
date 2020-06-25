@@ -4,8 +4,16 @@ namespace CatAttack
 {
 	public class StarpowerReservoir : MonoBehaviour
 	{
-		private int currentStarpower = 0;
-		private int maxStarpower = 4;
+		public static StarpowerReservoir instance;
+
+		[System.NonSerialized] public int currentStarpower = 4;
+		[System.NonSerialized] public int maxStarpower = 4;
+
+		public void Awake ()
+		{ 
+			Debug.Log("StarpowerReservoir.Awake()");
+			StarpowerReservoir.instance = this;
+		}
 
 		//check if there's enough starpower. default 1. returns true/false
 		public bool HasStarpower (int targetAmmount = 1)
@@ -16,7 +24,7 @@ namespace CatAttack
 		//attempts to drain target ammount. default 1. Returns true if succeeded
 		public bool DrainStarpower (int targetAmmount = 1)
 		{
-			return true;
+			//return true;
 
 			if (HasStarpower(targetAmmount))
 			{
