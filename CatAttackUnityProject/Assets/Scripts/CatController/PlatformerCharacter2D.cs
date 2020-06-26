@@ -199,7 +199,7 @@ namespace CatAttack
             m_StarpowerReservoir.RegenerateStarpower();
 
             //force animator to reset back to entry
-            m_Animator.Play("Base Layer.CatStanding");
+            m_Animator.Play("Base Layer.Standing");
         }
     }
 }

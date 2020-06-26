@@ -15,6 +15,7 @@ namespace CatAttack
 		{
 			LevelManager.instance = this;
 			checkpointList = new List<RespawnCheckpoint>();
+			if (activeCheckpoint == null) { Debug.LogError("LevelManager.activeCheckpoint initial value has not been set. Set it up within the inspector."); }
 		}
 	//ENDOF In-Class management
 
@@ -22,7 +23,7 @@ namespace CatAttack
 		//Checkpoint currently in use. Getting the active checkpoint coordinates will return this checkpoints spawn spot
 		public RespawnCheckpoint activeCheckpoint;
 		//get the coordinates for re-spawning
-		public Vector3 respawnSpot { get { return activeCheckpoint.spawnSpot; } }
+		public Vector3 respawnSpot { get { return activeCheckpoint.spawnPosition; } }
 		//list of checkpoints available in the world
 		private List<RespawnCheckpoint> checkpointList;
 

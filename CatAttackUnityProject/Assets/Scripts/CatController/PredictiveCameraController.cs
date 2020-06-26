@@ -20,7 +20,7 @@ namespace CatAttack.UI
 				transform.position.z
 			);
 
-			Debug.Log("PredictiveCameraController targetPosition: "); Debug.Log(targetPosition);
+			//Debug.Log("PredictiveCameraController targetPosition: "); Debug.Log(targetPosition);
 
 			transform.localPosition = Vector3.Lerp(transform.localPosition, targetPosition, lerpRate);
 		}

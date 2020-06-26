@@ -2,13 +2,13 @@
 
 namespace CatAttack
 {		
-	public class RespawnCheckpoint : MonoBehaviour
+	public class SpawnSpot : MonoBehaviour
 	{
 		public Transform _spawnSpot;
 		private Animator animator;
 
 		//spawnPosition returns the world coordinates for respawning
-		public Vector3 spawnSpot
+		public Vector3 spawnPosition
 		{
 			get { return _spawnSpot.position; }
 		}
@@ -23,6 +23,7 @@ namespace CatAttack
 		//on creation report ourselves to the level manager and cache our animator
 		public void Awake()
 		{
+			if (_spawnSpot == null) { _spawnSpot = transform; }
 			LevelManager.instance.AddCheckpoint(this);
 			animator = GetComponent<Animator>();
 		}
