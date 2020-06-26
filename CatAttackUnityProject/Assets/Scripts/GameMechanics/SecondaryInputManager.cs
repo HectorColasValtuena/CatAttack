@@ -7,7 +7,7 @@ namespace CatAttack
 	public class SecondaryInputManager : MonoBehaviour
 	{
 	//defines
-		private string resetKeyCode = "reset";
+		private string resetKeyCode = "r";
 
 	//In-Class and In-Object management
 		public GameObject resetInterfaceElement;
@@ -26,11 +26,6 @@ namespace CatAttack
 			{
 				resetInterfaceElement.SetActive(resetInput);
 			}
-		}
-
-		private void executeReset ()
-		{
-			LevelManager.instance.ResetPlayer();
 		}
 	//ENDOFPlayer reset input management
 	}
