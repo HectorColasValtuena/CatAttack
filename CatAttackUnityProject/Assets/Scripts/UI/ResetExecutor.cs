@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 
-public class ResetExecutor : MonoBehaviour
+namespace CatAttack
 {
-	public void ExecuteReset ()
+	public class ResetExecutor : MonoBehaviour
 	{
-		CatAttack.LevelManager.instance.ResetPlayer();
+		public void ExecuteReset ()
+		{
+			CatAttack.LevelManager.instance.ResetPlayer();
+		}
 	}
 }
