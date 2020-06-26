@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1947034043}
   - component: {fileID: 1947034042}
   - component: {fileID: 1947034041}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CatCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 540483649781028912}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CeilingCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -138,7 +138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 540483649819961118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
@@ -176,9 +176,9 @@ GameObject:
   - component: {fileID: 540483650876491672}
   - component: {fileID: -4593591527157779844}
   - component: {fileID: 2420948293580798087}
-  m_Layer: 0
-  m_Name: Cat
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: PlayerCATrachter
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8663427344137999531}
   - component: {fileID: 5125305015968838991}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DashBurstSFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   - component: {fileID: 7119254425326492455}
   - component: {fileID: 1061234425215457216}
   - component: {fileID: 5568823527646968403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SleepEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5301,7 +5301,7 @@ GameObject:
   - component: {fileID: 540483650530629118}
   - component: {fileID: 540483650530629120}
   - component: {fileID: 540483650530629121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DashEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}

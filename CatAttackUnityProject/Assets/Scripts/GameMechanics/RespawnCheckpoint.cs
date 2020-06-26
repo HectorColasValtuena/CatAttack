@@ -2,7 +2,7 @@
 
 namespace CatAttack
 {		
-	public class SpawnSpot : MonoBehaviour
+	public class RespawnCheckpoint : MonoBehaviour
 	{
 		public Transform _spawnSpot;
 		private Animator animator;
@@ -21,11 +21,19 @@ namespace CatAttack
 		}
 
 		//on creation report ourselves to the level manager and cache our animator
-		public void Awake()
+		public void Awake ()
 		{
 			if (_spawnSpot == null) { _spawnSpot = transform; }
 			LevelManager.instance.AddCheckpoint(this);
 			animator = GetComponent<Animator>();
+		}
+
+		public void OnTriggerEnter2D (Collider2D other)
+		{
+			//if (other.tag == "Player")
+			//{
+				LevelManager.instance.SetActiveCheckpoint(this);
+			//}
 		}
 	}
 }
