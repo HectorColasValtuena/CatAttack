@@ -6,6 +6,9 @@ namespace CatAttack
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
+        //const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
+
         private Vector2 m_XFlipVector2 = new Vector2(-1f, 1f);  //multiply this any vector to reverse horizontal component
 
         [SerializeField] private float m_MaxGroundSpeed = 1f;                    // The fastest the player can travel in the x axis.
@@ -19,11 +22,8 @@ namespace CatAttack
         //[SerializeField] private bool m_AirControl = false;                 // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 
-        private Transform m_GroundCheck;    // A position marking where to check if the player is grounded.
-        private Transform m_CeilingCheck;   // A position marking where to check for ceilings
-        const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
+        [SerializeField] private Transform[] m_GroundChecks;    // A position marking where to check if the player is grounded.
         private bool m_Grounded;            // Whether or not the player is grounded.
-        const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
         private Animator m_Animator;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private SpriteRenderer m_SpriteRenderer;
@@ -41,8 +41,6 @@ namespace CatAttack
             LevelManager.playerGameObject = this;
 
             // Setting up references.
-            m_GroundCheck = transform.Find("GroundCheck");
-            m_CeilingCheck = transform.Find("CeilingCheck");
             m_Animator = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_SpriteRenderer = GetComponent<SpriteRenderer>();
@@ -52,8 +50,8 @@ namespace CatAttack
 
         private void FixedUpdate()
         {
+            /*
             m_Grounded = false;
-
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             // This can be done using layers instead but Sample Assets will not overwrite your project settings.
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -62,9 +60,22 @@ namespace CatAttack
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
             }
-            m_Animator.SetBool("Ground", m_Grounded);
+            //*/
 
-            // Set the vertical animation
+            m_Grounded = false;
+
+            foreach (Transform groundCheck in m_GroundChecks)
+            {
+                Collider2D collision = Physics2D.OverlapCircle(groundCheck.position, k_GroundedRadius, m_WhatIsGround);
+                Debug.Log(collision);
+                if (collision != null)
+                {
+                    m_Grounded = true;
+                }
+            }
+
+            // Set animator variables to drive animation
+            m_Animator.SetBool("Ground", m_Grounded);
             m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
 
