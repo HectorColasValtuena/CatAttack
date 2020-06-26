@@ -37,6 +37,9 @@ namespace CatAttack
 
         private void Awake()
         {
+            //store a reference to this controller in the level manager
+            LevelManager.playerGameObject = this;
+
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
@@ -136,7 +139,8 @@ namespace CatAttack
         {
             m_Grounded = false;
             m_Animator.SetBool("Ground", false);
-            //m_Animator.SetFloat("StarDashing", 1f);
+
+            //force restart the stardash animation state
             m_Animator.Play("Base Layer.StarDash", -1, 0f);
 
             //Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with input
@@ -178,6 +182,24 @@ namespace CatAttack
         private void AttemptSleep ()
         {
 
+        }
+
+        //resets the player to target position. if no target position given, get default respawn spot from the level manager
+        public void ResetPlayer () { ResetPlayer(LevelManager.instance.respawnSpot); }
+        public void ResetPlayer (Vector3 targetPosition)
+        {
+            //reset our momentum and position
+            m_Rigidbody2D.velocity = Vector2.zero;
+            transform.position = targetPosition;
+
+            //reset jump input
+            m_JumpFlag = false;
+
+            //regenerate Star Power            
+            m_StarpowerReservoir.RegenerateStarpower();
+
+            //force animator to reset back to entry
+            m_Animator.Play("Base Layer.CatStanding");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace CatAttack
+namespace CatAttack.UI
 {
 	public class PredictiveCameraController : MonoBehaviour
 	{
