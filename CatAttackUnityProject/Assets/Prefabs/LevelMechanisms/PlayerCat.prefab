@@ -304,6 +304,8 @@ MonoBehaviour:
   - {fileID: 6316571243617752832}
   - {fileID: 150468168478191684}
   - {fileID: 1747845924691378925}
+  m_ControlDisabled: 0
+  m_CatDead: 0
 --- !u!114 &540483650876491677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +434,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ea9f22939001b1408aca0ab0bc0f548, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -559,7 +561,7 @@ GameObject:
   - component: {fileID: 6744819601459496930}
   - component: {fileID: 1004742155537487337}
   m_Layer: 10
-  m_Name: DeathFX
+  m_Name: DeathEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5369,7 +5371,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8ea9f22939001b1408aca0ab0bc0f548, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d314b898c6a839c4cb1e5588374a76ad, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5527,7 +5529,7 @@ GameObject:
   - component: {fileID: 1061234425215457216}
   - component: {fileID: 5568823527646968403}
   m_Layer: 10
-  m_Name: SleepFX
+  m_Name: SleepEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10342,7 +10344,7 @@ GameObject:
   - component: {fileID: 540483650530629120}
   - component: {fileID: 540483650530629121}
   m_Layer: 10
-  m_Name: DashFX
+  m_Name: DashEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

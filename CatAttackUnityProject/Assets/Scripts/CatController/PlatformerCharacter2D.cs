@@ -36,7 +36,8 @@ namespace CatAttack
         private bool m_PreviousJump = false;
         private float m_JumpTimer = 0f;
 
-        public bool m_ControlDisabled = false;
+        public bool m_ControlDisabled = false;  //are player controls disabled?
+        public bool m_CatDead = false;          //is the player dead?
 
         private void Awake()
         {
@@ -71,6 +72,9 @@ namespace CatAttack
             // Set animator variables to drive animation
             m_Animator.SetBool("Ground", m_Grounded);
             m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
+            //if dropped below death height, die.
+            if (transform.position.y < LevelManager.instance.lethalDropoffHeight) { Death(); }
         }
 
         private bool CheckGround ()
@@ -88,7 +92,7 @@ namespace CatAttack
 
         public void Move(float move, bool crouch, bool jump)
         {
-            if (m_ControlDisabled) { return; } //ignore inputs if controls are disabled
+            if (m_ControlDisabled || m_CatDead) { return; } //ignore inputs if controls are disabled or character is dead
         //Save a jump only for each lift and press of the button
             if (jump && !m_PreviousJump && m_JumpTimer <= 0)
             {
@@ -210,8 +214,12 @@ namespace CatAttack
             m_Rigidbody2D.velocity = Vector2.zero;
             transform.position = targetPosition;
 
-            //reset controls disabled
+            //re-enable physics
+            m_Rigidbody2D.simulated = true;
+
+            //reset controls disabled and dead state
             m_ControlDisabled = false;
+            m_CatDead = false;
 
             //reset jump input
             m_JumpFlag = false;
@@ -226,17 +234,21 @@ namespace CatAttack
             m_Animator.Play("Base Layer.Standing");
         }
 
-        public IEnumerator DelayedReset (float timeDelay = 5)
+        public IEnumerator DelayedReset (float timeDelay = 1)
         {
             yield return new WaitForSeconds(timeDelay);
             ResetPlayer();
         }
 
+        //kill the player character. Automatically resets the player.
         public void Death () 
         {
-            m_Animator.SetBool("Dead", true);
-            m_ControlDisabled = true;
-            DelayedReset();
+            if (m_CatDead == true) return;  //if already dead, ignore
+            m_Rigidbody2D.simulated = false;    //deactivate physics until resurrection
+            m_Rigidbody2D.velocity = Vector2.zero;
+            m_CatDead = true;                   //store death state to disable controls
+            m_Animator.SetBool("Dead", true);   //indicate the animator we're dead
+            StartCoroutine(DelayedReset());    //reset the player after X seconds
         }
     }
 }
