@@ -6,9 +6,15 @@ namespace CatAttack
 {		
 	public class LevelManager : MonoBehaviour
 	{
-	//In-Class management
+	//public values
 		public static LevelManager instance;
-		public static PlatformerCharacter2D playerGameObject;
+		public static PlatformerCharacter2D playerGameObject;	//reference to the player
+
+		public float lethalDropoffHeight = -100f;	//dropping below this vertical position means death
+
+	//ENDOF public values
+
+	//In-Class management
 
 		//Save a public reference to this instance on creation
 		public void Awake ()
