@@ -1,0 +1,11 @@
+Install Python and the Python Imaging Library. Back in GIMP, select and cut the full-width areas you don't want to transparent, and export the image to test.png. Then use this Python code (works only if complete lines are transparent; will not work properly if there are 100%-transparent pixels anywhere other than on a full-width row)—
+
+	from PIL import Image
+	i = Image.open("test.png")
+	b = i.tobytes()
+	b2 = ''.join(b[n:n+4] for n in xrange(0,len(b),4) if ord(b[n+3]))
+	newHeight = len(b2)/i.width/4
+	i2 = Image.frombytes('RGBA',(i.width,newHeight),b2)
+	i2.save("test.png")
+
+Then re-load test.png and verify that the areas you cut have gone.
