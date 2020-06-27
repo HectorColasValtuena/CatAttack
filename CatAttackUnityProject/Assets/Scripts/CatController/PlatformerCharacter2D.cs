@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 #pragma warning disable 649
@@ -34,6 +35,8 @@ namespace CatAttack
         private bool m_JumpFlag = false;
         private bool m_PreviousJump = false;
         private float m_JumpTimer = 0f;
+
+        public bool m_ControlDisabled = false;
 
         private void Awake()
         {
@@ -85,6 +88,7 @@ namespace CatAttack
 
         public void Move(float move, bool crouch, bool jump)
         {
+            if (m_ControlDisabled) { return; } //ignore inputs if controls are disabled
         //Save a jump only for each lift and press of the button
             if (jump && !m_PreviousJump && m_JumpTimer <= 0)
             {
@@ -206,14 +210,33 @@ namespace CatAttack
             m_Rigidbody2D.velocity = Vector2.zero;
             transform.position = targetPosition;
 
+            //reset controls disabled
+            m_ControlDisabled = false;
+
             //reset jump input
             m_JumpFlag = false;
 
             //regenerate Star Power            
             m_StarpowerReservoir.RegenerateStarpower();
 
+            //remove dead flag from animator
+            m_Animator.SetBool("Dead", false);
+
             //force animator to reset back to entry
             m_Animator.Play("Base Layer.Standing");
+        }
+
+        public IEnumerator DelayedReset (float timeDelay = 5)
+        {
+            yield return new WaitForSeconds(timeDelay);
+            ResetPlayer();
+        }
+
+        public void Death () 
+        {
+            m_Animator.SetBool("Dead", true);
+            m_ControlDisabled = true;
+            DelayedReset();
         }
     }
 }
