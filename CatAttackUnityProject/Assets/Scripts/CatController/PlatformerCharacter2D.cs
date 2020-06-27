@@ -62,23 +62,26 @@ namespace CatAttack
             }
             //*/
 
-            m_Grounded = false;
-
-            foreach (Transform groundCheck in m_GroundChecks)
-            {
-                Collider2D collision = Physics2D.OverlapCircle(groundCheck.position, k_GroundedRadius, m_WhatIsGround);
-                Debug.Log(collision);
-                if (collision != null)
-                {
-                    m_Grounded = true;
-                }
-            }
+            //check and store wether we¡re touching ground
+            m_Grounded = CheckGround ();
 
             // Set animator variables to drive animation
             m_Animator.SetBool("Ground", m_Grounded);
             m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
 
+        private bool CheckGround ()
+        {
+            foreach (Transform groundCheck in m_GroundChecks)
+            {
+                Collider2D collision = Physics2D.OverlapCircle(groundCheck.position, k_GroundedRadius, m_WhatIsGround);
+                if (collision != null)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public void Move(float move, bool crouch, bool jump)
         {
