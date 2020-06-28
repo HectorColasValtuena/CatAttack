@@ -39,8 +39,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: ParticlesBackground
+  - name: ParticleDeepBackground
     uniqueID: 3402969117
+    locked: 0
+  - name: SolidGround
+    uniqueID: 2552305413
     locked: 0
   - name: DecorBackground
     uniqueID: 1904779381
@@ -54,6 +57,6 @@ TagManager:
   - name: DecorForeground
     uniqueID: 1426982183
     locked: 0
-  - name: ParticlesForeground
+  - name: ParticleForeground
     uniqueID: 1708832315
     locked: 0
