@@ -223,11 +223,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee22cc6da4a9264faf3eb7154a3cdbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAdvanceRate: {x: 0.3, y: 0.15}
-  maxAdvanceDistance: {x: 1, y: 0.25}
-  minSize: 1
-  sizePerSpeed: 1
+  maxAdvanceRate: {x: 0.5, y: 0.25}
+  maxAdvanceDistance: {x: 2, y: 0.5}
   lerpRate: 0.1
+  minSize: 1
+  sizePerSpeed: 0.1
+  sizeLerpRate: 0.1
+  maxSize: 2
 --- !u!1 &540483649781028919
 GameObject:
   m_ObjectHideFlags: 0
