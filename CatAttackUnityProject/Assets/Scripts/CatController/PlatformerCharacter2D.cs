@@ -24,6 +24,7 @@ namespace CatAttack
         [SerializeField] private LayerMask m_WhatIsGround;                  // A mask determining what is ground to the character
 
         [SerializeField] private Transform[] m_GroundChecks;    // A position marking where to check if the player is grounded.
+        [SerializeField] public Transform m_CameraTarget;    // A position marking where to check if the player is grounded.
         private bool m_Grounded;            // Whether or not the player is grounded.
         private Animator m_Animator;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
