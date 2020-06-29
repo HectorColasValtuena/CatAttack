@@ -32,6 +32,7 @@ namespace CatAttack
 		public static void LevelChange (int levelNumber, bool autoUnlock = true)
 		{
 			if (autoUnlock) { ProgressionManager.LevelUnlock(levelNumber); }
+			currentLevel = levelNumber;
 			SceneManager.LoadScene(levelNumber);		
 		}
 	}

@@ -9,6 +9,7 @@ namespace CatAttack
 	//public values
 		public static LevelManager instance;
 		public static PlatformerCharacter2D playerGameObject;	//reference to the player
+		public static Transform cameraFocusTarget = null;		//object to be focused by the camera
 
 		public float lethalDropoffHeight = -100f;	//dropping below this vertical position means death
 
@@ -20,6 +21,7 @@ namespace CatAttack
 		public void Awake ()
 		{
 			LevelManager.instance = this;
+			cameraFocusTarget = null;
 			checkpointList = new List<RespawnCheckpoint>();
 			if (activeCheckpoint == null) { Debug.LogError("LevelManager.activeCheckpoint initial value has not been set. Set it up within the inspector."); }
 		}
@@ -58,6 +60,22 @@ namespace CatAttack
 			LevelManager.playerGameObject.ResetPlayer();
 		}
 
-	//ENDOFReset management
+	//ENDOF Reset management
+
+	//Level Beaten management
+		public GameObject endLevelDialog;
+		public int nextLevel = 0;
+
+		public void ShowEndLevelDialog ()
+		{
+			if (endLevelDialog != null)	{ endLevelDialog.SetActive(true); }
+		}
+
+		public void AdvanceLevel ()
+		{
+			ProgressionManager.LevelChange(nextLevel);
+		}
+
+	//ENDOF Level Beaten management
 	}
 }

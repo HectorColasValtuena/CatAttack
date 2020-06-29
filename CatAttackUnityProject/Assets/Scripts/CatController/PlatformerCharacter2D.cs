@@ -37,8 +37,11 @@ namespace CatAttack
         private bool m_PreviousJump = false;
         private float m_JumpTimer = 0f;
 
-        public bool m_ControlDisabled = false;  //are player controls disabled?
-        public bool m_CatDead = false;          //is the player dead?
+        [System.NonSerialized] public bool m_ControlDisabled = false;  //are player controls disabled?
+        [System.NonSerialized] public bool m_CatDead = false;          //is the player dead?
+        [System.NonSerialized] public bool m_IsAsleep = false;          //is the player asleep?
+
+        public bool m_CameraFocused { get { return m_IsAsleep; } }      //return true if camera needs to focus 
 
         private void Awake()
         {
@@ -55,18 +58,6 @@ namespace CatAttack
 
         private void FixedUpdate()
         {
-            /*
-            m_Grounded = false;
-            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-            // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                if (colliders[i].gameObject != gameObject)
-                    m_Grounded = true;
-            }
-            //*/
-
             //check and store wether we¡re touching ground
             m_Grounded = CheckGround ();
 
@@ -93,8 +84,12 @@ namespace CatAttack
 
         public void Move(float move, bool crouch, bool jump)
         {
-            if (m_ControlDisabled || m_CatDead) { return; } //ignore inputs if controls are disabled or character is dead
-        //Save a jump only for each lift and press of the button
+            if (m_ControlDisabled || m_CatDead || m_IsAsleep) { return; } //ignore inputs if controls are disabled or character is dead
+
+            //if moving reset camera focus back to the player
+            if (LevelManager.cameraFocusTarget != null) { LevelManager.cameraFocusTarget = null; }
+
+            //Save a jump only for each lift and press of the button
             if (jump && !m_PreviousJump && m_JumpTimer <= 0)
             {
                 m_JumpFlag = true;
@@ -181,7 +176,6 @@ namespace CatAttack
             m_Rigidbody2D.velocity = new Vector2 (m_JumpSpeed.x * move, m_JumpSpeed.y);  
         }
 
-
         private void CheckFlip(float move)
         { // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !m_FacingRight)
@@ -202,25 +196,18 @@ namespace CatAttack
             m_SpriteRenderer.flipX = !m_FacingRight;
         }
 
-        private void AttemptSleep ()
-        {
-
-        }
-
         //resets the player to target position. if no target position given, get default respawn spot from the level manager
         public void ResetPlayer () { ResetPlayer(LevelManager.instance.respawnSpot); }
         public void ResetPlayer (Vector3 targetPosition)
         {
+            //reset controls disabled and special states
+            m_CatDead = false;
+            m_IsAsleep = false;
+            DeImmobilize();
+            
             //reset our momentum and position
             m_Rigidbody2D.velocity = Vector2.zero;
             transform.position = targetPosition;
-
-            //re-enable physics
-            m_Rigidbody2D.simulated = true;
-
-            //reset controls disabled and dead state
-            m_ControlDisabled = false;
-            m_CatDead = false;
 
             //reset jump input
             m_JumpFlag = false;
@@ -230,6 +217,7 @@ namespace CatAttack
 
             //remove dead flag from animator
             m_Animator.SetBool("Dead", false);
+            m_Animator.SetBool("Sleeping", false);
 
             //force animator to reset back to entry
             m_Animator.Play("Base Layer.Standing");
@@ -245,11 +233,35 @@ namespace CatAttack
         public void Death () 
         {
             if (m_CatDead == true) return;  //if already dead, ignore
-            m_Rigidbody2D.simulated = false;    //deactivate physics until resurrection
-            m_Rigidbody2D.velocity = Vector2.zero;
+            Immobilize();
             m_CatDead = true;                   //store death state to disable controls
             m_Animator.SetBool("Dead", true);   //indicate the animator we're dead
             StartCoroutine(DelayedReset());    //reset the player after X seconds
+        }
+
+        //put the cat to sleep
+        public void FallAsleep ()
+        {
+            Immobilize();
+            m_Rigidbody2D.simulated = true;
+            LevelManager.cameraFocusTarget = transform;
+            m_IsAsleep = true;
+            m_Animator.SetBool("Sleeping", true);
+            m_Animator.Play("Base Layer.BeginSleep");
+        }
+
+        //Disable controls and physics
+        public void Immobilize ()
+        {
+            m_Rigidbody2D.simulated = false;
+            m_Rigidbody2D.velocity = Vector2.zero;
+            m_ControlDisabled = true;
+        }
+        //re-enable controls and physics
+        public void DeImmobilize ()
+        {
+            m_Rigidbody2D.simulated = true;
+            m_ControlDisabled = false;
         }
     }
 }
