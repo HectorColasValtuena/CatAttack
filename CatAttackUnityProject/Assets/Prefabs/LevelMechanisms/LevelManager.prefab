@@ -46,8 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lethalDropoffHeight: -10
   activeCheckpoint: {fileID: 0}
-  endLevelDialog: {fileID: 7404926374727018864}
-  nextLevel: 0
 --- !u!1001 &4148234762270741824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170,12 +168,6 @@ PrefabInstance:
 --- !u!224 &3051778425056728663 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1426345613517521687, guid: 350835f6e5e3ae844a9947df0de6c412,
-    type: 3}
-  m_PrefabInstance: {fileID: 4148234762270741824}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7404926374727018864 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6868808326102481968, guid: 350835f6e5e3ae844a9947df0de6c412,
     type: 3}
   m_PrefabInstance: {fileID: 4148234762270741824}
   m_PrefabAsset: {fileID: 0}
