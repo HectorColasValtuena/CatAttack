@@ -6,13 +6,14 @@ namespace CatAttack
 	{
 		public static StarpowerReservoir instance;
 
-		[System.NonSerialized] public int currentStarpower = 4;
-		[System.NonSerialized] public int maxStarpower = 4;
+		private int currentStarpower;
+		public int maxStarpower = 4;
 
 		public void Awake ()
 		{ 
 			Debug.Log("StarpowerReservoir.Awake()");
 			StarpowerReservoir.instance = this;
+			currentStarpower = maxStarpower;
 		}
 
 		//check if there's enough starpower. default 1. returns true/false
