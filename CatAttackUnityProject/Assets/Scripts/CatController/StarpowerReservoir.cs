@@ -6,7 +6,7 @@ namespace CatAttack
 	{
 		public static StarpowerReservoir instance;
 
-		private int currentStarpower;
+		[System.NonSerialized] public int currentStarpower;
 		public int maxStarpower = 4;
 
 		public void Awake ()
