@@ -17,7 +17,7 @@ namespace CatAttack
 			if (levelNumber <= defaultUnlockedLevel) return true;
 			
 			//If playerprefs is uninitialized, set up default value
-			if (!PlayerPrefs.HasKey(levelUnlockedKey)) { PlayerPrefs.SetInt(levelUnlockedKey, defaultUnlockedLevel); return levelNumber <= defaultUnlockedLevel; }
+			if (!PlayerPrefs.HasKey(levelUnlockedKey)) { PlayerPrefs.SetInt(levelUnlockedKey, defaultUnlockedLevel); } // return levelNumber <= defaultUnlockedLevel; }
 			return levelNumber <= PlayerPrefs.GetInt(levelUnlockedKey);
 		}
 
@@ -34,6 +34,12 @@ namespace CatAttack
 			if (autoUnlock) { ProgressionManager.LevelUnlock(levelNumber); }
 			currentLevel = levelNumber;
 			SceneManager.LoadScene(levelNumber);		
+		}
+
+		//open next scene
+		public static void AdvanceLevel (bool autoUnlock = true)
+		{
+			ProgressionManager.LevelChange(currentLevel+1, autoUnlock);
 		}
 	}
 }
