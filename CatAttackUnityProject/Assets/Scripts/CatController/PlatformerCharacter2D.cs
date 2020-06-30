@@ -60,6 +60,8 @@ namespace CatAttack
         {
             //check and store wether we¡re touching ground
             m_Grounded = CheckGround ();
+            //regain starpower if touching the ground
+            if (m_Grounded) { m_StarpowerReservoir.RegenerateStarpower(); }
 
             // Set animator variables to drive animation
             m_Animator.SetBool("Ground", m_Grounded);
