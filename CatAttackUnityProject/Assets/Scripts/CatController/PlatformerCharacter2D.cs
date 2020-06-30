@@ -13,8 +13,8 @@ namespace CatAttack
         private Vector2 m_XFlipVector2 = new Vector2(-1f, 1f);  //multiply this any vector to reverse horizontal component
 
         [SerializeField] private float m_MaxGroundSpeed = 1f;                    // The fastest the player can travel in the x axis.
-        [SerializeField] private Vector2 m_JumpSpeed = new Vector2(10f, 30f);  // Initial speed of a jump
-        [SerializeField] private Vector2 m_StarDashSpeed = new Vector2(10f, 30f);  // Initial speed of a dash
+        [SerializeField] private Vector2 m_JumpSpeed = new Vector2(2f, 3f);  // Initial speed of a jump
+        [SerializeField] private Vector2 m_StarDashSpeed = new Vector2(2f, 4f);  // Initial speed of a dash
         [SerializeField] private float m_MaxStarDashSpeed = 2f;         // Amount of force added when the player jumps.
         [SerializeField] private float m_MinimumAirControl = 0.5f;         // minimum air control when airborne
         [SerializeField] private float m_JumpCooldown = 0.1f;         // Time in seconds between jump activations
@@ -86,6 +86,9 @@ namespace CatAttack
         {
             if (m_ControlDisabled || m_CatDead || m_IsAsleep) { return; } //ignore inputs if controls are disabled or character is dead
 
+            //update sprite orientation
+            CheckFlip(move);
+
             //if moving reset camera focus back to the player
             if (LevelManager.cameraFocusTarget != null) { LevelManager.cameraFocusTarget = null; }
 
@@ -146,8 +149,6 @@ namespace CatAttack
                 m_JumpFlag = false;
             }
 
-            //update sprite orientation
-            CheckFlip(move);
 
             // The Speed animator parameter is set to the absolute value of rigidbody velocity to adjust playback
             m_Animator.SetFloat("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
@@ -162,7 +163,8 @@ namespace CatAttack
             m_Animator.Play("Base Layer.StarDash", -1, 0f);
 
             //Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with input
-            m_Rigidbody2D.velocity = new Vector2 (m_StarDashSpeed.x * move, m_StarDashSpeed.y);
+            //always dash full speed in the direction the player is facing
+            m_Rigidbody2D.velocity = (m_FacingRight) ? (m_StarDashSpeed) : (m_StarDashSpeed * m_XFlipVector2);
         }
 
         private void Jump(float move)

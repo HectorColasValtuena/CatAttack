@@ -226,8 +226,8 @@ MonoBehaviour:
   maxAdvanceRate: {x: 0.4, y: 0.1}
   maxAdvanceDistance: {x: 1.6, y: 0.5}
   lerpRate: 0.025
-  minSize: 2
-  sizePerSpeed: 0.5
+  minSize: 1.5
+  sizePerSpeed: 0.1
   sizeLerpRate: 0.05
   maxSize: 4
   focusedSize: 1
@@ -352,9 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxGroundSpeed: 2
-  m_JumpSpeed: {x: 2, y: 4}
-  m_StarDashSpeed: {x: 3, y: 6}
+  m_MaxGroundSpeed: 1.5
+  m_JumpSpeed: {x: 2, y: 3}
+  m_StarDashSpeed: {x: 2, y: 4}
   m_MaxStarDashSpeed: 5
   m_MinimumAirControl: 1
   m_JumpCooldown: 0.1
