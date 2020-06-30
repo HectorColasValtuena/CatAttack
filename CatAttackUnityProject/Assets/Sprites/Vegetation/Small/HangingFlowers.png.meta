@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 2e713d5b8aee7bc42992a13aefc72c98
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3552406402370938270
+    second: FlowerVine_Long_0
+  - first:
+      213: 55350928859943024
+    second: FlowerVine_Long_2bunch (2)
+  - first:
+      213: 2835672917233394522
+    second: FlowerVine_Long_3Bunch
+  - first:
+      213: 2883072797031085833
+    second: FlowerVine_Short_3Bunch
+  - first:
+      213: -4979532811973545156
+    second: FlowerVine_Medium_3bunch
+  - first:
+      213: -6464312330482466168
+    second: FlowerVine_Long_2bunch
+  - first:
+      213: -6501077250966133300
+    second: FlowerVine_Stub 0
+  - first:
+      213: 3905596733333253082
+    second: FlowerVine_Stub 0
+  - first:
+      213: 3905596733333253082
+    second: FlowerVine_Stub_1
+  - first:
+      213: 2321445702602871030
+    second: FlowerVine_Stub 5
+  - first:
+      213: 7751649815239582984
+    second: FlowerVine_Stub 4
+  - first:
+      213: -8589129424689902788
+    second: HangingFlowers_2
+  - first:
+      213: 5853280425967566981
+    second: HangingFlowers_3
+  - first:
+      213: -7472439343002709732
+    second: FlowerVine_Stub 3
+  - first:
+      213: 5471374805485337301
+    second: FlowerVine_Stub 2
+  - first:
+      213: -4568905192785034053
+    second: FlowerVine_Stub_6
+  - first:
+      213: -1701982686025872458
+    second: FlowerVine_Stub 7
+  - first:
+      213: 2752373510274656155
+    second: FlowerVine_Stub 8
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,9 +94,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -70,9 +124,402 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlowerVine_Long_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 16, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95a42f2dceac4130800000000000000
+      internalID: 3552406402370938270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Long_3Bunch
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 46
+        height: 80
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 16, z: 0, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5364e28e755a5720800000000000000
+      internalID: 2835672917233394522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Short_3Bunch
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 46
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90731a80f6bb20820800000000000000
+      internalID: 2883072797031085833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Medium_3bunch
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 46
+        height: 48
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 16, z: 0, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c333aea4a4525eab0800000000000000
+      internalID: -4979532811973545156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Long_2bunch
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 16
+        width: 26
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 8, z: 0, w: 16}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824a605f262a46a0800000000000000
+      internalID: -6464312330482466168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 4
+        width: 10
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc56ac63fa887c5a0800000000000000
+      internalID: -6501077250966133300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Long_2bunch (2)
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 16
+        width: 28
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 16, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0705fa46065a4c000800000000000000
+      internalID: 55350928859943024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 16
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f05005219e673020800000000000000
+      internalID: 2321445702602871030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HangingFlowers_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 16
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805e39cdf64639b60800000000000000
+      internalID: 7751649815239582984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HangingFlowers_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 16
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bc08f9b484dc880800000000000000
+      internalID: -8589129424689902788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HangingFlowers_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 16
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804b8019870b3150800000000000000
+      internalID: 5853280425967566981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 52
+        width: 12
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c119baa12009c4890800000000000000
+      internalID: -7472439343002709732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 66
+        width: 10
+        height: 14
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dab9f1a56a3eeb40800000000000000
+      internalID: 5471374805485337301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 66
+        width: 14
+        height: 14
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb44c9b2fecf790c0800000000000000
+      internalID: -4568905192785034053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 52
+        width: 10
+        height: 12
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb0099b3c75168e0800000000000000
+      internalID: -1701982686025872458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerVine_Stub 8
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 32
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97ad19ff15623620800000000000000
+      internalID: 2752373510274656155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HangingFlowers_0
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 16
+        width: 10
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb21464987733630800000000000000
+      internalID: 3905596733333253082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
