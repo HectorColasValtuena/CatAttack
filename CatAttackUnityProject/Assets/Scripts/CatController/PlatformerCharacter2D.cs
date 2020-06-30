@@ -115,9 +115,10 @@ namespace CatAttack
 
         //if attempting to move in the direction of movement, respect previous momentum
             float targetXSpeed;
-            if (Mathf.Sign(move) == Mathf.Sign(m_Rigidbody2D.velocity.x))
+            float movementSign = m_FacingRight ? 1 : -1;
+            if (movementSign == Mathf.Sign(m_Rigidbody2D.velocity.x) || move == 0)
             {
-                targetXSpeed = Mathf.Sign(move) * Mathf.Max(
+                targetXSpeed = movementSign * Mathf.Max(
                     Mathf.Abs(m_Rigidbody2D.velocity.x),
                     Mathf.Abs(maxXSpeed * move)
                 );
