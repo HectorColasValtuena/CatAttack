@@ -73,7 +73,7 @@ TextureImporter:
     second: Arrows_Wood_Up
   - first:
       213: -4144753518854709185
-    second: Arrows_Wood_23
+    second: Arrows_Wood_Up_wallMount
   - first:
       213: -4021738910061697111
     second: Arrows_Wood_24
@@ -695,15 +695,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arrows_Wood_23
+      name: Arrows_Wood_Up_wallMount
       rect:
         serializedVersion: 2
         x: 104
         y: 36
         width: 24
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -807,8 +807,8 @@ TextureImporter:
         y: 4
         width: 28
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,7 +850,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
