@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: 8bb52f3aa46096c49873f4ca7e5bfeda
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2670385880569054123
+    second: GrassColored_0
+  - first:
+      213: 9191911167425678686
+    second: GrassColored_1
+  - first:
+      213: 5321186918471289463
+    second: GrassColored_2
+  - first:
+      213: 924204263003388093
+    second: GrassColored_3
+  - first:
+      213: 4571993279489184314
+    second: GrassColored_4
+  - first:
+      213: 1994606977559898803
+    second: GrassColored_5
+  - first:
+      213: -8057554503815411888
+    second: GrassColored_6
+  - first:
+      213: 3150665292245039896
+    second: GrassColored_7
+  - first:
+      213: 6505282507708130897
+    second: GrassColored_8
+  - first:
+      213: 4578060033805452222
+    second: GrassColored_9
+  - first:
+      213: -921994190793227851
+    second: GrassColored_10
+  - first:
+      213: -2373267842557778590
+    second: GrassColored_11
+  - first:
+      213: 4997314024764957865
+    second: GrassColored_12
+  - first:
+      213: 4713462904947064209
+    second: GrassColored_13
+  - first:
+      213: -4441896526610139644
+    second: GrassColored_14
+  - first:
+      213: -7085306719272813477
+    second: GrassColored_15
+  - first:
+      213: 2764148530505674070
+    second: GrassColored_16
+  - first:
+      213: -1650620890626874393
+    second: GrassColored_17
+  - first:
+      213: 7693033355068888864
+    second: GrassColored_18
+  - first:
+      213: 7937945492547553203
+    second: GrassColored_19
+  - first:
+      213: -598905969924831035
+    second: GrassColored_20
+  - first:
+      213: -4554216734131313892
+    second: GrassColored_21
+  - first:
+      213: -3816012998613494158
+    second: GrassColored_22
+  - first:
+      213: -7992177852716965533
+    second: GrassColored_23
+  - first:
+      213: 6728851524436294404
+    second: GrassColored_24
+  - first:
+      213: -1468047900952083070
+    second: GrassColored_25
+  - first:
+      213: 9095814230048744039
+    second: GrassColored_26
+  - first:
+      213: 8680778963535259836
+    second: GrassColored_27
+  - first:
+      213: 2524452598046264267
+    second: GrassColored_28
+  - first:
+      213: -6997605095140056495
+    second: GrassColored_29
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +121,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +130,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +160,255 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GrassColored_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 40
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba389806fcd1f0520800000000000000
+      internalID: 2670385880569054123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 126
+        width: 200
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d8a55818a309f70800000000000000
+      internalID: 9191911167425678686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 40
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77acfea3f47a8d940800000000000000
+      internalID: 5321186918471289463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 40
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8f73c61ee63dc00800000000000000
+      internalID: 924204263003388093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 40
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a321d6b0aabf27f30800000000000000
+      internalID: 4571993279489184314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba29fb6a744eab10800000000000000
+      internalID: 1994606977559898803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_6
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 94
+        width: 200
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057cbb99ed0dd2090800000000000000
+      internalID: -8057554503815411888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 62
+        width: 200
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bfa6ee36969bb20800000000000000
+      internalID: 3150665292245039896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 200
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156618b69f7674a50800000000000000
+      internalID: 6505282507708130897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrassColored_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 200
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3036b5859888f30800000000000000
+      internalID: 4578060033805452222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
