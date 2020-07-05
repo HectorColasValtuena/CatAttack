@@ -89,6 +89,24 @@ TextureImporter:
   - first:
       213: -8588467528141539916
     second: RockSword
+  - first:
+      213: 1155584605246013023
+    second: GemCrystal
+  - first:
+      213: -6999344592459420446
+    second: GemCrystal2
+  - first:
+      213: 8523975043751710978
+    second: GemCrystal
+  - first:
+      213: 8523975043751710978
+    second: Rocks (1)_0
+  - first:
+      213: 7673469576727719969
+    second: GemCrystal4
+  - first:
+      213: 1876353938233929491
+    second: GemCrystal4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -730,7 +748,7 @@ TextureImporter:
         width: 46
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -738,6 +756,111 @@ TextureImporter:
       bones: []
       spriteID: 4b5752c6942afc880800000000000000
       internalID: -8588467528141539916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemCrystal
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e399f6316790010800000000000000
+      internalID: 1155584605246013023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemCrystal2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eca7e16d255dde90800000000000000
+      internalID: -6999344592459420446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2019d1de32e3b4670800000000000000
+      internalID: 8523975043751710978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemCrystal4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1207f9b9ce3ad7a60800000000000000
+      internalID: 7673469576727719969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemCrystal5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fa65927f52a0a10800000000000000
+      internalID: 1876353938233929491
       vertices: []
       indices: 
       edges: []
