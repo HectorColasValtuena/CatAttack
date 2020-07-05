@@ -7,16 +7,16 @@ TextureImporter:
     second: Roots_1
   - first:
       213: 5451449941940831916
-    second: Rocks (1)_1
+    second: Branches2
   - first:
       213: -5972911670546619099
-    second: Rocks (1)_2
+    second: Branches3
   - first:
       213: 829237324661356735
     second: DarkBush
   - first:
       213: 2261024479905452328
-    second: Rocks (1)_3
+    second: DarkBush2
   - first:
       213: -4819469852501861000
     second: Skeleton_1
@@ -61,10 +61,34 @@ TextureImporter:
     second: MossyStone4
   - first:
       213: -958260001832349278
-    second: Rocks (1)_10
+    second: MossyStone6
   - first:
       213: -6522871871116305203
-    second: Rocks (1)_11
+    second: Branches0
+  - first:
+      213: 6365720639022389155
+    second: MossyStone3
+  - first:
+      213: -6412477369533709378
+    second: MossyStone5
+  - first:
+      213: -6195562954729590777
+    second: Branches
+  - first:
+      213: 1569417571950275516
+    second: Rocks (1)_1
+  - first:
+      213: -9102784109324328847
+    second: Rocks (1)_2
+  - first:
+      213: 8377955413177961960
+    second: Rocks (1)_3
+  - first:
+      213: 7172054530672469960
+    second: Rocks (1)_10
+  - first:
+      213: -8588467528141539916
+    second: RockSword
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,7 +129,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -173,10 +197,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rocks (1)_0
+      name: Branches
       rect:
         serializedVersion: 2
-        x: 576
+        x: 672
         y: 0
         width: 48
         height: 32
@@ -194,7 +218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rocks (1)_1
+      name: Branches2
       rect:
         serializedVersion: 2
         x: 624
@@ -215,7 +239,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rocks (1)_2
+      name: Branches3
       rect:
         serializedVersion: 2
         x: 672
@@ -257,7 +281,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rocks (1)_3
+      name: DarkBush2
       rect:
         serializedVersion: 2
         x: 768
@@ -546,6 +570,174 @@ TextureImporter:
       bones: []
       spriteID: 4e3b8c9cecb279550800000000000000
       internalID: 6167446381855814628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb346b2aecd4207a0800000000000000
+      internalID: -6412477369533709378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MossyStone6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1515cfa9393b2f0800000000000000
+      internalID: -958260001832349278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb2a5077f0b7c510800000000000000
+      internalID: 1569417571950275516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17027a8c41a6ca180800000000000000
+      internalID: -9102784109324328847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed888a5f0a744470800000000000000
+      internalID: 8377955413177961960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (1)_10
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 32
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7a672b891488360800000000000000
+      internalID: 7172054530672469960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Branches0
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc99b6c79a1a75a0800000000000000
+      internalID: -6522871871116305203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockSword
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 32
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5752c6942afc880800000000000000
+      internalID: -8588467528141539916
       vertices: []
       indices: 
       edges: []
