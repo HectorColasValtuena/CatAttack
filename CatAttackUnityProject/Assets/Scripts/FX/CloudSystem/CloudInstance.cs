@@ -6,7 +6,8 @@ namespace CatAttack
 	{
 		private SpriteRenderer spriteRenderer;
 
-		[System.NonSerialized] public float moveSpeed;
+		public Vector2 moveSpeed;
+		public Transform centerPoint = null;
 		public Sprite cloudSprite { set { spriteRenderer.sprite = value; } }
 
 		void Awake ()
@@ -18,17 +19,20 @@ namespace CatAttack
 
 		void Update()
 		{
-			//move the cloud
-			transform.Translate(new Vector3 (moveSpeed * Time.deltaTime, 0, 0));
+			//ensure we have a center point
+			if (centerPoint == null) { centerPoint = transform.parent; }
 
-			//check our position relative to the parent - if out of range ask manager for a position reset
+			//move the cloud
+			transform.Translate(new Vector3 (moveSpeed.x * Time.deltaTime, moveSpeed.y * Time.deltaTime, 0));
+
+			//check our position relative to the centre point - if out of range ask manager for a position reset
 			if
 			(
-				transform.localPosition.x > CloudManager.instance.maxCloudDistance.x ||
-				transform.localPosition.x < -CloudManager.instance.maxCloudDistance.x ||
-				transform.localPosition.y > CloudManager.instance.maxCloudDistance.y ||
-				transform.localPosition.y < -CloudManager.instance.maxCloudDistance.y
-			){
+				transform.position.x > centerPoint.position.x + CloudManager.instance.maxCloudDistance.x ||
+				transform.position.x < centerPoint.position.x - CloudManager.instance.maxCloudDistance.x ||
+				transform.position.y > centerPoint.position.y + CloudManager.instance.maxCloudDistance.y ||
+				transform.position.y < centerPoint.position.y - CloudManager.instance.maxCloudDistance.y
+			) {
 				CloudManager.instance.ResetCloud(this);
 			}
 		}

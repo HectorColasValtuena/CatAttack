@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8538132954499846031}
   - component: {fileID: 6757741471943708182}
   m_Layer: 0
-  m_Name: MenuCloudSystem
+  m_Name: BasicCloudSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,11 +43,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b659c9f02b6b4034bb78b6e364d88f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCloudDistance: {x: 15, y: 6}
-  cloudAmmount: 10
-  minCloudSpeed: 0.1
-  maxCloudSpeed: 0.4
-  cloudDirection: 1
+  centerPoint: {fileID: 0}
+  maxCloudDistance: {x: 16, y: 8}
+  cloudAmmount: 15
+  minCloudSpeed: {x: 0.05, y: 0}
+  maxCloudSpeed: {x: 0.4, y: 0}
+  cloudDirection: {x: 1, y: 0}
   cloudPrefab: {fileID: 6527233516996439520, guid: 05c7a0714f0a1f940a90f49cfc3a938a,
     type: 3}
   cloudSpriteList:
