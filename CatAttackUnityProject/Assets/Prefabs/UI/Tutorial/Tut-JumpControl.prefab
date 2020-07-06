@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 534389319}
   - component: {fileID: 534389321}
   - component: {fileID: 534389320}
+  - component: {fileID: 7160634714979036085}
   m_Layer: 5
   m_Name: Drawing
   m_TagString: Untagged
@@ -73,6 +74,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &7160634714979036085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534389318}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6503812675fb44943aefbd282b0bdb91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3341618718788301283
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tut-JumpControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576968403932795174, guid: b20d22b33b74d3346800f84d0d5d6217,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7226962895450416649, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
