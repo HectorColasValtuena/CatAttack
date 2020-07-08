@@ -21,4 +21,9 @@ public class InventoryController : MonoBehaviour
 		}
 	}
 
+	public void Awake ()
+	{
+		dynamiteFX.SetActive(hasDynamite);
+	}
+
 }
