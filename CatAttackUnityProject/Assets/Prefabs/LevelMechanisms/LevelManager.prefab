@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3051778423575768080}
   - component: {fileID: 3051778423575768111}
+  - component: {fileID: 2208314993136727032}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -48,6 +49,22 @@ MonoBehaviour:
   lethalDropoffHeight: -10
   activeCheckpoint: {fileID: 0}
   endLevelDialog: {fileID: 7404926374727018864}
+--- !u!114 &2208314993136727032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051778423575768110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c9305cea2941c4ea504e288f508117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {fileID: 0}
+  anchorMaxY: 80
+  anchorMinY: -20
+  maxYRange: 0
 --- !u!1 &6425255923372205668
 GameObject:
   m_ObjectHideFlags: 0
