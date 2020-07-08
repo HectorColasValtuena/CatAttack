@@ -15,7 +15,7 @@ namespace CatAttack
 		void Awake ()
 		{
 			ParallaxSettings.instance = this;
-			if (anchor == null) { anchor = LevelManager.playerGameObject.transform; }//ParallaxCamera.main.transform; }
+			if (anchor == null) { anchor = Camera.main.transform;}//LevelManager.playerGameObject.transform; }//ParallaxCamera.main.transform; }
 			Debug.Log("ParallaxSettings anchor");
 			Debug.Log(anchor);
 			maxYRange = anchorMaxY - anchorMinY;
