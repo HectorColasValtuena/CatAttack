@@ -28,7 +28,7 @@ namespace CatAttack
 			//if any required component is unavailable, report a log and exit
 			if (targetBoxCollider2D == null || targetRigidbody2D == null || targetRspriteRenderer == null) { Debug.Log("ColliderSizeFromSprite required components not found!"); return; }
 
-			Debug.Log(targetRspriteRenderer.size);
+			//Debug.Log(targetRspriteRenderer.size);
 
 			targetBoxCollider2D.offset = targetRspriteRenderer.size * sizeToOffsetVector;
 			targetBoxCollider2D.size = targetRspriteRenderer.size;

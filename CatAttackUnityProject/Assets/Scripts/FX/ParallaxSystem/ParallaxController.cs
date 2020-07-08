@@ -7,6 +7,7 @@ namespace CatAttack
 	public class ParallaxController : MonoBehaviour
 	{
 		public float xParallaxRate;
+		public float xOffset = 0;
 
 		public float yMaxPosition;
 		public float yMinPosition;
@@ -23,7 +24,7 @@ namespace CatAttack
 		{
 		//update the position of the parallax system
 		//horizontal
-			float targetX = ParallaxSettings.instance.anchor.position.x * xParallaxRate;
+			float targetX = (ParallaxSettings.instance.anchor.position.x * (-xParallaxRate)) + xOffset;
 
 		//vertical
 			//float targetY;
@@ -45,8 +46,8 @@ namespace CatAttack
 
 			Debug.Log ("ParallaxController: {\nanchorRelativeY: " + anchorRelativeY + " verticalRatio: " + verticalRatio + " targetY: " + targetY + "\n}");
 
-		//finally move ourselves around the camera anchor
-			transform.position = new Vector3 (targetX, targetY, -ParallaxSettings.instance.anchor.position.z) + ParallaxSettings.instance.anchor.position;
+		//finally move ourselves around the camera
+			transform.position = new Vector3 (targetX, targetY, 10) + ParallaxCamera.main.transform.position; //ParallaxSettings.instance.anchor.position;
 		}
 	}
 }

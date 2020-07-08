@@ -26,7 +26,7 @@ namespace CatAttack
 
 		public void Start ()
 		{
-			if (centerPoint == null) { centerPoint = Camera.main.transform; }
+			if (centerPoint == null) { centerPoint = ParallaxCamera.main.transform; }
 			InitializeClouds ();
 		}
 
