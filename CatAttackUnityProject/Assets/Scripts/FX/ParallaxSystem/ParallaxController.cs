@@ -23,7 +23,7 @@ namespace CatAttack
 		{
 		//update the position of the parallax system
 		//horizontal
-			float targetX = 0;
+			float targetX = ParallaxSettings.instance.anchor.position.x * xParallaxRate;
 
 		//vertical
 			//float targetY;
