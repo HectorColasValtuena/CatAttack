@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 0}
-  maxCloudDistance: {x: 16, y: 8}
+  maxCloudDistance: {x: 6, y: 3}
   cloudAmmount: 30
   minCloudSpeed: {x: 0.05, y: 0}
-  maxCloudSpeed: {x: 0.4, y: 0}
-  cloudDirection: {x: 1, y: 0}
+  maxCloudSpeed: {x: 0.25, y: 0}
+  cloudDirection: {x: -1, y: 0}
   cloudPrefab: {fileID: 6527233516996439520, guid: 05c7a0714f0a1f940a90f49cfc3a938a,
     type: 3}
   cloudSpriteList:
@@ -68,16 +68,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ed85cad72c34e0145833acadca53edcc, type: 3}
   - {fileID: 21300000, guid: e8987417e100e104babd2260ce155280, type: 3}
   - {fileID: 21300000, guid: a2b1cad3ebd98d14194c1a7c809e8907, type: 3}
-  - {fileID: 21300000, guid: 7b03ea1645024f442bbbd623f654aeed, type: 3}
-  - {fileID: 21300000, guid: 944e12851f334ed4d9b1c525aa1369b6, type: 3}
-  - {fileID: 21300000, guid: 58a3ee5424a56444886f44aa65bbdb30, type: 3}
-  - {fileID: 21300000, guid: 27384cac82d29894b94bfb58547ee121, type: 3}
-  - {fileID: 21300000, guid: c908374909a70eb4ba05ab522b64b30d, type: 3}
-  - {fileID: 21300000, guid: ce3c85fab8560ef40a350c1a887101a4, type: 3}
-  - {fileID: 21300000, guid: 695839a890ace064599c855a327a6b2d, type: 3}
-  - {fileID: 21300000, guid: ea47dc612389f4f4ba0bdb897c887cb5, type: 3}
-  - {fileID: 21300000, guid: 90e2f01601bc4ec46b38863eefc0c5ce, type: 3}
-  - {fileID: 21300000, guid: d8b1a3381e9e3bb48950a6bcb4bff65c, type: 3}
-  - {fileID: 21300000, guid: a182a4d55cf561941a2ea03b6b8e3302, type: 3}
-  - {fileID: 21300000, guid: a891c3ff4536bb94f92b954d6c174868, type: 3}
-  - {fileID: 21300000, guid: e1ca3214d4779fa498b7136bbe8cfb68, type: 3}
