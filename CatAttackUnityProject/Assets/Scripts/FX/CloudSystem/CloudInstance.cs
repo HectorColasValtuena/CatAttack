@@ -10,11 +10,14 @@ namespace CatAttack
 		public Transform centerPoint = null;
 		public Sprite cloudSprite { set { spriteRenderer.sprite = value; } }
 
+		public CloudManager cloudManager;
+
 		void Awake ()
 		{
 			spriteRenderer = GetComponent<SpriteRenderer>();
 			//flip roughly half of the cloud sprites on creation
 			spriteRenderer.flipX = Random.Range(0,2) == 1;
+			if (cloudManager == null) { cloudManager = transform.parent.GetComponent<CloudManager>(); }
 		}
 
 		void Update()
@@ -28,12 +31,13 @@ namespace CatAttack
 			//check our position relative to the centre point - if out of range ask manager for a position reset
 			if
 			(
-				transform.position.x > centerPoint.position.x + CloudManager.instance.maxCloudDistance.x ||
-				transform.position.x < centerPoint.position.x - CloudManager.instance.maxCloudDistance.x ||
-				transform.position.y > centerPoint.position.y + CloudManager.instance.maxCloudDistance.y ||
-				transform.position.y < centerPoint.position.y - CloudManager.instance.maxCloudDistance.y
+				transform.position.x > centerPoint.position.x + cloudManager.maxCloudDistance.x ||
+				transform.position.x < centerPoint.position.x - cloudManager.maxCloudDistance.x ||
+				transform.position.y > centerPoint.position.y + cloudManager.maxCloudDistance.y ||
+				transform.position.y < centerPoint.position.y - cloudManager.maxCloudDistance.y
 			) {
-				CloudManager.instance.ResetCloud(this);
+				cloudManager.ResetCloud(this);
+				spriteRenderer.flipX = Random.Range(0,2) == 1;
 			}
 		}
 	}

@@ -5,7 +5,7 @@ namespace CatAttack
 	public class CloudManager : MonoBehaviour
 	{
 		//private const int cloudZPos = 10;
-		public static CloudManager instance;
+		//public static CloudManager instance;
 
 		public Transform centerPoint;	//transform of the point around which to limit cloud movement
 
@@ -20,7 +20,7 @@ namespace CatAttack
 
 		public void Awake ()
 		{
-			CloudManager.instance = this;
+			//CloudManager.instance = this;
 			cloudDirection = new Vector2 ((cloudDirection.x >= 0) ? 1 : -1, (cloudDirection.y >= 0) ? 1 : -1 );
 		}
 
@@ -35,9 +35,9 @@ namespace CatAttack
 			//on start summon and initialize pre-set ammount of clouds
 			for (int i = 0; i < cloudAmmount; i++)
 			{
-				CloudInstance newCloud = Instantiate(cloudPrefab).GetComponent<CloudInstance>();
+				CloudInstance newCloud = Instantiate(cloudPrefab, transform).GetComponent<CloudInstance>();
 
-				newCloud.transform.SetParent(transform);
+				//newCloud.transform.SetParent(transform);
 				//give the cloud a center point
 				newCloud.centerPoint = centerPoint;
 				//initialize new cloud's position
@@ -46,6 +46,7 @@ namespace CatAttack
 				newCloud.moveSpeed =  new Vector2(Random.Range(minCloudSpeed.x, maxCloudSpeed.x) * cloudDirection.x, Random.Range(minCloudSpeed.y, maxCloudSpeed.y) * cloudDirection.y);
 				//Initialize new cloud's sprite 
 				newCloud.cloudSprite = cloudSpriteList[Random.Range(0, cloudSpriteList.Length)];
+				newCloud.cloudManager = this;
 			}
 		}
 
