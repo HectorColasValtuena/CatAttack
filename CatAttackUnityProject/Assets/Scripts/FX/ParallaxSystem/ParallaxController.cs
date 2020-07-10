@@ -44,7 +44,7 @@ namespace CatAttack
 			//For verticalRatio = 0 => targetY = yMaxPosition. For verticalRatio = 1 => targetY = yMinPosition
 			float targetY = yMaxPosition - ((yMaxPosition - yMinPosition) * verticalRatio);
 
-			Debug.Log ("ParallaxController: {\nanchorRelativeY: " + anchorRelativeY + " verticalRatio: " + verticalRatio + " targetY: " + targetY + "\n}");
+			//Debug.Log ("ParallaxController: {\nanchorRelativeY: " + anchorRelativeY + " verticalRatio: " + verticalRatio + " targetY: " + targetY + "\n}");
 
 		//finally move ourselves around the camera
 			transform.position = new Vector3 (targetX, targetY, 10) + ParallaxCamera.main.transform.position; //ParallaxSettings.instance.anchor.position;

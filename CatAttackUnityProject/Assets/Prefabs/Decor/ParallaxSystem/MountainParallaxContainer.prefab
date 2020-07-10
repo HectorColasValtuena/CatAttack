@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &386365874230225455
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2996734412782851021}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ac03fd95baf69940980f85b8a655fcf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7414196968856643989
 GameObject:
   m_ObjectHideFlags: 0
@@ -50,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58019e47cf45d0b4bb5f3d2ec8a93306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xParallaxRate: 0.05
+  xParallaxRate: 0.11
   xOffset: 0
   yMaxPosition: 2.5
   yMinPosition: 0
@@ -204,6 +223,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16e2b58f3ba46f4793a77b99f5cf54a, type: 3}
+--- !u!1 &2996734412782851021 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2996734412288180350, guid: e16e2b58f3ba46f4793a77b99f5cf54a,
+    type: 3}
+  m_PrefabInstance: {fileID: 582751155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2996734412782851023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2996734412288180348, guid: e16e2b58f3ba46f4793a77b99f5cf54a,
@@ -487,7 +512,7 @@ PrefabInstance:
     - target: {fileID: 2996734412288180351, guid: e16e2b58f3ba46f4793a77b99f5cf54a,
         type: 3}
       propertyPath: xParallaxRate
-      value: 0.4
+      value: 0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16e2b58f3ba46f4793a77b99f5cf54a, type: 3}
@@ -714,7 +739,7 @@ PrefabInstance:
     - target: {fileID: 2996734412288180351, guid: e16e2b58f3ba46f4793a77b99f5cf54a,
         type: 3}
       propertyPath: xParallaxRate
-      value: 0.55
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16e2b58f3ba46f4793a77b99f5cf54a, type: 3}
