@@ -46,7 +46,7 @@ TextureImporter:
     second: IceRocks6
   - first:
       213: -7420562572957896069
-    second: Rocks (2)_1
+    second: GoldVein
   - first:
       213: -9208631723151571291
     second: ShroomRocks_0
@@ -56,6 +56,27 @@ TextureImporter:
   - first:
       213: 8058906691020180427
     second: RocksShrooms2
+  - first:
+      213: -9208631723151571291
+    second: Rocks (2)_0
+  - first:
+      213: -7315849782071153468
+    second: GoldVein2
+  - first:
+      213: 6158535860358379383
+    second: Rocks (2)_1
+  - first:
+      213: 60513046920433027
+    second: SilverVein1
+  - first:
+      213: 673468505010095165
+    second: SilverVein2
+  - first:
+      213: 6641942283934497790
+    second: CopperVein1
+  - first:
+      213: -5157163765294445130
+    second: CopperVein2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -272,7 +293,7 @@ TextureImporter:
       name: MineRocksPickaxe
       rect:
         serializedVersion: 2
-        x: 666
+        x: 665
         y: 0
         width: 48
         height: 32
@@ -353,12 +374,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksShrooms0
+      name: Rocks (2)_0
       rect:
         serializedVersion: 2
-        x: 1618
+        x: 666
         y: 0
-        width: 46
+        width: 48
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -411,6 +432,153 @@ TextureImporter:
       bones: []
       spriteID: bcbc64400fcf6df60800000000000000
       internalID: 8058906691020180427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldVein
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72394dd7add40990800000000000000
+      internalID: -7420562572957896069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldVein2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cca78d5261e87a90800000000000000
+      internalID: -7315849782071153468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks (2)_1
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7777a255cb3877550800000000000000
+      internalID: 6158535860358379383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SilverVein1
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d08f9ab4cf6d000800000000000000
+      internalID: 60513046920433027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SilverVein2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d344a808904a85900800000000000000
+      internalID: 673468505010095165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CopperVein1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbff84115bec2c50800000000000000
+      internalID: 6641942283934497790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CopperVein2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdcb1911e21e68b0800000000000000
+      internalID: -5157163765294445130
       vertices: []
       indices: 
       edges: []
