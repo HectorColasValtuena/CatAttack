@@ -7781,7 +7781,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &774476981
@@ -13874,7 +13874,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1367547102
@@ -17540,7 +17540,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1747767947
@@ -18398,6 +18398,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00c0c85a3413b4e4286f241981a7942c, type: 3}
+--- !u!4 &1842473522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1947034040, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709926981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1843084850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21258,6 +21264,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eae083eb28476804f96cc7a7758e7798, type: 3}
+--- !u!1001 &4415199827036576340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1842473522}
+    m_Modifications:
+    - target: {fileID: 1469182157626075924, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_Name
+      value: SnowCameraAddon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741290382671612932, guid: be66aebdfea10a7438945e0d1be9873d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be66aebdfea10a7438945e0d1be9873d, type: 3}
 --- !u!1001 &5721431121830979499
 PrefabInstance:
   m_ObjectHideFlags: 0
