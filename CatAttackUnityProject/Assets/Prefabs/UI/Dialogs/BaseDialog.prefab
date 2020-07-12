@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 8021596040146504658}
   - component: {fileID: 8021596040146504657}
   m_Layer: 5
-  m_Name: TemplatePanel
+  m_Name: DialogPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,12 +238,12 @@ PrefabInstance:
     - target: {fileID: 3576968403932795174, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
       propertyPath: m_Name
-      value: Napstadialog
+      value: BaseDialog
       objectReference: {fileID: 0}
     - target: {fileID: 3576968403932795174, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7226962895450416649, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
