@@ -2286,7 +2286,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &169029789 stripped
@@ -16918,6 +16918,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6971515058741530354, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971515058741530354, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 7414196968856643986, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16977,6 +16987,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkyParallaxContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMaxPosition
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMinPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: xParallaxRate
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18e72de2ee146ea4fa9b5a65b2b50181, type: 3}

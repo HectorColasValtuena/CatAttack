@@ -7,6 +7,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2089579293600943149, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: xParallaxRate
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089579293600943149, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMaxPosition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089579293600943149, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMinPosition
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996734413287740252, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMaxPosition
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996734413287740252, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMinPosition
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996734413287740255, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996734413676812900, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2996734413676812903, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
       propertyPath: yMaxPosition
@@ -16,6 +51,16 @@ PrefabInstance:
         type: 3}
       propertyPath: yMinPosition
       value: -2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996734413676812903, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: xParallaxRate
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200142470851823369, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5724654354330409281, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
@@ -46,6 +91,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601900, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 20.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601901, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601901, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601902, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: xParallaxRate
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601902, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: xOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601902, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMaxPosition
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865367865934601902, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: yMinPosition
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 7414196968856643986, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
@@ -105,7 +185,17 @@ PrefabInstance:
     - target: {fileID: 7414196968856643989, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
       propertyPath: m_Name
-      value: PartyParallaxContainer
+      value: PartyParallaxContainer Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245407588635127063, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: maxCloudDistance.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245407588635127063, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
+        type: 3}
+      propertyPath: maxCloudDistance.y
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18e72de2ee146ea4fa9b5a65b2b50181, type: 3}
