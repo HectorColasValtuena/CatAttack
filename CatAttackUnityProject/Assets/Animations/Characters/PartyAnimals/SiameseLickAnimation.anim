@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CatWalking
+  m_Name: SiameseLickAnimation
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,31 +20,25 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: -7864736117118875791, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 3893888861534572734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: 7183151866447136315, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     - time: 0.33333334
-      value: {fileID: 8814065720695864063, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: 1406706158316389993, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     - time: 0.5
-      value: {fileID: -5775861045710624734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: 7353892773532776300, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     - time: 0.6666667
-      value: {fileID: 7115848109341235460, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: -4593271372521027657, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     - time: 0.8333333
-      value: {fileID: -6188868310644707875, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+      value: {fileID: -3095131108501084188, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
-    - time: 1
-      value: {fileID: 4029367331224654369, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
-        type: 3}
-    - time: 1.1666666
-      value: {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
-        type: 3}
-    - time: 1.3166667
-      value: {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    - time: 0.98333335
+      value: {fileID: -3095131108501084188, guid: a732c7c6016adb5458dbe48b29c5c4e5,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -65,21 +59,19 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: 3893888861534572734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: 8814065720695864063, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: -5775861045710624734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: 7115848109341235460, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: -6188868310644707875, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: 4029367331224654369, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
-    - {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc, type: 3}
+    - {fileID: -7864736117118875791, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: 7183151866447136315, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: 1406706158316389993, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: 7353892773532776300, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: -4593271372521027657, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: -3095131108501084188, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
+    - {fileID: -3095131108501084188, guid: a732c7c6016adb5458dbe48b29c5c4e5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.3333334
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
