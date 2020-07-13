@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 426097836}
   - component: {fileID: 426097838}
   - component: {fileID: 426097837}
+  - component: {fileID: 7823465959847805276}
   m_Layer: 5
   m_Name: Text (final)
   m_TagString: Untagged
@@ -79,10 +80,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Ahora por favor disfruta de la fiesta cuanto quieras ^w^
 
-    
 
     Tienes
     un amigo esperandote :3'
+--- !u!114 &7823465959847805276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426097835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acad15d6b81da244ea3172e8f5a0665d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetGameObject: {fileID: 0}
+  reEnableOnMyDisable: 0
 --- !u!1 &480718686
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 928, y: -368}
+  m_AnchoredPosition: {x: 948, y: -339}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1709875710
@@ -679,23 +693,6 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Bueno, supongo que ya sabes quien soy. Siento estar tan feo pero he hecho
     este sprite yo mismo haha
---- !u!114 &147910283252644456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7881040443580419558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd4d54f85bac353498d45274c71125c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogList:
-  - {fileID: 7142814607014992631}
-  - {fileID: 1925382372}
-  - {fileID: 426097835}
-  resetOnEnable: 1
 --- !u!1 &153655063294621266
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,6 +4129,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &147910283252644456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7881040443580419558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4d54f85bac353498d45274c71125c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogList:
+  - {fileID: 7142814607014992631}
+  - {fileID: 1925382372}
+  - {fileID: 6272723471281489763}
+  - {fileID: 4469450213667150021}
+  - {fileID: 1022388315300592999}
+  - {fileID: 7633460532146879675}
+  - {fileID: 7754977632314117611}
+  - {fileID: 6359394802341550738}
+  - {fileID: 1377456093606796076}
+  - {fileID: 8364128919401786438}
+  - {fileID: 8429190986666415384}
+  - {fileID: 2972952403315210033}
+  - {fileID: 2386419979688616156}
+  - {fileID: 426097835}
+  resetOnEnable: 1
 --- !u!1 &8364128919401786438
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,7 +4462,7 @@ PrefabInstance:
     - target: {fileID: 1444357897947918222, guid: 06d638a0b8c957743baa4bb555883c6b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061147441853392593, guid: 06d638a0b8c957743baa4bb555883c6b,
         type: 3}
@@ -4552,7 +4577,7 @@ PrefabInstance:
     - target: {fileID: 7002283320232664254, guid: 06d638a0b8c957743baa4bb555883c6b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06d638a0b8c957743baa4bb555883c6b, type: 3}

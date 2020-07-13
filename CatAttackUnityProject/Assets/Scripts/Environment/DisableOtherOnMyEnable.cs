@@ -4,6 +4,8 @@ public class DisableOtherOnMyEnable : MonoBehaviour
 {
 	public GameObject targetGameObject;
 
+	public bool reEnableOnMyDisable = true;
+
 	public void OnEnable () 
 	{
 		targetGameObject.SetActive(false);
@@ -11,6 +13,6 @@ public class DisableOtherOnMyEnable : MonoBehaviour
 
 	public void OnDisable ()
 	{
-		targetGameObject.SetActive(true);
+		if (reEnableOnMyDisable) { targetGameObject.SetActive(true); }
 	}
 }
