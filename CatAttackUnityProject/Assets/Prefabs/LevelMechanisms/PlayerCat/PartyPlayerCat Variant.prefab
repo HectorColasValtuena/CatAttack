@@ -134,20 +134,25 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 540483650876491678, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
+        type: 3}
+      propertyPath: m_MaxGroundSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 540483650876491681, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
         type: 3}
       propertyPath: m_Name
-      value: PartyPlayerCat
+      value: PartyPlayerCat Variant
       objectReference: {fileID: 0}
     - target: {fileID: 540483650876491682, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 540483650876491682, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 540483650876491682, guid: 5ea72ef44ca3e15458e8f4b84bf14c29,
         type: 3}
@@ -258,6 +263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PartyBalloonParticleBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641377806151928449, guid: ee5001b3a456dd94f9c03cc37d4de947,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee5001b3a456dd94f9c03cc37d4de947, type: 3}
