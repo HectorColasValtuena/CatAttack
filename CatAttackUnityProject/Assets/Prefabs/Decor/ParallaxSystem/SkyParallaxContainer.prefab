@@ -26,15 +26,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6971515058741530359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58019e47cf45d0b4bb5f3d2ec8a93306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xParallaxRate: 0.05
+  xParallaxRate: 0
   xOffset: 0
-  yMaxPosition: 0
-  yMinPosition: -0.5
+  yMaxPosition: -2
+  yMinPosition: 0
 --- !u!1 &7414196968856643989
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +581,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214192997846481198, guid: 80efe70f2278b974db61e5f8ce1a020c,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 214192997846481198, guid: 80efe70f2278b974db61e5f8ce1a020c,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.minScalar
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80efe70f2278b974db61e5f8ce1a020c, type: 3}

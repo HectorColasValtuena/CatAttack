@@ -6,6 +6,8 @@ namespace CatAttack
 {
 	public class ParallaxController : MonoBehaviour
 	{
+		private const float ZDistance = 200f;
+
 		public float xParallaxRate;
 		public float xOffset = 0;
 
@@ -47,7 +49,7 @@ namespace CatAttack
 			//Debug.Log ("ParallaxController: {\nanchorRelativeY: " + anchorRelativeY + " verticalRatio: " + verticalRatio + " targetY: " + targetY + "\n}");
 
 		//finally move ourselves around the camera
-			transform.position = new Vector3 (targetX, targetY, 10) + ParallaxCamera.main.transform.position; //ParallaxSettings.instance.anchor.position;
+			transform.position = new Vector3 (targetX, targetY, ZDistance) + ParallaxCamera.main.transform.position; //ParallaxSettings.instance.anchor.position;
 		}
 	}
 }

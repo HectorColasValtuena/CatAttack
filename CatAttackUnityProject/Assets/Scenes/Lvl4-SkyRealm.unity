@@ -6608,7 +6608,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2046798177
-  m_SortingLayer: -4
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5251030363247432775, guid: 80fd3344b3d3ccf40a502af3e16e39c5,
     type: 3}
@@ -14615,7 +14615,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2046798177
-  m_SortingLayer: -4
+  m_SortingLayer: -3
   m_SortingOrder: -2
   m_Sprite: {fileID: 3534726657828763156, guid: 80fd3344b3d3ccf40a502af3e16e39c5,
     type: 3}
@@ -16833,16 +16833,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6971515058741530354, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: EmissionModule.rateOverTime.minScalar
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6971515058741530354, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 7414196968856643986, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16902,26 +16892,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkyParallaxContainer
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: yMaxPosition
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: yMinPosition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9059045466108717788, guid: 18e72de2ee146ea4fa9b5a65b2b50181,
-        type: 3}
-      propertyPath: xParallaxRate
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18e72de2ee146ea4fa9b5a65b2b50181, type: 3}
@@ -18398,7 +18368,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2046798177
-  m_SortingLayer: -4
+  m_SortingLayer: -3
   m_SortingOrder: -2
   m_Sprite: {fileID: 3267350609867920600, guid: 80fd3344b3d3ccf40a502af3e16e39c5,
     type: 3}
@@ -20366,7 +20336,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2046798177
-  m_SortingLayer: -4
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 6487390647880897370, guid: ad4cf103cb1e89348aa808cf57e635b0,
     type: 3}
