@@ -14814,6 +14814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911666554}
   - component: {fileID: 1911666555}
+  - component: {fileID: 1911666556}
   m_Layer: 0
   m_Name: Jandro
   m_TagString: Untagged
@@ -14875,7 +14876,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3238257439261706307, guid: 20e6cc1d38c887041ac3ffddba67f200,
+  m_Sprite: {fileID: 4111029601709655276, guid: 20e6cc1d38c887041ac3ffddba67f200,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14887,6 +14888,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1911666556
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911666553}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b91fc82b45dd4244d873cc56c392536d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1925452473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4649455712001075597, guid: 3126301d42d681b49929135a99ebdcb3,
