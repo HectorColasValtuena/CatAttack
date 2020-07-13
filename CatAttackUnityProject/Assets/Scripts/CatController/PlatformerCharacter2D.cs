@@ -86,7 +86,12 @@ namespace CatAttack
 
         public void Move(float move, bool crouch, bool jump)
         {
-            if (m_ControlDisabled || m_CatDead || m_IsAsleep) { return; } //ignore inputs if controls are disabled or character is dead
+            //ignore inputs if controls are disabled or character is dead
+            if (m_ControlDisabled || m_CatDead || m_IsAsleep)
+            {
+                m_Animator.SetFloat("Speed", 0f);
+                return;
+            }
 
             //update sprite orientation
             CheckFlip(move);
