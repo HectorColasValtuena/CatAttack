@@ -74,6 +74,7 @@ namespace CatAttack
 			// Set animator variables to drive animation
 			m_Animator.SetBool("Ground", m_Grounded);
 			m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+            m_Animator.SetBool("SideCling", m_SideClinging);
 
 			//if dropped below death height, die.
 			if (transform.position.y < LevelManager.instance.lethalDropoffHeight) { Death(); }
