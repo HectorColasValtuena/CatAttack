@@ -101,7 +101,7 @@ namespace CatAttack
 		private bool CheckSideCling (bool facingRight)
 		{
             //check collisions against right-side or left-side collision checks depending on direction
-            return CheckRadiusCollisions(
+            return !m_Grounded && CheckRadiusCollisions(
                 (facingRight)? m_RightClingChecks : m_LeftClingChecks,
                 k_SideCheckRadius,
                 m_WhatIsGround
