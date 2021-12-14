@@ -74,7 +74,7 @@ namespace CatAttack
 			// Set animator variables to drive animation
 			m_Animator.SetBool("Ground", m_Grounded);
 			m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
-            m_Animator.SetBool("SideCling", m_SideClinging);
+			m_Animator.SetBool("SideCling", m_SideClinging);
 
 			//if dropped below death height, die.
 			if (transform.position.y < LevelManager.instance.lethalDropoffHeight) { Death(); }
@@ -83,29 +83,29 @@ namespace CatAttack
 		//Checks for collisions in a given radius around a given list of origin points
 		private bool CheckRadiusCollisions (Transform[] originPoints, float radius, LayerMask layerMask)
 		{
-            foreach (Transform originPoint in originPoints)
-            {
-                Collider2D collision = Physics2D.OverlapCircle(originPoint.position, radius, layerMask);
-                if (collision != null) { return true; }
-            }
-            return false;
+			foreach (Transform originPoint in originPoints)
+			{
+				Collider2D collision = Physics2D.OverlapCircle(originPoint.position, radius, layerMask);
+				if (collision != null) { return true; }
+			}
+			return false;
 		}
 
-        //checks if the cat is standing on the ground
+		//checks if the cat is standing on the ground
 		private bool CheckGround ()
 		{
-            return CheckRadiusCollisions(m_GroundChecks, k_GroundedRadius, m_WhatIsGround);
+			return CheckRadiusCollisions(m_GroundChecks, k_GroundedRadius, m_WhatIsGround);
 		}
 
 		//checks wether we're snugging right up against a wall
 		private bool CheckSideCling (bool facingRight)
 		{
-            //check collisions against right-side or left-side collision checks depending on direction
-            return !m_Grounded && CheckRadiusCollisions(
-                (facingRight)? m_RightClingChecks : m_LeftClingChecks,
-                k_SideCheckRadius,
-                m_WhatIsGround
-            );
+			//check collisions against right-side or left-side collision checks depending on direction
+			return !m_Grounded && CheckRadiusCollisions(
+				(facingRight)? m_RightClingChecks : m_LeftClingChecks,
+				k_SideCheckRadius,
+				m_WhatIsGround
+			);
 		}
 
 		public void Move(float move, bool crouch, bool jump)
@@ -194,9 +194,30 @@ namespace CatAttack
 			//force restart the stardash animation state
 			m_Animator.Play("Base Layer.StarDash", -1, 0f);
 
-			//Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with input
+			bool jumpRightwards = StarDashJumpDirection(m_FacingRight, m_SideClinging);
+
+			//Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with jump direction
 			//always dash full speed in the direction the player is facing
-			m_Rigidbody2D.velocity = (m_FacingRight) ? (m_StarDashSpeed) : (m_StarDashSpeed * m_XFlipVector2);
+			m_Rigidbody2D.velocity = (jumpRightwards) ? (m_StarDashSpeed) : (m_StarDashSpeed * m_XFlipVector2);
+		}
+
+		//determines what direction to jump towards on a star dash
+		//returns TRUE if RIGHTWARDS. FALSE if LEFTWARDS
+		private bool StarDashJumpDirection (bool facingRight, bool sideClinging)
+		{
+			return facingRight;
+			//!! [TO-DO] the following logic introduces a bug: jump doesn't flip and it impedes properly timed wall-jump
+
+			//jump direction is straightforward under most circumstances
+			// IF side-clinging to a wall, jump direction is reversed
+
+			return facingRight != sideClinging;
+
+		// jump right 	< facing right 	| touching wall
+		// yes			< yes			| no
+		// no 			< yes			| yes
+		// no			< no			| no
+		// yes			< no			| yes
 		}
 
 		private void Jump(float move)
