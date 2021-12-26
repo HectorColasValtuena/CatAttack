@@ -158,33 +158,49 @@ namespace CatAttack
 				targetXSpeed = maxXSpeed * move;
 			}
 
-
 				// Move the character
 			m_Rigidbody2D.velocity = new Vector2(targetXSpeed, m_Rigidbody2D.velocity.y);
-
 				
 			// If the player should jump...
 			if (m_JumpFlag && (m_JumpTimer <= 0))
 			{
-				//perform a jump from the ground 
-				if (m_Grounded && m_Animator.GetBool("Ground"))
-				{
-				   Jump(move);
-				}
-				//or dash if airborne and enough stars
-				else if (m_StarpowerReservoir.DrainStarpower())
-				{
-					StarDashJump(move);
-				}
-				m_JumpTimer = m_JumpCooldown;
-				m_JumpFlag = false;
+				Jump(move);
 			}
-
 
 			// The Speed animator parameter is set to the absolute value of rigidbody velocity to adjust playback
 			m_Animator.SetFloat("Speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
 		}
 
+		//jump input detected - calls one of available jumps as corresponding
+		private void Jump (float move)
+		{
+			//perform a jump from the ground 
+			if (m_Grounded && m_Animator.GetBool("Ground"))
+			{
+				GroundJump(move);
+			}
+			//or dash if airborne and enough stars
+			else if (m_StarpowerReservoir.DrainStarpower())
+			{
+				StarDashJump(move);
+			}
+			m_JumpTimer = m_JumpCooldown;
+			m_JumpFlag = false;
+		}
+
+		//Do a basic jump from the ground
+		private void GroundJump (float move)
+		{
+		 // Add a vertical force to the player.
+			m_Grounded = false;			//m_Grounded is updated immediately 
+			m_Animator.SetBool("Ground", false);
+
+
+			//Set the rigidbody's vertical velocity to jump speed, and scale horizontal velocity with input
+			m_Rigidbody2D.velocity = new Vector2 (m_JumpSpeed.x * move, m_JumpSpeed.y);  
+		}
+
+		//performs an airborne star-dash
 		private void StarDashJump(float move)
 		{
 			m_Grounded = false;
@@ -193,13 +209,14 @@ namespace CatAttack
 			//force restart the stardash animation state
 			m_Animator.Play("Base Layer.StarDash", -1, 0f);
 
-			bool jumpRightwards = GetJumpDirection(m_FacingRight, m_SideClinging);
+			//[DEPRECATED] bool jumpRightwards = GetJumpDirection(m_FacingRight, m_SideClinging);
 
 			//Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with jump direction
 			//always dash full speed in the direction the player is facing
-			m_Rigidbody2D.velocity = (jumpRightwards) ? (m_StarDashSpeed) : (m_StarDashSpeed * m_XFlipVector2);
+			m_Rigidbody2D.velocity = (m_FacingRight) ? (m_StarDashSpeed) : (m_StarDashSpeed * m_XFlipVector2);
 		}
 
+		/*
 		//determines what direction to jump towards on a star dash
 		//returns TRUE if RIGHTWARDS. FALSE if LEFTWARDS
 		private bool GetJumpDirection (bool facingRight, bool sideClinging)
@@ -218,17 +235,7 @@ namespace CatAttack
 		// no			< no			| no
 		// yes			< no			| yes
 		}
-
-		private void Jump(float move)
-		{
-		 // Add a vertical force to the player.
-			m_Grounded = false;
-			m_Animator.SetBool("Ground", false);
-
-
-			//Set the rigidbody's vertical velocity to jump speed, and scale horizontal velocity with input
-			m_Rigidbody2D.velocity = new Vector2 (m_JumpSpeed.x * move, m_JumpSpeed.y);  
-		}
+		*/
 
 		private void CheckFlip(float move)
 		{ // If the input is moving the player right and the player is facing left...
