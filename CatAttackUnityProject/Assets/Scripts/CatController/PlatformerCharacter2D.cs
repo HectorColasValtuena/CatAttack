@@ -194,7 +194,7 @@ namespace CatAttack
 			//force restart the stardash animation state
 			m_Animator.Play("Base Layer.StarDash", -1, 0f);
 
-			bool jumpRightwards = StarDashJumpDirection(m_FacingRight, m_SideClinging);
+			bool jumpRightwards = GetJumpDirection(m_FacingRight, m_SideClinging);
 
 			//Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with jump direction
 			//always dash full speed in the direction the player is facing
@@ -203,9 +203,9 @@ namespace CatAttack
 
 		//determines what direction to jump towards on a star dash
 		//returns TRUE if RIGHTWARDS. FALSE if LEFTWARDS
-		private bool StarDashJumpDirection (bool facingRight, bool sideClinging)
+		private bool GetJumpDirection (bool facingRight, bool sideClinging)
 		{
-			return facingRight;
+			//return facingRight;
 			//!! [TO-DO] the following logic introduces a bug: jump doesn't flip and it impedes properly timed wall-jump
 
 			//jump direction is straightforward under most circumstances
