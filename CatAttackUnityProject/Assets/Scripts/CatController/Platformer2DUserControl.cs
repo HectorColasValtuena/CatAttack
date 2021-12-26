@@ -10,8 +10,6 @@ namespace CatAttack
 		public static Rigidbody2D playerCatRigidbody;
 
 		private PlatformerCharacter2D m_Character;
-		private bool m_Jump;
-
 
 		private void Awake()
 		{
@@ -19,25 +17,16 @@ namespace CatAttack
 			m_Character = GetComponent<PlatformerCharacter2D>();
 		}
 
-
-		private void Update()
-		{
-			if (!m_Jump)
-			{
-				// Read the jump input in Update so button presses aren't missed.
-				m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-			}
-		}
-
-
 		private void FixedUpdate()
 		{
 			// Read the inputs.
 			bool crouch = Input.GetKey(KeyCode.LeftControl);
 			float h = CrossPlatformInputManager.GetAxis("Horizontal");
+			bool jump = CrossPlatformInputManager.GetButton("Jump");
+			//bool jump = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space);
+
 			// Pass all parameters to the character control script.
-			m_Character.Move(h, crouch, m_Jump);
-			m_Jump = false;
+			m_Character.Move(h, crouch, jump);
 		}
 	}
 }
