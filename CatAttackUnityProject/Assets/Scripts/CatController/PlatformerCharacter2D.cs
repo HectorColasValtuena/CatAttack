@@ -20,7 +20,6 @@ namespace CatAttack
 		[SerializeField] private float m_MinimumAirControl = 0.5f;		 // minimum air control when airborne
 		[SerializeField] private float m_JumpCooldown = 0.1f;		 // Time in seconds between jump activations
 
-		//!!!// [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
 		//[SerializeField] private bool m_AirControl = false;				 // Whether or not a player can steer while jumping;
 		[SerializeField] private LayerMask m_WhatIsGround;				  // A mask determining what is ground to the character
 
@@ -108,7 +107,7 @@ namespace CatAttack
 			);
 		}
 
-		public void Move(float move, bool crouch, bool jump)
+		public void Move(float move, bool jump)
 		{
 			//ignore inputs if controls are disabled or character is dead
 			if (m_ControlDisabled || m_CatDead || m_IsAsleep)

@@ -20,13 +20,12 @@ namespace CatAttack
 		private void FixedUpdate()
 		{
 			// Read the inputs.
-			bool crouch = Input.GetKey(KeyCode.LeftControl);
 			float h = CrossPlatformInputManager.GetAxis("Horizontal");
 			bool jump = CrossPlatformInputManager.GetButton("Jump");
 			//bool jump = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space);
 
 			// Pass all parameters to the character control script.
-			m_Character.Move(h, crouch, jump);
+			m_Character.Move(h, jump);
 		}
 	}
 }
