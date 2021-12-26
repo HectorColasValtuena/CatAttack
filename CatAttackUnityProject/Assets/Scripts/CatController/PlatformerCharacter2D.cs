@@ -179,11 +179,23 @@ namespace CatAttack
 			{
 				GroundJump(move);
 			}
-			//or dash if airborne and enough stars
+			//if facing a wall, drop off of it
+			else if (m_SideClinging && CheckSideCling(m_FacingRight))
+			{
+				SideClingingDropJump();
+			}
+			//dash if airborne and enough stars
 			else if (m_StarpowerReservoir.DrainStarpower())
 			{
 				StarDashJump(move);
 			}
+			//if no stars and clinging to a wall, default to a drop-jump
+			else if (m_SideClinging)
+			{
+				SideClingingDropJump();
+			}
+
+			//update timers and flags
 			m_JumpTimer = m_JumpCooldown;
 			m_JumpFlag = false;
 		}
@@ -199,6 +211,9 @@ namespace CatAttack
 			//Set the rigidbody's vertical velocity to jump speed, and scale horizontal velocity with input
 			m_Rigidbody2D.velocity = new Vector2 (m_JumpSpeed.x * move, m_JumpSpeed.y);  
 		}
+
+		//drop off of a wall
+		//private void SideClingingDropJump ()
 
 		//performs an airborne star-dash
 		private void StarDashJump(float move)
