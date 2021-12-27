@@ -20,6 +20,8 @@ namespace CatAttack
 		[SerializeField] private float m_MinimumAirControl = 0.5f;		 // minimum air control when airborne
 		[SerializeField] private float m_JumpCooldown = 0.1f;		 // Time in seconds between jump activations
 
+		[SerializeField] private float m_SideClingMaxTime = 1.0f;	// Maximum time in seconds the cat can cling to a wall
+
 		//[SerializeField] private bool m_AirControl = false;				 // Whether or not a player can steer while jumping;
 		[SerializeField] private LayerMask m_WhatIsGround;				  // A mask determining what is ground to the character
 
@@ -33,8 +35,17 @@ namespace CatAttack
 		private SpriteRenderer m_SpriteRenderer;
 
 		private bool m_Grounded;			// Whether or not the player is grounded.
-		private bool m_SideClinging;		// True if the player is grabbing on to a wall
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+
+		private float m_SideClingTimer;	// Maximum cling time countdown
+		private ESideClingState m_SideClingState; // True if the player is grabbing on to a wall
+		private bool IsSideClinging { get { return this.m_SideClingState != ESideClingState.None; }}
+		private enum ESideClingState
+		{
+			None = 0,
+			Right = 1,
+			Left = -1
+		}
 
 		private StarpowerReservoir m_StarpowerReservoir;
 
@@ -68,12 +79,12 @@ namespace CatAttack
 			if (m_Grounded) { m_StarpowerReservoir.RegenerateStarpower(); }
 
 			//if not grounded but attached to a wall, we're side-clinging
-			m_SideClinging = CheckSideCling(m_FacingRight);
+			m_SideClingState = GetSideClingState();
 
 			// Set animator variables to drive animation
 			m_Animator.SetBool("Ground", m_Grounded);
 			m_Animator.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
-			m_Animator.SetBool("SideCling", m_SideClinging);
+			m_Animator.SetBool("SideCling", this.IsSideClinging);
 
 			//if dropped below death height, die.
 			if (transform.position.y < LevelManager.instance.lethalDropoffHeight) { Death(); }
@@ -96,15 +107,29 @@ namespace CatAttack
 			return CheckRadiusCollisions(m_GroundChecks, k_GroundedRadius, m_WhatIsGround);
 		}
 
-		//checks wether we're snugging right up against a wall
-		private bool CheckSideCling (bool facingRight)
+		//returns a value indicating the clinging status
+		private ESideClingState GetSideClingState ()
 		{
-			//check collisions against right-side or left-side collision checks depending on direction
-			return !m_Grounded && CheckRadiusCollisions(
-				(facingRight)? m_RightClingChecks : m_LeftClingChecks,
-				k_SideCheckRadius,
-				m_WhatIsGround
-			);
+			// if grounded, not clinging.
+			if (m_Grounded) { return ESideClingState.None; }
+
+			// if in contact with a wall on either side, clinging to that side.
+			if (CheckSideCling(true)) { return ESideClingState.Right; }
+			if (CheckSideCling(false)) { return ESideClingState.Left; }
+
+			//if none, not clinging.
+			return ESideClingState.None;
+
+			//checks wether we're hanging from a wall from the given side (true > right false > left)
+			bool CheckSideCling (bool facingRight)
+			{
+				//collisions against right-side or left-side collision checks depending on direction
+				return CheckRadiusCollisions(
+					(facingRight)? m_RightClingChecks : m_LeftClingChecks,
+					k_SideCheckRadius,
+					m_WhatIsGround
+				);
+			}
 		}
 
 		//public move method - must be called each FixedUpdate passing inputs
@@ -123,12 +148,14 @@ namespace CatAttack
 			//if moving reset camera focus back to the player
 			if (LevelManager.cameraFocusTarget != null) { LevelManager.cameraFocusTarget = null; }
 
-			//Save a jump only for each lift and press of the button
+			//Perform a jump only for each lift and press of the button
+			//ignores jump until released again, and JumpTimer is elapsed
 			if (jump && !m_PreviousJump && m_JumpTimer <= 0)
 			{
+				//Save a flag indicating we want and can jump
 				m_JumpFlag = true;
 			}
-			m_PreviousJump = jump;
+			m_PreviousJump = jump;	//store current state of the button to check its release
 
 		//update jump timer
 			m_JumpTimer -= Time.deltaTime;
@@ -142,6 +169,27 @@ namespace CatAttack
 			else
 			{
 				maxXSpeed = Mathf.Max(m_MaxStarDashSpeed*m_Animator.GetFloat("StarDashing"), m_MinimumAirControl);
+			}
+
+		//control the limit timer when side clinging
+		//if limit time exceeded, nullify move speed
+			if (this.IsSideClinging)
+			{
+				//if we are advancing towards the wall we're hugging
+				if (m_FacingRight && m_SideClingState == ESideClingState.Right
+				 || !m_FacingRight && m_SideClingState == ESideClingState.Left)
+				{
+					//control the cling time limit
+					m_SideClingTimer += Time.deltaTime;
+					if(m_SideClingTimer > m_SideClingMaxTime)
+					{
+						maxXSpeed = 0;
+					}
+				}
+			}
+			else
+			{
+				m_SideClingTimer = 0f;
 			}
 
 		//if attempting to move in the direction of movement, respect previous momentum
