@@ -10,7 +10,7 @@ namespace CatAttack
 			if (playerController != null && !playerController.m_IsAsleep) 
 			{
 				playerController.FallAsleep();
-				LevelManager.instance.ShowEndLevelDialog();
+				LevelManager.instance.LevelFinished();
 			}
 		}
 
