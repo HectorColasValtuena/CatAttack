@@ -65,14 +65,20 @@ namespace CatAttack
 	//Level Beaten management
 		public GameObject endLevelDialog;
 
-		public void ShowEndLevelDialog ()
+		public void LevelFinished ()
+		{
+			ProgressionManager.UnlockNext();
+			ShowEndLevelDialog();
+		}
+
+		private void ShowEndLevelDialog ()
 		{
 			if (endLevelDialog != null)	{ endLevelDialog.SetActive(true); }
 		}
 
 		public void AdvanceLevel ()
 		{
-			ProgressionManager.AdvanceLevel ();
+			ProgressionManager.AdvanceLevel();
 		}
 	//ENDOF Level Beaten management
 	}

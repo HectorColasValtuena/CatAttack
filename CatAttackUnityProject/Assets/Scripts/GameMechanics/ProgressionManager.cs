@@ -28,6 +28,12 @@ namespace CatAttack
 			if (!ProgressionManager.LevelIsUnlocked(levelNumber)) { PlayerPrefs.SetInt(levelUnlockedKey, levelNumber); }
 		}
 
+		//unlock the level after current level
+		public static void UnlockNext ()
+		{
+			LevelUnlock(currentLevel + 1);
+		}
+
 		//open target scene
 		public static void LevelChange (int levelNumber, bool autoUnlock = true)
 		{
