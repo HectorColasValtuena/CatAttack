@@ -6,7 +6,7 @@ namespace CatAttack
 	public static class ProgressionManager
 	{
 		private const string levelUnlockedKey = "levelUnlocked";
-		private const int defaultUnlockedLevel = 1;
+		private const int defaultUnlockedLevel = 2;
 
 		public static int currentLevel = 0;
 
