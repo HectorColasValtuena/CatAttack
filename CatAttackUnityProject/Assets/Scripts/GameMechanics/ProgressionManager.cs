@@ -8,7 +8,7 @@ namespace CatAttack
 		private const string levelUnlockedKey = "levelUnlocked";
 		private const int defaultUnlockedLevel = 2;
 
-		public static int currentLevel = 0;
+		public static int currentLevel = 1;
 
 		//get if scene is unlocked
 		public static bool LevelIsUnlocked (int levelNumber)

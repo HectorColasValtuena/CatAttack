@@ -4,8 +4,6 @@ namespace CatAttack
 {
 	public class EscMenuDeployer : MonoBehaviour
 	{
-		private const int menuSceneNumber = 1;
-
 		private Animator animator;
 
 		void Awake ()
@@ -28,7 +26,7 @@ namespace CatAttack
 
 		public void QuitButtonPressed ()
 		{
-			ProgressionManager.LevelChange(menuSceneNumber);
+			ProgressionManager.LevelChange(1);  //TO-DO move this to a constant somewhere safe
 		}
 	}
 }

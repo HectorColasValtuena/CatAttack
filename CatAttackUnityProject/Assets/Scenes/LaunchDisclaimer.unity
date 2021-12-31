@@ -1457,6 +1457,7 @@ GameObject:
   - component: {fileID: 1405334080}
   - component: {fileID: 1405334084}
   - component: {fileID: 1405334085}
+  - component: {fileID: 1405334086}
   m_Layer: 5
   m_Name: LaunchTextsCanvas
   m_TagString: Untagged
@@ -1578,6 +1579,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1405334084}
+--- !u!114 &1405334086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405334079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9b04df77db8ac4a81a917edd3cf8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1451571702
 GameObject:
   m_ObjectHideFlags: 0
