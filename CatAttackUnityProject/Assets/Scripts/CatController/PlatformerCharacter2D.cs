@@ -258,7 +258,7 @@ namespace CatAttack
 			m_Animator.SetBool("Ground", false);
 
 			//force restart the stardash animation state
-			m_Animator.Play("Base Layer.StarDash", -1, 0f);
+			m_Animator.Play("StarDash", -1, 0f);
 
 			//Set the rigidbody's vertical velocity to dash speed, and scale horizontal velocity with jump direction
 			//always dash full speed in the direction the player is facing
