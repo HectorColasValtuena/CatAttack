@@ -306,7 +306,7 @@ namespace CatAttack
 
 			//remove dead flag from animator
 			m_Animator.SetBool("Dead", false);
-			m_Animator.SetBool("Sleeping", false);
+			m_Animator.SetBool("FallAsleep", false);
 
 			//force animator to reset back to entry
 			m_Animator.Play("Base Layer.Standing");
@@ -335,8 +335,7 @@ namespace CatAttack
 			m_Rigidbody2D.simulated = true;
 			LevelManager.cameraFocusTarget = transform;
 			m_IsAsleep = true;
-			m_Animator.SetBool("Sleeping", true);
-			m_Animator.Play("Base Layer.BeginSleep");
+			m_Animator.SetBool("FallAsleep", true);
 		}
 
 		//Disable controls and physics
