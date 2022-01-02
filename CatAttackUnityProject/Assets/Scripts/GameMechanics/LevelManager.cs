@@ -18,8 +18,7 @@ namespace CatAttack
 		private LevelTimer levelTimer;
 	//ENDOF private fields
 
-	//In-Class management
-
+	//MonoBehaviour lifecycle
 		//Save a public reference to this instance on creation
 		public void Awake ()
 		{
@@ -29,7 +28,13 @@ namespace CatAttack
 			if (activeCheckpoint == null) { Debug.LogError("LevelManager.activeCheckpoint initial value has not been set. Set it up within the inspector."); }
 			levelTimer = gameObject.GetComponent<LevelTimer>();
 		}
-	//ENDOF In-Class management
+
+		//HOPEFULLY TEMPORARILY timer starts on level start
+		public void Start ()
+		{
+			levelTimer.StartTimer();
+		}
+	//ENDOF MonoBehaviour lifecycle
 
 	//Checkpoint management
 		//Checkpoint currently in use. Getting the active checkpoint coordinates will return this checkpoints spawn spot
@@ -76,7 +81,7 @@ namespace CatAttack
 				level: ProgressionManager.currentLevel,
 				seconds: levelTimer.levelTime
 			);
-			
+
 			ProgressionManager.UnlockNext();
 			ShowEndLevelDialog();
 		}
