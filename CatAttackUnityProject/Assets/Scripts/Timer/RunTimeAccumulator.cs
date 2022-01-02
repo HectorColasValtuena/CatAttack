@@ -7,11 +7,36 @@ namespace CatAttack
 	public static class RunTimeAccumulator
 	{
 	//const	
+		private static int[] REQUIRED_LEVELS = {2,3,4,5};
 	//ENDOF const
 
 	//public static members
-		public static bool FullRunTimeAvailable
-		{ get {/*[TO-DO]*/ return false; } }
+		public static bool FullRunAvailable
+		{
+			get
+			{
+				foreach (int level in REQUIRED_LEVELS)
+				{
+					if (!levelTimes.ContainsKey(level))
+					{ return false; }
+				}
+				return true;
+			}
+		}
+
+		public static float FullRunCombinedTime
+		{
+			get
+			{
+				if (!FullRunAvailable) {}
+				float total = 0f;
+				foreach (int level in REQUIRED_LEVELS)
+				{
+					total += levelTimes[level];
+				}
+				return total;
+			}
+		}		
 
 		public static void RegisterLevelTime (int level, float seconds)
 		{
@@ -34,7 +59,7 @@ namespace CatAttack
 			return null;
 		}
 
-		public static void ResetTimeAccumulator ()
+		public static void ResetRun ()
 		{
 			ResetTimeDictionary();
 		}
