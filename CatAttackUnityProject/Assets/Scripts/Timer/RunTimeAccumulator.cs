@@ -15,6 +15,8 @@ namespace CatAttack
 
 		public static void RegisterLevelTime (int level, float seconds)
 		{
+			ValidateDictionary();
+
 			Debug.Log(string.Format("Registered level {0} time: {1}", level, seconds));
 			if (levelTimes.ContainsKey(level))
 			{ levelTimes.Remove(level); }
@@ -25,6 +27,8 @@ namespace CatAttack
 		//returns level # time, or null if not registered
 		public static float? GetLevelTime (int level, float seconds)
 		{
+			ValidateDictionary();
+
 			if (levelTimes.ContainsKey(level))
 			{ return levelTimes[level]; }
 			return null;
@@ -41,6 +45,8 @@ namespace CatAttack
 		private static IDictionary<int, float> levelTimes;
 		private static void ResetTimeDictionary ()
 		{ levelTimes = new Dictionary<int,float>(); }
+		private static void ValidateDictionary()
+		{ if (levelTimes == null) { ResetTimeDictionary(); }}
 	//ENDOF private static
 	}
 }
