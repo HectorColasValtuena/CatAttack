@@ -6,14 +6,17 @@ namespace CatAttack
 {		
 	public class LevelManager : MonoBehaviour
 	{
-	//public values
+	//public fields
 		public static LevelManager instance;
 		public static PlatformerCharacter2D playerGameObject;	//reference to the player
 		public static Transform cameraFocusTarget = null;		//object to be focused by the camera
 
 		public float lethalDropoffHeight = -100f;	//dropping below this vertical position means death
+	//ENDOF public fields
 
-	//ENDOF public values
+	//private fields
+		private LevelTimer levelTimer;
+	//ENDOF private fields
 
 	//In-Class management
 
@@ -24,6 +27,7 @@ namespace CatAttack
 			cameraFocusTarget = null;
 			checkpointList = new List<RespawnCheckpoint>();
 			if (activeCheckpoint == null) { Debug.LogError("LevelManager.activeCheckpoint initial value has not been set. Set it up within the inspector."); }
+			levelTimer = gameObject.GetComponent<LevelTimer>();
 		}
 	//ENDOF In-Class management
 
@@ -67,6 +71,12 @@ namespace CatAttack
 
 		public void LevelFinished ()
 		{
+			levelTimer.StopTimer();
+			RunTimeAccumulator.RegisterLevelTime(
+				level: ProgressionManager.currentLevel,
+				seconds: levelTimer.levelTime
+			);
+			
 			ProgressionManager.UnlockNext();
 			ShowEndLevelDialog();
 		}
