@@ -13,6 +13,9 @@ namespace CatAttack
 				return this.fixedUpdateCount * Time.fixedDeltaTime;
 			}
 		}
+
+		public bool isRunning
+		{ get { return this.timerActive; }}
 	//ENDOF public properties
 
 	//public methods
