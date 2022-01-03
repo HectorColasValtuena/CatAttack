@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace CatAttack
+namespace CatAttack.UI
 {
 	//controls a gameobject character (letter or number)
-	public class WorldObjectTypesetController : MonoBehaviour
+	public class WorldTextTypesetCharacter : MonoBehaviour
 	{
 	//public properties
 		//character or substring represented by this character
@@ -21,6 +21,5 @@ namespace CatAttack
 			}
 		}
 	//ENDOF public properties
-
 	}
 }
