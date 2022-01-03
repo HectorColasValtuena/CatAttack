@@ -3,15 +3,17 @@ using UnityEngine;
 namespace CatAttack.UI
 {
 	//controls a gameobject character (letter or number)
-	public class WorldTextTypesetCharacter : MonoBehaviour
+	[RequireComponent(typeof(RectTransform))]
+	public class WorldTextTypesetCharacter : MonoBehaviour, ITypesetCharacterSample
 	{
-	//public properties
+	//ITypesetCharacterSample implementation
 		//character or substring represented by this character
+		char ITypesetCharacterSample.character { get { return this.characterRepresented; }}
 		[SerializeField]
-		public string characterRepresented;
+		public char characterRepresented;
 
 		//returns width in units
-		public float characterWidth 
+		float ITypesetCharacterSample.width 
 		{
 			get
 			{
@@ -20,6 +22,6 @@ namespace CatAttack.UI
 				return rectTransform.rect.width;
 			}
 		}
-	//ENDOF public properties
+	//ENDOF ITypesetCharacterSample
 	}
 }
