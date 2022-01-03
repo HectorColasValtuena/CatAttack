@@ -13,12 +13,16 @@ namespace CatAttack.UI
 		private RectTransform container;
 
 		[SerializeField]
-		private ITypesetDictionary characterDictionary;
+		private GameObjectTypesetDictionary serializedDictionary;
+		private ITypesetDictionary characterDictionary { get { return (ITypesetDictionary) this.serializedDictionary; }}
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
 		private void Start ()
 		{
+			if (this.container == null)
+			{ this.container = this.transform as RectTransform; }
+
 			this.Write(this.initialPhrase);
 		}
 	//ENDOF MonoBehaviour
@@ -29,7 +33,12 @@ namespace CatAttack.UI
 			this.Clear();
 			float widthReached = 0f;
 
-			//foreach
+			foreach (char character in phrase.ToCharArray())
+			{
+				widthReached = this.CreateCharacterAt(character, widthReached);
+			}
+
+			this.container.sizeDelta = new Vector2(x: widthReached, y: this.container.sizeDelta.y);
 		}
 
 		//removes every child within the container
@@ -42,5 +51,19 @@ namespace CatAttack.UI
 			this.container.sizeDelta = new Vector2(x: 0f, y: this.container.sizeDelta.y);
 		}
 	//ENDOF public methods
+
+	//private methods
+		//creates a character at xOffset horizontal offset. returns new total xOffset (summing previous and new character's)
+		private float CreateCharacterAt (char character, float xOffset)
+		{
+			ITypesetCharacterSample sample = this.characterDictionary.GetSample(character);
+			GameObject newObject = UnityEngine.Object.Instantiate(
+				original: sample.gameObject,
+				parent: this.container
+			);
+			(newObject.transform as RectTransform).anchoredPosition = new Vector2(x: xOffset, y: 0f);
+			return xOffset + sample.width;
+		}
+	//ENDOF private methods
 	}
 }

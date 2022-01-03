@@ -4,5 +4,6 @@ namespace CatAttack.UI
 	{
 		char character { get; } //character or substring represented by this character
 		float width { get; }		//returns width in world units
+		UnityEngine.GameObject gameObject { get; }
 	}
 }
