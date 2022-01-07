@@ -23,7 +23,8 @@ namespace CatAttack.UI
 			if (this.container == null)
 			{ this.container = this.transform as RectTransform; }
 
-			this.Write(this.initialPhrase);
+			if (this.initialPhrase != "")
+			{ this.Write(this.initialPhrase); }
 		}
 	//ENDOF MonoBehaviour
 
