@@ -15,6 +15,7 @@ namespace CatAttack
 		{
 			get
 			{
+				ValidateDictionary();
 				foreach (int level in REQUIRED_LEVELS)
 				{
 					if (!levelTimes.ContainsKey(level))
