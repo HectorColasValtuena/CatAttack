@@ -33,7 +33,6 @@ namespace CatAttack
 
 		private Animator m_Animator;			// Reference to the player's animator component.
 		private Rigidbody2D m_Rigidbody2D;
-		private SpriteRenderer m_SpriteRenderer;
 
 		private bool m_Grounded;			// Whether or not the player is grounded.
 		private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -103,7 +102,6 @@ namespace CatAttack
 			// Setting up references.
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody2D = GetComponent<Rigidbody2D>();
-			m_SpriteRenderer = GetComponent<SpriteRenderer>();
 			m_StarpowerReservoir = GetComponent<StarpowerReservoir>();
 		}
 
@@ -318,7 +316,7 @@ namespace CatAttack
 		private void Flip()
 		{   //flip the character
 			m_FacingRight = !m_FacingRight;
-			m_SpriteRenderer.flipX = !m_FacingRight;
+			m_Animator.SetBool("FacingRight", m_FacingRight);
 		}
 
 		//resets the player to target position. if no target position given, get default respawn spot from the level manager
