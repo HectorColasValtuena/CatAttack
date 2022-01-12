@@ -47,5 +47,13 @@ namespace CatAttack
 		{
 			ProgressionManager.LevelChange(currentLevel+1, autoUnlock);
 		}
+
+		//resets game save
+		public static void ResetSave ()
+		{
+			currentLevel = 1;
+			PlayerPrefs.DeleteAll();
+			LevelChange(1);
+		}
 	}
 }

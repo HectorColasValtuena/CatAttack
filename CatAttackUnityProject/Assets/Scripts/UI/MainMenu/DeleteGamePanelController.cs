@@ -47,7 +47,7 @@ namespace CatAttack
 
 		public void DoDeleteSaveGame ()
 		{
-			Debug.LogError("DoDeleteSaveGame() called: unimplemented");
+			ProgressionManager.ResetSave();
 			this.Hide();
 		}
 
