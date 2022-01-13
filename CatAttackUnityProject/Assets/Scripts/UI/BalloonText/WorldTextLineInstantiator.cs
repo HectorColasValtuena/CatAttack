@@ -18,7 +18,7 @@ namespace CatAttack.UI
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
-		private void Start ()
+		private void Awake ()
 		{
 			if (this.container == null)
 			{ this.container = this.transform as RectTransform; }
@@ -29,9 +29,10 @@ namespace CatAttack.UI
 	//ENDOF MonoBehaviour
 
 	//public methods
-		public void Write (string phrase)
+		public void Write (string phrase, bool clear = true)
 		{
-			this.Clear();
+			if (clear) { this.Clear(); }
+
 			float widthReached = 0f;
 
 			foreach (char character in phrase.ToCharArray())
