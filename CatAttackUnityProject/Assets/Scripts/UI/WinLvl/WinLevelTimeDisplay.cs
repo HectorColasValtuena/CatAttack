@@ -13,14 +13,23 @@ namespace CatAttack
 	//ENDOF serialized fields		
 
 	//private properties
-		private bool isRecord
-		{ get { return true; /*[TO-DO]*/ }}
+		private float RunTime
+		{ get { return RunTimeAccumulator.FullRunCombinedTime; }}
+		
+		private bool IsRecord
+		{
+			get
+			{
+				if (!this.TimeAvailable) { return false; }
+				return RecordVault.IsRecord(this.RunTime);
+			}
+		}
 
-		private bool timeAvailable
+		private bool TimeAvailable
 		{ get { return RunTimeAccumulator.FullRunAvailable; }}
 
-		private string recordTimeString
-		{ get { return new TimeFormatter(RunTimeAccumulator.FullRunCombinedTime).toString; }}
+		private string RecordTimeString
+		{ get { return new TimeFormatter(this.RunTime).toString; }}
 	//ENDOF private properties
 
 	//MonoBehaviour lifecycle
@@ -28,12 +37,13 @@ namespace CatAttack
 		{
 			if (this.animator == null) { this.animator = this.GetComponent<Animator>(); }
 
-			this.animator.SetBool("RecordMode", this.isRecord);
-			this.animator.SetBool("TimeAvailable", this.timeAvailable);
+			this.animator.SetBool("RecordMode", this.IsRecord);
+			this.animator.SetBool("TimeAvailable", this.TimeAvailable);
 
-			if (this.timeAvailable)
+			if (this.TimeAvailable)
 			{
-				this.timeField.Write(this.recordTimeString);
+				this.timeField.Write(this.RecordTimeString);
+				RecordVault.RegisterTime(this.RunTime);
 			}
 		}
 	//ENDOF MonoBehaviour lifecycle
