@@ -26,10 +26,8 @@ namespace CatAttack
 		}
 
 		private bool TimeAvailable
-		{ get { return RunTimeAccumulator.FullRunAvailable; }}
+		{ get { return RunTimeAccumulator.FullRunAvailable || RecordVault.HasRecord; }}
 
-		private string RecordTimeString
-		{ get { return new TimeFormatter(this.RunTime).toString; }}
 	//ENDOF private properties
 
 	//MonoBehaviour lifecycle
@@ -42,10 +40,20 @@ namespace CatAttack
 
 			if (this.TimeAvailable)
 			{
-				this.timeField.Write(this.RecordTimeString);
+				this.timeField.Write(this.SecondsToTimeString(this.RunTime));
 				RecordVault.RegisterTime(this.RunTime);
+			}
+			else if (RecordVault.HasRecord)
+			{
+				this.timeField.Write(this.SecondsToTimeString(RecordVault.Record));
 			}
 		}
 	//ENDOF MonoBehaviour lifecycle
+
+	//private methods
+		//formats a time in seconds to an MM:ss.mmm
+		private string SecondsToTimeString (float seconds)
+		{ return new TimeFormatter(this.RunTime).toString; }
+	//ENDOF private methods
 	}
 }
