@@ -20,7 +20,7 @@ namespace CatAttack
 		{
 			get
 			{
-				if (!this.TimeAvailable) { return false; }
+				if (!RunTimeAccumulator.FullRunAvailable) { return false; }
 				return RecordVault.IsRecord(this.RunTime);
 			}
 		}
