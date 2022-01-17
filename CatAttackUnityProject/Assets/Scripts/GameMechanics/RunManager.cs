@@ -4,7 +4,7 @@ using Debug = UnityEngine.Debug;
 
 namespace CatAttack
 {
-	public static class RunTimeAccumulator
+	public static class RunManager
 	{
 	//const	
 		private static int[] REQUIRED_LEVELS = {2,3,4,5};

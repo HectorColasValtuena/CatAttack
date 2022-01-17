@@ -6,6 +6,6 @@ namespace CatAttack
 	public class OnAwakeRunTimerResetter : MonoBehaviour
 	{
 		public void Awake ()
-		{ RunTimeAccumulator.ResetRun(); }
+		{ RunManager.ResetRun(); }
 	}
 }

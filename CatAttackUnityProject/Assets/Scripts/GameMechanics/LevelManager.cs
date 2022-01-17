@@ -77,7 +77,7 @@ namespace CatAttack
 		public void LevelFinished ()
 		{
 			levelTimer.StopTimer();
-			RunTimeAccumulator.RegisterLevelTime(
+			RunManager.RegisterLevelTime(
 				level: ProgressionManager.currentLevel,
 				seconds: levelTimer.levelTime
 			);

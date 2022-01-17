@@ -14,19 +14,19 @@ namespace CatAttack
 
 	//private properties
 		private float RunTime
-		{ get { return RunTimeAccumulator.FullRunCombinedTime; }}
+		{ get { return RunManager.FullRunCombinedTime; }}
 		
 		private bool IsRecord
 		{
 			get
 			{
-				if (!RunTimeAccumulator.FullRunAvailable) { return false; }
+				if (!RunManager.FullRunAvailable) { return false; }
 				return RecordVault.IsRecord(this.RunTime);
 			}
 		}
 
 		private bool TimeAvailable
-		{ get { return RunTimeAccumulator.FullRunAvailable || RecordVault.HasRecord; }}
+		{ get { return RunManager.FullRunAvailable || RecordVault.HasRecord; }}
 
 	//ENDOF private properties
 
