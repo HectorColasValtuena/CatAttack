@@ -7,29 +7,12 @@ namespace CatAttack
 	{
 	//constants
 		private const string levelUnlockedKey = "levelUnlocked";
-		private const string stopwatchUnlockedKey = "stopwatchUnlocked";
 		private const int defaultUnlockedLevel = 2;
 	//ENDOF constants
 
 	//public fields
 		public static int currentLevel = 1;
 	//ENDOF public field
-
-	//public properties
-		//is stopwatch (timer) unlocked
-		public static bool StopwatchUnlocked
-		{
-			get
-			{
-				return PlayerPrefs.HasKey(stopwatchUnlockedKey)
-					&& PlayerPrefs.GetInt(stopwatchUnlockedKey) > 0;
-			}
-			private set
-			{
-				PlayerPrefs.SetInt(stopwatchUnlockedKey, value ? 1 : 0);
-			}
-		}
-	//ENDOF public properties
 
 	//public methods
 		//get if scene is unlocked
@@ -76,12 +59,6 @@ namespace CatAttack
 			currentLevel = 1;
 			PlayerPrefs.DeleteAll();
 			LevelChange(1);
-		}
-
-		//unlocks stopwatch
-		public static void UnlockStopwatch ()
-		{
-			StopwatchUnlocked = true;
 		}
 	//ENDOF public methods
 
