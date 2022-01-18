@@ -18,7 +18,7 @@ namespace CatAttack
 
 		private void Start ()
 		{
-			if (ProgressionManager.StopwatchUnlocked)
+			if (UnlockablesManager.Stopwatch != EUnlockableState.Locked)
 			{
 				this.Disable();
 			}
@@ -35,7 +35,7 @@ namespace CatAttack
 		private void PickedUp ()
 		{
 			this.animator.SetTrigger("PickedUp");
-			ProgressionManager.UnlockStopwatch();
+			UnlockablesManager.UnlockStopwatch();
 		}
 
 		private void Disable ()
