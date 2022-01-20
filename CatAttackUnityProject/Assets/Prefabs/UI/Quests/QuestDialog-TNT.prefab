@@ -186,7 +186,7 @@ PrefabInstance:
     - target: {fileID: 3576968403932795174, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7226962895450416649, guid: b20d22b33b74d3346800f84d0d5d6217,
         type: 3}
@@ -422,6 +422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TemplatePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176800213851328356, guid: 7b47dda279cd4a34cac84e1f779538e2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b47dda279cd4a34cac84e1f779538e2, type: 3}

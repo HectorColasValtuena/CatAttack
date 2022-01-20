@@ -1,29 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class InventoryController : MonoBehaviour
+namespace CatAttack
 {
-	//object containing carried dynamite sprite
-	public GameObject dynamiteFX;
-
-	public bool _dynamite = false;
-	public bool hasDynamite 
+	public class InventoryController : MonoBehaviour
 	{
-		get { return _dynamite; }
-		set
+	//Sombrero
+		//[TO-DO]==================================================================
+		/*public bool Sombrero
 		{
-			_dynamite = value;
-			if (dynamiteFX != null)
+		}
+		private bool _sombrero = false;
+		*/
+	//ENDOF Sombrero
+
+	//Dynamite quest item
+		[SerializeField]
+		private GameObject dynamiteFX;
+		public bool Dynamite 
+		{
+			get { return _dynamite; }
+			set
 			{
-				dynamiteFX.SetActive(value);
+				_dynamite = value;
+				if (dynamiteFX != null)
+				{
+					dynamiteFX.SetActive(value);
+				}
 			}
 		}
-	}
+		private bool _dynamite = false;
+	//ENDOF Dynamite
 
-	public void Awake ()
-	{
-		dynamiteFX.SetActive(hasDynamite);
+		public void Awake ()
+		{
+			this.dynamiteFX.SetActive(this.Dynamite);
+		}
 	}
-
 }

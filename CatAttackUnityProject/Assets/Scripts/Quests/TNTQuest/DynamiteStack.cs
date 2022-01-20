@@ -10,7 +10,7 @@ namespace CatAttack
 		{
 			InventoryController inventory = other.GetComponent<InventoryController>();
 			if (inventory == null) { return; }
-			inventory.hasDynamite = true;
+			inventory.Dynamite = true;
 			if (disableStick != null) { disableStick.SetActive(false); }
 		}
 	}
