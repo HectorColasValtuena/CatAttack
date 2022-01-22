@@ -20111,10 +20111,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 434206768251563495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a0f826f415f784a9b6aa13e80c32bf, type: 3}
+  m_Script: {fileID: 11500000, guid: ebb323e87c07c9f4c92d2112462013bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 6106455019257387529}
+  rewards: 
+  animator: {fileID: 0}
+  requiredItems: 64000000
   dialog: {fileID: 8530041979723537371}
 --- !u!95 &6106455019257387529
 Animator:
