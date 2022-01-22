@@ -1,4 +1,4 @@
-namespace CatAttack
+namespace CatAttack.Quests
 {
 	//interface representing a single quest - either full or a step of one
 	public interface IQuest

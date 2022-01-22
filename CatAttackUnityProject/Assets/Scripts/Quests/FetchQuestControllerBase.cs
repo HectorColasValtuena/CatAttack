@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CatAttack
+namespace CatAttack.Quests
 {
 	public abstract class FetchQuestControllerBase : QuestControllerBase
 	{
