@@ -8,7 +8,7 @@ namespace CatAttack.Accessories
 		bool Enabled { get; set; }
 
 		//inventory item represented by this accessory
-		EItemID Item { get; }
+		EItemID ItemID { get; }
 
 		//update this accessory's pose to fit parent sprite and horizontal flip
 		void UpdatePose (UnityEngine.Sprite sprite, bool flip);
