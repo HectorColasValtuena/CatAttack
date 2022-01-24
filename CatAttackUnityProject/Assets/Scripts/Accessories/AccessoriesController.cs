@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using IInventory = CatAttack.Inventory.IInventory;
 using EItemID = CatAttack.Inventory.EItemID;
 
 namespace CatAttack.Accessories
@@ -15,13 +16,16 @@ namespace CatAttack.Accessories
 
 		[SerializeField]
 		private SpriteRenderer spriteRenderer;
+
+		[SerializeField]
+		private IInventory inventory;
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
 		private void Awake ()
 		{
 			if (this.spriteRenderer == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no spriteRenderer defined"); }
-			this.InitializeItemToAccessoryCache();
+			if (this.inventory == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no inventory defined"); }
 		}
 
 		private void Update ()
@@ -40,17 +44,6 @@ namespace CatAttack.Accessories
 	//ENDOF private properties
 
 	//private fields
-		//cache of accessories mapped by their linked item
-		private IDictionary<EItemID, IAccessory> itemToAccessoryCache;
-		private void InitializeItemToAccessoryCache ()
-		{
-			this.itemToAccessoryCache = new Dictionary<EItemID, IAccessory>();
-			foreach (IAccessory accessory in this.accessories)
-			{
-				this.itemToAccessoryCache.Add(key: accessory.Item, value: accessory);
-			}
-		}
-
 		//info on last pose
 		private Sprite lastSprite = null;
 		private bool lastFlip = false;
@@ -60,18 +53,18 @@ namespace CatAttack.Accessories
 		//updates which accessories are active according to player's inventory
 		private void UpdateEnabledAccessories ()
 		{
-			//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			Debug.LogWarning("!! AccessoriesController.UpdateEnabledAccessories unimplemented");
+			foreach (IAccessory accessory in this.accessories)
+			{
+				accessory.Enabled = this.inventory.Contains(accessory.ItemID);
+			}
 		}
 
 		//updates accessories by pose if pose has changed
 		private void CheckPoseUpdate ()
 		{
-			if (	this.lastSprite != this.CurrentSprite
-				||	this.lastFlip != this.CurrentFlip)
-			{
-				this.UpdateAccessoryPoses();
-			}
+			if ((this.lastSprite != this.CurrentSprite) || (this.lastFlip != this.CurrentFlip))
+			{ this.UpdateAccessoryPoses(); }
+
 			this.lastSprite = this.CurrentSprite;
 			this.lastFlip = this.CurrentFlip;
 		}
