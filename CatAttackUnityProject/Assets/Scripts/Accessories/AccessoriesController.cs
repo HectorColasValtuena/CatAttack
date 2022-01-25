@@ -48,8 +48,8 @@ namespace CatAttack.Accessories
 		{ get { return this.spriteRenderer.flipX; }}
 
 		//info on default scales for each flip direction
-		private const Vector3 rightwardScale = new Vector3(1, 1, 1);
-		private const Vector3 leftwardScale = new Vector3(-1, 1, 1);
+		private Vector3 rightwardScale = new Vector3(1, 1, 1);
+		private Vector3 leftwardScale = new Vector3(-1, 1, 1);
 	//ENDOF private properties
 
 	//private fields
