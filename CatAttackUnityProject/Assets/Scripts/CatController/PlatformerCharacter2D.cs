@@ -2,11 +2,21 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+using IPlayer = CatAttack.Player.IPlayer;
+
 #pragma warning disable 649
 namespace CatAttack
 {
-	public class PlatformerCharacter2D : MonoBehaviour
+	public class PlatformerCharacter2D :
+		MonoBehaviour,
+		IPlayer
 	{
+	//IPlayer implementation
+		bool IPlayer.IsDead { get { return this.m_CatDead; }}
+	//ENDOF IPlayer
+
+	//beware ye traveler for there be dragons beyond this point
+
 		const float k_GroundedRadius = .02f;	// Radius of the overlap circle to determine if grounded
 		const float k_SideCheckRadius = .02f;   // Radius of the overlap circle to determine if clinging to a wall
 		//const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
