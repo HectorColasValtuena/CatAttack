@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+using IPlayer = CatAttack.Player.IPlayer;
 using IInventory = CatAttack.Inventory.IInventory;
 using EItemID = CatAttack.Inventory.EItemID;
 
@@ -21,6 +23,10 @@ namespace CatAttack.Accessories
 		private SpriteRenderer spriteRenderer;
 
 		[SerializeField]
+		private PlatformerCharacter2D _player;
+		private IPlayer Player { get { return this._player; }}
+
+		[SerializeField]
 		private CatAttack.Inventory.InventoryController _inventory;
 		private IInventory Inventory { get { return this._inventory; }}
 	//ENDOF serialized fields
@@ -30,10 +36,12 @@ namespace CatAttack.Accessories
 		{
 			if (this.spriteRenderer == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no spriteRenderer defined"); }
 			if (this.Inventory == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no inventory defined"); }
+			if (this.Player == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no player defined"); }
 		}
 
 		private void Update ()
 		{
+			this.CheckPlayerDeath();
 			this.UpdateEnabledAccessories();
 			this.CheckFlipUpdate();
 			this.CheckPoseUpdate();
@@ -47,6 +55,9 @@ namespace CatAttack.Accessories
 		private bool CurrentFlip
 		{ get { return this.spriteRenderer.flipX; }}
 
+		private bool PlayerIsDead
+		{ get { return this.Player.IsDead; }}
+
 		//info on default scales for each flip direction
 		private Vector3 rightwardScale = new Vector3(1, 1, 1);
 		private Vector3 leftwardScale = new Vector3(-1, 1, 1);
@@ -56,15 +67,35 @@ namespace CatAttack.Accessories
 		//info on last pose
 		private Sprite lastSprite = null;
 		private bool lastFlip = false;
+		private bool lastIsPlayerDead = false;
 	//ENDOF private fields
 
 	//private methods
+		private void CheckPlayerDeath ()
+		{
+			if (this.PlayerIsDead && !this.lastIsPlayerDead)
+			{ this.OnPlayerDeath(); } 
+		}
+
+		private void OnPlayerDeath ()
+		{
+			foreach (IAccessory accessory in this.accessories)
+			{
+				accessory.OnCarrierDeath();
+				if (accessory.RemoveItemOnDeath)
+				{ this.Inventory.Remove(accessory.ItemID); }
+			}
+		}
+
 		//updates which accessories are active according to player's inventory
+		//every item will be made disabled during player death
 		private void UpdateEnabledAccessories ()
 		{
 			foreach (IAccessory accessory in this.accessories)
 			{
-				accessory.Enabled = this.Inventory.Contains(accessory.ItemID);
+				accessory.Enabled =
+						this.Inventory.Contains(accessory.ItemID)
+					&&	!this.PlayerIsDead;
 			}
 		}
 
@@ -96,7 +127,7 @@ namespace CatAttack.Accessories
 			foreach (IAccessory accessory in this.accessories)
 			{
 				if (accessory.Enabled)
-				{ accessory.UpdatePose(masterSprite: this.CurrentSprite, flip: this.CurrentFlip); }
+				{ accessory.UpdatePose(masterSprite: this.CurrentSprite); }
 			}
 		}
 	//ENDOF private methods
