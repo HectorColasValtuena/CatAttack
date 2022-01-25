@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEvent = UnityEngine.Events.UnityEvent;
 
 using EItemID = CatAttack.Inventory.EItemID;
 
@@ -16,6 +17,12 @@ namespace CatAttack.Accessories
 
 		[SerializeField]
 		private AccessoryPoseDefinition[] poses;
+
+		[SerializeField]
+		private bool removeItemOnDeath;
+
+		[SerializeField]
+		private UnityEvent onCarrierDeath;
 
 		[SerializeField]
 		private SpriteRenderer spriteRenderer;
@@ -41,9 +48,16 @@ namespace CatAttack.Accessories
 		//inventory item represented by this accessory
 		EItemID IAccessory.ItemID { get { return this.itemID; }}
 
+		//if true the linked item should be removed from the inventory on character death
+		bool IAccessory.RemoveItemOnDeath { get { return this.removeItemOnDeath; }}
+
 		//update this accessory's pose to fit parent sprite and horizontal flip
 		void IAccessory.UpdatePose (UnityEngine.Sprite masterSprite)
 		{ this.UpdatePose(masterSprite); }
+
+		//to be called on player death
+		void IAccessory.OnCarrierDeath ()
+		{ this.onCarrierDeath?.Invoke(); }
 	//ENDOF IAccessory
 
 	//MonoBehaviour lifecycle
