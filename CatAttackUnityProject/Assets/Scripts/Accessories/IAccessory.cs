@@ -11,6 +11,6 @@ namespace CatAttack.Accessories
 		EItemID ItemID { get; }
 
 		//update this accessory's pose to fit parent sprite and horizontal flip
-		void UpdatePose (UnityEngine.Sprite sprite, bool flip);
+		void UpdatePose (UnityEngine.Sprite masterSprite, bool flip);
 	}
 }

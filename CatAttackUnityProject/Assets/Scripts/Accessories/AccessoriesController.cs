@@ -18,14 +18,15 @@ namespace CatAttack.Accessories
 		private SpriteRenderer spriteRenderer;
 
 		[SerializeField]
-		private IInventory inventory;
+		private CatAttack.Inventory.InventoryController _inventory;
+		private IInventory Inventory { get { return this._inventory; }}
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
 		private void Awake ()
 		{
 			if (this.spriteRenderer == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no spriteRenderer defined"); }
-			if (this.inventory == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no inventory defined"); }
+			if (this.Inventory == null) { Debug.LogError("!! " + this.gameObject.name + ".AccessoriesController: ERROR no inventory defined"); }
 		}
 
 		private void Update ()
@@ -55,7 +56,7 @@ namespace CatAttack.Accessories
 		{
 			foreach (IAccessory accessory in this.accessories)
 			{
-				accessory.Enabled = this.inventory.Contains(accessory.ItemID);
+				accessory.Enabled = this.Inventory.Contains(accessory.ItemID);
 			}
 		}
 
@@ -75,7 +76,7 @@ namespace CatAttack.Accessories
 			foreach (IAccessory accessory in this.accessories)
 			{
 				if (accessory.Enabled)
-				{ accessory.UpdatePose(sprite: this.CurrentSprite, flip: this.CurrentFlip); }
+				{ accessory.UpdatePose(masterSprite: this.CurrentSprite, flip: this.CurrentFlip); }
 			}
 		}
 	//ENDOF private methods
