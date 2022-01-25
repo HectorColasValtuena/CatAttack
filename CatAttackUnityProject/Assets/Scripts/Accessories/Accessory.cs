@@ -19,11 +19,6 @@ namespace CatAttack.Accessories
 
 		[SerializeField]
 		private SpriteRenderer spriteRenderer;
-
-		[SerializeField]
-		private Vector3 rightwardScale = new Vector3(1, 1, 1);
-		[SerializeField]
-		private Vector3 leftwardScale = new Vector3(-1, 1, 1);
 	//ENDOF serialized fields
 
 	//IAccessory
@@ -35,7 +30,11 @@ namespace CatAttack.Accessories
 			set
 			{
 				if (this.gameObject.activeSelf != value)
-				{ this.gameObject.SetActive(value); }
+				{
+					this.gameObject.SetActive(value);
+					if (value)
+					{ this.OnEnableRefresh(); }
+				}
 			}
 		}
 
@@ -43,8 +42,8 @@ namespace CatAttack.Accessories
 		EItemID IAccessory.ItemID { get { return this.itemID; }}
 
 		//update this accessory's pose to fit parent sprite and horizontal flip
-		void IAccessory.UpdatePose (UnityEngine.Sprite masterSprite, bool flip)
-		{ this.UpdatePose(masterSprite, flip); }
+		void IAccessory.UpdatePose (UnityEngine.Sprite masterSprite)
+		{ this.UpdatePose(masterSprite); }
 	//ENDOF IAccessory
 
 	//MonoBehaviour lifecycle
@@ -67,6 +66,7 @@ namespace CatAttack.Accessories
 	//private fields
 		private AccessoryPoseDefinition defaultPose;
 		private IDictionary<Sprite, AccessoryPoseDefinition> poseDictionary;
+		private Sprite masterSprite;
 	//ENDOF private fields
 
 	//private methods
@@ -86,20 +86,25 @@ namespace CatAttack.Accessories
 			}
 		}
 
-		private void UpdatePose (UnityEngine.Sprite masterSprite, bool flip)
+		private void OnEnableRefresh()
+		{ this.UpdatePose(this.masterSprite); }
+
+		private void UpdatePose (UnityEngine.Sprite masterSprite)
 		{
+			this.masterSprite = masterSprite;
+			if (!this.Enabled) { return; } //optimize by not updating disabled accessories
+
 			if (this.poseDictionary.ContainsKey(masterSprite))
-			{ this.ApplyPose(this.poseDictionary[masterSprite], flip); }
+			{ this.ApplyPose(this.poseDictionary[masterSprite]); }
 			else
-			{ this.ApplyPose(this.defaultPose, flip); }
+			{ this.ApplyPose(this.defaultPose); }
 
 		}
 
-		private void ApplyPose (AccessoryPoseDefinition pose, bool flip)
+		private void ApplyPose (AccessoryPoseDefinition pose)
 		{
 			this.transform.localPosition = pose.localPosition;
 			this.Sprite = pose.accessorySprite;
-			this.transform.localScale = flip ? this.leftwardScale : this.rightwardScale;
 		}
 	//ENDOF private methods
 
