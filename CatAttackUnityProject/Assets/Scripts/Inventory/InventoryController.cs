@@ -18,7 +18,10 @@ namespace CatAttack.Inventory
 		void IInventory.Add (EItemID itemID)
 		{ this.Add(itemID); }
 		private void Add (EItemID itemID)
-		{ this.Items.Add(itemID); }
+		{ 
+			if (!this.Items.Contains(itemID))
+			{ this.Items.Add(itemID); }
+		}
 
 		//removes item from inventory
 		//returns true if item was removed, false if item didn't exist in inventory
