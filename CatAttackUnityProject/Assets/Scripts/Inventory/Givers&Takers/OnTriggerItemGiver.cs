@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace CatAttack.Inventory
 {
-	public class OnTriggerItemGiver : MonoBehaviour
+	public class OnTriggerItemGiver : OnTriggerInventoryInteractor
 	{
 	//serialized fields
 		//list of items given to the player
@@ -15,14 +15,6 @@ namespace CatAttack.Inventory
 	//ENDOF serialized
 
 	//MonoBehaviour lifecycle
-		private void OnTriggerEnter2D (Collider2D other)
-		{
-			InventoryController inventory = other.GetComponent<InventoryController>();
-			if (inventory == null) { return; }
-			this.GiveItems(inventory);
-			this.disableOnPickup?.SetActive(false);
-		}
-		
 		private void Awake ()
 		{
 			if (this.givenItems.Length == 0)
@@ -30,11 +22,12 @@ namespace CatAttack.Inventory
 		}
 	//ENDOF MonoBehaviour
 
-	//private methods
-		private void GiveItems (IInventory inventory)
+	//protected methods
+		protected override void InteractWithInventory (IInventory inventory)
 		{
 			foreach (EItemID item in this.givenItems)
 			{ inventory.Add(item); }
+			this.disableOnPickup?.SetActive(false);
 		}
 	//ENDOF private methods
 	}
