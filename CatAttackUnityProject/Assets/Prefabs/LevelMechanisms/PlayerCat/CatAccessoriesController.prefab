@@ -126,65 +126,80 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 100
   poses:
-  - masterSprite: {fileID: -7782575711053197157, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+  - _masterSprite: {fileID: -7782575711053197157, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -4775482765658110738, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -4775482765658110738, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 91a212252bcfd0c44b901d9d1f1ccff6, type: 3}
-  - masterSprite: {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 91a212252bcfd0c44b901d9d1f1ccff6, type: 3}
+  - _masterSprite: {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 3893888861534572734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 3893888861534572734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 8814065720695864063, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 8814065720695864063, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -5775861045710624734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0.02, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -5775861045710624734, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 7115848109341235460, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0.02, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 7115848109341235460, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -6188868310644707875, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0.02, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -6188868310644707875, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 4029367331224654369, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0.02, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 4029367331224654369, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0.02, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0, y: 0.18, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 4638819546980127605, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.18, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 4638819546980127605, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: 0, y: 0.16, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -1464076979257304727, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: 0, y: 0.16, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -1464076979257304727, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: -0.02, y: 0.14, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 7998637763406093744, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: -0.02, y: 0.14, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 7998637763406093744, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: -0.02, y: 0.14, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: -6153659694602022283, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
+    _localPosition: {x: -0.02, y: 0.14, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: -6153659694602022283, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    localPosition: {x: -0.02, y: 0.14, z: 0}
-    accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
-  - masterSprite: {fileID: 21300000, guid: b613baa8355bd344a982384fe4701c6f, type: 3}
-    localPosition: {x: -0.06, y: 0.1, z: 0}
-    accessorySprite: {fileID: 21300000, guid: acd3819b933804a448222b3612bf36c1, type: 3}
+    _localPosition: {x: -0.02, y: 0.14, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 0}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
+  - _masterSprite: {fileID: 21300000, guid: b613baa8355bd344a982384fe4701c6f, type: 3}
+    _localPosition: {x: -0.06, y: 0.1, z: 0}
+    _eulerAngles: {x: 0, y: 0, z: 90}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
   removeItemOnDeath: 1
   onCarrierDeath:
     m_PersistentCalls:
