@@ -86,9 +86,12 @@ namespace CatAttack.Accessories
 	//private methods
 		private void StoreDefaults ()
 		{
-			this.defaultPose = new AccessoryPoseDefinition();
-			this.defaultPose.localPosition = this.transform.localPosition;
-			this.defaultPose.accessorySprite = this.Sprite;
+			this.defaultPose = new AccessoryPoseDefinition(
+				masterSprite: null,
+				localPosition: this.transform.localPosition,
+				localRotation: this.transform.localRotation,
+				accessorySprite: this.Sprite
+			);
 		}
 
 		private void InitPoseDictionary ()
@@ -96,7 +99,7 @@ namespace CatAttack.Accessories
 			this.poseDictionary = new Dictionary<Sprite, AccessoryPoseDefinition>();
 			foreach (AccessoryPoseDefinition pose in this.poses)
 			{
-				this.poseDictionary.Add(key: pose.masterSprite, value: pose);
+				this.poseDictionary.Add(key: pose.MasterSprite, value: pose);
 			}
 		}
 
@@ -117,8 +120,9 @@ namespace CatAttack.Accessories
 
 		private void ApplyPose (AccessoryPoseDefinition pose)
 		{
-			this.transform.localPosition = pose.localPosition;
-			this.Sprite = pose.accessorySprite;
+			this.transform.localPosition = pose.LocalPosition;
+			this.transform.localRotation = pose.LocalRotation;
+			this.Sprite = pose.AccessorySprite;
 		}
 	//ENDOF private methods
 
@@ -129,12 +133,56 @@ namespace CatAttack.Accessories
 		{
 		//serialized fields
 			[SerializeField]
-			public Sprite masterSprite;
+			private Sprite _masterSprite;
+			public Sprite MasterSprite
+			{
+				get { return this._masterSprite; }
+				private set { this._masterSprite = value; }
+			}
+
 			[SerializeField]
-			public Vector3 localPosition;
+			private Vector3 _localPosition;
+			public Vector3 LocalPosition
+			{
+				get { return this._localPosition; }
+				private set { this._localPosition = value; }
+			}
+
 			[SerializeField]
-			public Sprite accessorySprite;
+			private Vector3 _eulerAngles;
+			private Quaternion? _localRotation = null;
+			public Quaternion LocalRotation
+			{
+				get
+				{
+					if (this._localRotation == null) { this._localRotation = Quaternion.Euler(this._eulerAngles); }
+					return (Quaternion) this._localRotation;
+				}
+				private set { this._localRotation = value; }
+			}
+
+			[SerializeField]
+			private Sprite _accessorySprite;
+			public Sprite AccessorySprite
+			{
+				get { return this._accessorySprite; }
+				private set { this._accessorySprite = value; }
+			}
 		//ENDOF serialized
+
+		//constructor
+			public AccessoryPoseDefinition (
+					Sprite masterSprite,
+					Vector3 localPosition,
+					Quaternion localRotation,
+					Sprite accessorySprite
+			) {
+				this.MasterSprite = masterSprite;
+				this.LocalPosition = localPosition;
+				this.LocalRotation = localRotation;
+				this.AccessorySprite = accessorySprite;
+			}
+		//ENDOF constructor
 		}
 	//ENDOF sub-classes
 	}
