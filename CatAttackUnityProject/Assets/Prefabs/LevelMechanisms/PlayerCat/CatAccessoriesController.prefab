@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accessories:
   - {fileID: 2235446903361202871}
+  - {fileID: 6806993098444135686}
   spriteRenderer: {fileID: 0}
   _player: {fileID: 0}
   _inventory: {fileID: 0}
@@ -189,7 +190,7 @@ MonoBehaviour:
       type: 3}
     _localPosition: {x: 0.03, y: 0, z: 0}
     _eulerAngles: {x: 0, y: 0, z: 0}
-    _accessorySprite: {fileID: 21300000, guid: 4befb6bae935b6b41a71adab5a4eedbb, type: 3}
+    _accessorySprite: {fileID: 21300000, guid: 5077b7a6469dc7445aebc4a758d93646, type: 3}
   - _masterSprite: {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
     _localPosition: {x: 0.03, y: 0, z: 0}
@@ -227,7 +228,7 @@ MonoBehaviour:
     _accessorySprite: {fileID: 21300000, guid: 5077b7a6469dc7445aebc4a758d93646, type: 3}
   - _masterSprite: {fileID: -2214032914029989031, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
-    _localPosition: {x: 0, y: 0, z: 0}
+    _localPosition: {x: 0.03, y: 0, z: 0}
     _eulerAngles: {x: 0, y: 0, z: 0}
     _accessorySprite: {fileID: 21300000, guid: 5077b7a6469dc7445aebc4a758d93646, type: 3}
   - _masterSprite: {fileID: 4638819546980127605, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
@@ -476,7 +477,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1848753997
   m_SortingLayer: 1
-  m_SortingOrder: 100
+  m_SortingOrder: 200
   m_Sprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
