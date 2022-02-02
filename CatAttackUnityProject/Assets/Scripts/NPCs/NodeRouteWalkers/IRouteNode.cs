@@ -5,5 +5,6 @@ namespace CatAttack.NodeRouteWalkers
 	public interface IRouteNode
 	{
 		Transform Transform { get; }
+		float WaitTime { get; }
 	}
 }
