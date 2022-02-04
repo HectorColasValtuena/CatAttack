@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using TimeFormatter = CatAttack.TimeFormatter;
+using TimeFormatter = CatAttack.Timing.TimeFormatter;
 
 public class TimeFormattingTest : MonoBehaviour
 {

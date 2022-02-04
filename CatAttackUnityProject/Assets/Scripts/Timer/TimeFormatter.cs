@@ -1,6 +1,6 @@
 using Math = System.Math;
 
-namespace CatAttack
+namespace CatAttack.Timing
 {
 	public class TimeFormatter
 	{

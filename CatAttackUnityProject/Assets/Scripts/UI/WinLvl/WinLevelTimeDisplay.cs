@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using TimeFormatter = CatAttack.Timing.TimeFormatter;
+
 namespace CatAttack
 {
 	public class WinLevelTimeDisplay : MonoBehaviour
