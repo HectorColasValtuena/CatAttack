@@ -57,7 +57,7 @@ namespace CatAttack.Accessories
 
 		//to be called on player death
 		void IAccessory.OnCarrierDeath ()
-		{ this.onCarrierDeath?.Invoke(); }
+		{ if (this.Enabled) { this.onCarrierDeath?.Invoke(); }}
 	//ENDOF IAccessory
 
 	//MonoBehaviour lifecycle
