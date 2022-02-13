@@ -2,7 +2,9 @@ using UnityEngine;
 
 using static CatAttack.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
 
-using FloatRange = CatAttack.CatMath.Ranges.FloatRange;
+using RandomFloatRange = PHATASS.Utils.Math.Ranges.RandomFloatRange;
+using IFloatRange = PHATASS.Utils.Math.Ranges.ILimitedRange<System.Single>;
+
 
 namespace CatAttack.NodeRouteWalkers
 {
@@ -13,7 +15,8 @@ namespace CatAttack.NodeRouteWalkers
 	{
 	//serialized fields
 		[SerializeField]
-		private FloatRange lateralImpulseRange;
+		private RandomFloatRange _lateralImpulseRange;
+		private IFloatRange lateralImpulseRange { get { return this._lateralImpulseRange; }}
 
 		[SerializeField]
 		private float lateralDecelerationRate;
