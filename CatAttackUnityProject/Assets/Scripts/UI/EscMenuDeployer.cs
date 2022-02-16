@@ -13,7 +13,7 @@ namespace CatAttack
 
 		void Update()
 		{
-			if (Input.GetKeyDown("escape"))
+			if (UnityEngine.Input.GetKeyDown("escape"))
 			{
 				ToggleMenu();
 			}

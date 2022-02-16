@@ -21,7 +21,7 @@ namespace CatAttack
 	//Player reset input management
 		private void CheckResetInput ()
 		{
-			bool resetInput = Input.GetKey(resetKeyCode);
+			bool resetInput = UnityEngine.Input.GetKey(resetKeyCode);
 			if (resetInterfaceElement.activeSelf != resetInput)
 			{
 				resetInterfaceElement.SetActive(resetInput);

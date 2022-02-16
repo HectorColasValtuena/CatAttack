@@ -19,8 +19,8 @@ namespace CatAttack
 		private void FixedUpdate()
 		{
 			// Read the inputs.
-			float h = Input.GetAxis("Horizontal");
-			bool jump = Input.GetButton("Jump");
+			float h = UnityEngine.Input.GetAxis("Horizontal");
+			bool jump = UnityEngine.Input.GetButton("Jump");
 			//bool jump = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space);
 
 			// Pass all parameters to the character control script.

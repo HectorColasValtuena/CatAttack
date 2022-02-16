@@ -17,7 +17,7 @@ namespace CatAttack
 		{
 			get
 			{
-				return Input.GetKey(KeyCode.Escape);
+				return UnityEngine.Input.GetKey(KeyCode.Escape);
 			}
 		}
 
@@ -40,7 +40,7 @@ namespace CatAttack
 			else
 			{
 				deployedTimer += Time.deltaTime;
-				if (Input.GetKeyDown(KeyCode.Escape) || deployedTimer >= autoCloseTime)
+				if (UnityEngine.Input.GetKeyDown(KeyCode.Escape) || deployedTimer >= autoCloseTime)
 				{ SetDeployed(false); }
 			}
 		}
