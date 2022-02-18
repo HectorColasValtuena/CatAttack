@@ -1,4 +1,8 @@
+using Time = UnityEngine.Time;
+
 using SerializeField = UnityEngine.SerializeField;
+
+using static PHATASS.Utils.Math.FloatExtensions;
 
 using IValueMutableFloat = PHATASS.Utils.Math.IValueMutable<float>;
 
@@ -52,9 +56,15 @@ namespace CatAttack.Input
 	//ENDOF private fields
 
 	//private methods
+		//on update move axis value towards target value
 		private void UpdateAxis ()
 		{
-		//	this.
+			//if snap is enabled and signs are opposite, snap value back to zero
+			if (this.snap && (this.value.ESign() == (this.targetValue.ESign() * -1)))
+			{ this.value = 0.0f; }
+
+			//now change value accordingly
+			this.value = this.value.EStepTowards(this.targetValue, this.changeSpeed * Time.deltaTime);
 		}
 	//ENDOF private methods
 	}
