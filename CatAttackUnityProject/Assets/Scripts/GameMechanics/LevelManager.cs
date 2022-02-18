@@ -9,6 +9,7 @@ namespace CatAttack
 	//public fields
 		public static LevelManager instance;
 		public static PlatformerCharacter2D playerGameObject;	//reference to the player
+		public static Rigidbody2D playerRigidbody;
 		public static Transform cameraFocusTarget = null;		//object to be focused by the camera
 
 		public float lethalDropoffHeight = -100f;	//dropping below this vertical position means death

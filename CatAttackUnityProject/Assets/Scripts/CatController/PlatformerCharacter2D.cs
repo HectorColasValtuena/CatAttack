@@ -11,6 +11,10 @@ namespace CatAttack
 		MonoBehaviour,
 		IPlayer
 	{
+	//static fields
+		public static Rigidbody2D playerCatRigidbody;
+	//endof static fields
+
 	//IPlayer implementation
 		bool IPlayer.IsDead { get { return this.m_CatDead; }}
 	//ENDOF IPlayer
@@ -108,6 +112,7 @@ namespace CatAttack
 		{
 			//store a reference to this controller in the level manager
 			LevelManager.playerGameObject = this;
+			LevelManager.playerRigidbody = this.gameObject.GetComponent<Rigidbody2D>();
 
 			// Setting up references.
 			m_Animator = GetComponent<Animator>();

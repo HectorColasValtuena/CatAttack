@@ -29,7 +29,7 @@ namespace CatAttack.UI
 
 		void Update ()
 		{
-			if (Platformer2DUserControl.playerCatRigidbody == null) { Debug.LogWarning("PredictiveCameraController.Update(): No player catracter"); return; }
+			if (LevelManager.playerRigidbody == null) { Debug.LogWarning("PredictiveCameraController.Update(): No player catracter"); return; }
 
 			Vector3 relativeTargetPosition;
 			float targetSize;
@@ -45,12 +45,12 @@ namespace CatAttack.UI
 				//predict player character future position and move the camera ahead of the player
 				relativeTargetPosition = new Vector3
 				(
-					CapValue(Platformer2DUserControl.playerCatRigidbody.velocity.x*maxAdvanceRate.x, maxAdvanceDistance.x),
-					CapValue(Platformer2DUserControl.playerCatRigidbody.velocity.y*maxAdvanceRate.y, maxAdvanceDistance.y),
+					CapValue(LevelManager.playerRigidbody.velocity.x*maxAdvanceRate.x, maxAdvanceDistance.x),
+					CapValue(LevelManager.playerRigidbody.velocity.y*maxAdvanceRate.y, maxAdvanceDistance.y),
 					-10
 				);
 				//calculate size per speed
-				targetSize = minSize + (sizePerSpeed * Platformer2DUserControl.playerCatRigidbody.velocity.magnitude);
+				targetSize = minSize + (sizePerSpeed * LevelManager.playerRigidbody.velocity.magnitude);
 			}
 
 			MoveCamera(relativeTargetPosition, targetSize, LevelManager.cameraFocusTarget);

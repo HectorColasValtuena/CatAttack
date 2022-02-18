@@ -6,13 +6,10 @@ namespace CatAttack
 	[RequireComponent(typeof (PlatformerCharacter2D))]
 	public class Platformer2DUserControl : MonoBehaviour
 	{
-		public static Rigidbody2D playerCatRigidbody;
-
 		private PlatformerCharacter2D m_Character;
 
 		private void Awake()
 		{
-			Platformer2DUserControl.playerCatRigidbody = gameObject.GetComponent<Rigidbody2D>();
 			m_Character = GetComponent<PlatformerCharacter2D>();
 		}
 
