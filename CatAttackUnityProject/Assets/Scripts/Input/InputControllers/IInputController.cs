@@ -6,6 +6,6 @@ namespace CatAttack.Input
 		bool jump { get; }
 
 		//a float ranging from -1 (left) to +1 (right) representing current horizontal axis input. Neutral/none is 0.
-		float horizontalAxisInput { get; }
+		float horizontalAxis { get; }
 	}
 }
