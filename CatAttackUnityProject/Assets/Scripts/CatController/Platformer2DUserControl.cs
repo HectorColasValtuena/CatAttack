@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+using InputControllerCache = CatAttack.Input.InputControllerCache;
+
 using IUpdatable = CatAttack.Interfaces.IUpdatable;
 using IValueMutableFloat = PHATASS.Utils.Math.IValueMutable<float>;
 using IValueFloat = PHATASS.Utils.Math.IValue<float>;
@@ -18,24 +20,21 @@ namespace CatAttack
 		private CatAttack.Input.ElasticAxis hInputAxis;
 		private IValueMutableFloat horizontalAxis { get { return this.hInputAxis; }}
 		private IUpdatable updatableHorizontalAxis { get { return this.hInputAxis; }}
-
-		//is touch input enabled
-		private bool touchInputEnabled;
 	//ENDOF private fields
 
 	//private properties
-		//input from analog sources (keyboard/joysticks)
-		private float analogInputHorizontal { get { return UnityEngine.Input.GetAxis("Horizontal"); }}
-		private bool analogInputJump { get { return UnityEngine.Input.GetButton("Jump"); }}
+		//is touch input enabled
+		private bool touchInputEnabled { get { return InputControllerCache.touchInputEnabled; }}
 
+		//input from analog sources (keyboard/joysticks)
+		private float analogInputHorizontal { get { return InputControllerCache.analogInputController.horizontalAxis; }}
+		private bool analogInputJump { get { return InputControllerCache.analogInputController.jump; }}
 
 		//input from touch screen
-		private float touchInputHorizontal { get { return 0; }}
-		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		private bool touchInputJump { get { return false; }}
+		private float touchInputHorizontal { get { return InputControllerCache.touchInputController.horizontalAxis; }}
+		private bool touchInputJump { get { return InputControllerCache.touchInputController.jump; }}
 
-
-		//input getters return 
+		//final input getters
 		private float horizontalInput
 		{
 			get
