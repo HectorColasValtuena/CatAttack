@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4658391009873707455}
   - component: {fileID: 4658391009873707453}
   - component: {fileID: 4658391009873707452}
+  - component: {fileID: 1408695403249889164}
   m_Layer: 5
   m_Name: TouchInputAreaPrefab
   m_TagString: Untagged
@@ -76,6 +77,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1408695403249889164
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4658391009873707454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8e303a7b7efe3d46a678a767e2d8a47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5652270741412406539
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,6 +107,7 @@ GameObject:
   - component: {fileID: 8771659929185141559}
   - component: {fileID: 8075007977462367180}
   - component: {fileID: 5160527037046730304}
+  - component: {fileID: 2618864757483721589}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -151,3 +172,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &2618864757483721589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5652270741412406539}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
