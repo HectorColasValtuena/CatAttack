@@ -57,7 +57,7 @@ TextureImporter:
       213: 2752373510274656155
     second: FlowerVine_Stub 8
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -77,6 +77,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -86,8 +88,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,9 +110,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -530,6 +536,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FlowerVine_Stub 2: 5471374805485337301
+      FlowerVine_Stub 0: -6501077250966133300
+      HangingFlowers_1: 7751649815239582984
+      HangingFlowers_2: -8589129424689902788
+      FlowerVine_Long_0: 3552406402370938270
+      FlowerVine_Long_2bunch: -6464312330482466168
+      FlowerVine_Long_2bunch (2): 55350928859943024
+      FlowerVine_Stub 3: -7472439343002709732
+      FlowerVine_Stub_6: -4568905192785034053
+      FlowerVine_Long_3Bunch: 2835672917233394522
+      FlowerVine_Stub 7: -1701982686025872458
+      FlowerVine_Medium_3bunch: -4979532811973545156
+      FlowerVine_Stub 8: 2752373510274656155
+      HangingFlowers_3: 5853280425967566981
+      FlowerVine_Stub 5: 2321445702602871030
+      FlowerVine_Short_3Bunch: 2883072797031085833
+      HangingFlowers_0: 3905596733333253082
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -57,7 +57,7 @@ TextureImporter:
       213: -6511646529849690251
     second: ColoredTrees_0_17
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -77,6 +77,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -86,8 +88,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,9 +110,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -551,6 +557,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ColoredTrees_0_2: 233282713575898017
+      ColoredTrees_0_14: -8641907190104074973
+      ColoredTrees_0_7: 2739003936800002593
+      ColoredTrees_0_6: 6254009674860914086
+      ColoredTrees_0_10: -9210011612243008495
+      ColoredTrees_0_1: -8120649891357084103
+      ColoredTrees_0_13: -4343921253575794280
+      ColoredTrees_0_15: -845375393918789826
+      ColoredTrees_0_3: -5381041386553415710
+      ColoredTrees_0_12: -7548512962132753389
+      ColoredTrees_0_16: 6757290326295712064
+      ColoredTrees_0_8: 554894898245534876
+      ColoredTrees_0_4: 7111670599012556261
+      ColoredTrees_0_11: 4252790653960853769
+      ColoredTrees_0_0: -8360658341154006132
+      ColoredTrees_0_9: 374971860075311095
+      ColoredTrees_0_17: -6511646529849690251
+      ColoredTrees_0_5: -2848761756826578026
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

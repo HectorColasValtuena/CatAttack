@@ -3,7 +3,7 @@ guid: 0e1dfd00d59564b4495bb11f457879ca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,6 +23,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,8 +34,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -54,9 +56,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -707,6 +713,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cat_Airborne: -4775482765658110738
+      Cat_Walk_4: -5775861045710624734
+      Cat_LayDown_3: 7998637763406093744
+      Cat_Walk_5: 7115848109341235460
+      Cat_Sitting_4: 4881450953399515673
+      Cat_Walk_3: 8814065720695864063
+      Cat_WakeUp_3: 1414148215875001879
+      Cat_Standing: -7782575711053197157
+      Cat_Sitting_6: -6329005499326883370
+      Cat_WakeUp_1: 1985249753183680308
+      Cat_Sit_5: -2971344214976871485
+      Cat_Sitting_5: 3965103447527475639
+      Cat_Sit_1: 4363162728969395906
+      Cat_Walk_8: -2214032914029989031
+      Cat_Sitting_1: -879383575811122102
+      Cat_Sitting_3: 8767177309361254543
+      Cat_Walk_2: 3893888861534572734
+      Cat_Sleeping: -6153659694602022283
+      Cat_WakeUp_2: 6934960068651045675
+      Cat_Walk_1: 7508270772525786254
+      Cat_LayDown_2: -1464076979257304727
+      Cat_LayDown_1: 4638819546980127605
+      Cat_Sit_4: 6351194401207352837
+      Cat_Sit_2: -7379188003268776963
+      Cat_Sitting_2: -9004348140131363697
+      Cat_Walk_7: 4029367331224654369
+      Cat_Sit_3: -8535002366508569611
+      Cat_Walk_6: -6188868310644707875
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

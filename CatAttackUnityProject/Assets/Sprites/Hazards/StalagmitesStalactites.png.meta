@@ -48,7 +48,7 @@ TextureImporter:
       213: 24359491997290856
     second: StalagmiteGemrockTall
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,6 +68,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,8 +79,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -99,9 +101,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -422,7 +428,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a088c1d162a8c0940800000000000000
-      internalID: 5263733960791066634
+      internalID: -296916875282942492
       vertices: []
       indices: 
       edges: []
@@ -458,6 +464,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      StalagmiteGemrockTall: 24359491997290856
+      StalactiteMetalTall: 8395755569015810198
+      StalagmitesStalactites_1: -6035394450076778237
+      StalactiteDirtTall: -296916875282942492
+      StalactitePinkGlassTall: -1472694554581601086
+      WTF_IS_DIS: -2544174232392297265
+      StalactiteGemrockTall: 6224859758001564102
+      StalagmiteMetalTall: -1181870974492359612
+      StalactiteCrystalTall: -2126139004034865714
+      IcicleTall: 6615077812216525335
+      StalactitePurpleGlassTall: 5544799781588611619
+      StalagmitesStalactites_0: -1164628861494523756
+      StalagmiteRockTall: 7408105631038068244
+      StalagmiteCrystalTall: 574546709082479014
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
