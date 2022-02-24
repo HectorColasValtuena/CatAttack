@@ -56,7 +56,7 @@ namespace CatAttack
 	//ENDOF private properties
 
 	//MonoBehaviour lifecycle
-		private void Awake()
+		private void Start ()
 		{
 			this.character = GetComponent<PlatformerCharacter2D>();
 			//initialize our movement axis 
