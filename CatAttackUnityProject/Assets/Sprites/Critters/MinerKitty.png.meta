@@ -45,7 +45,7 @@ TextureImporter:
       213: 8606728637032255307
     second: MinerKitty_13
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,8 +65,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -76,8 +74,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -98,13 +96,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -461,21 +455,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      MinerKitty_9: 2638311525964705144
-      MinerKitty_11: 7860898200610124236
-      MinerKitty_8: 5305714174813764306
-      MinerKitty_13: 8606728637032255307
-      MinerKitty_10: 1526499071413183954
-      MinerKitty_6: -693038925067893428
-      MinerKitty_12: 8859048915050631547
-      MinerKitty_4: 5742229652058695571
-      MinerKitty_5: 6394372682663280944
-      MinerKitty_2: -4748648766117301968
-      MinerKitty_7: -3096675898829809271
-      MinerKitty_0: 4220865140131531619
-      MinerKitty_3: -3364457758394053247
-      MinerKitty_1: -4088172372336941788
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
