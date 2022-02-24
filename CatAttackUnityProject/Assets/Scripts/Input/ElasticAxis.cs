@@ -2,11 +2,11 @@ using Time = UnityEngine.Time;
 
 using SerializeField = UnityEngine.SerializeField;
 
-using static PHATASS.Utils.Math.FloatExtensions;
+using static PHATASS.Utils.MathUtils.FloatExtensions;
 
-using IValueMutableFloat = PHATASS.Utils.Math.IValueMutable<float>;
+using IValueMutableFloat = PHATASS.Utils.MathUtils.IValueMutable<float>;
 
-using RandomFloatRange = PHATASS.Utils.Math.Ranges.RandomFloatRange;
+using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
 using IUpdatable = CatAttack.Interfaces.IUpdatable;
 
 namespace CatAttack.Input
