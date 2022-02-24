@@ -29,7 +29,7 @@ namespace CatAttack.Input
 		private void Awake ()
 		{
 			this.rectTransform = (this.transform as RectTransform);
-			Debug.Log(this.rectTransform.rect);
+			Debug.Log(this.name + " " + this.rectTransform.rect);
 		}
 
 		private void Update ()
@@ -55,6 +55,7 @@ namespace CatAttack.Input
 				 || touch.phase == TouchPhase.Moved
 				 || touch.phase == TouchPhase.Stationary
 				) {
+					Debug.Log("Touch@: " + touch.position);
 					if (this.PositionIsWithinRect(touch.position))
 					{ return true; }
 				}
