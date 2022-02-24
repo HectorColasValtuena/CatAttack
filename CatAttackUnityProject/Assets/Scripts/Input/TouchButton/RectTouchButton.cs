@@ -21,7 +21,8 @@ namespace CatAttack.Input
 	//ENDOF serialized
 
 	//IButton implementation
-		bool IButton.pressed { get { return this.IsPressed();}}
+		bool IButton.pressed { get { return this.pressed;}}
+		private bool pressed = false;
 	//ENDOF IButton
 
 	//MonoBehaviour lifecycle
@@ -33,6 +34,7 @@ namespace CatAttack.Input
 
 		private void Update ()
 		{
+			this.pressed = this.IsPressed();
 			this.SetAnimatorState(this.IsPressed());
 		}
 	//ENDOF MonoBehaviour lifecycle
