@@ -53,11 +53,13 @@ namespace CatAttack.Input
 
 		private static void PopulateTouchController ()
 		{
-			touchController = UnityEngine.Object.FindObjectsOfType<TouchInputController>()[0];
+			TouchInputController[] foundControllers = UnityEngine.Object.FindObjectsOfType<TouchInputController>();
+			if (foundControllers.Length >= 1) { touchController = foundControllers[0]; }
+			
 			if (touchController == null)
 			{
-				UnityEngine.Object.Instantiate(touchInputPrefab);
-				touchController = UnityEngine.Object.FindObjectsOfType<TouchInputController>()[0];
+				UnityEngine.GameObject instance = UnityEngine.Object.Instantiate(touchInputPrefab);
+				touchController = instance.GetComponent<TouchInputController>();
 			}
 		}
 	//ENDOF private methods
