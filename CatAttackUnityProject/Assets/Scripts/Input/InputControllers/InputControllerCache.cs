@@ -1,11 +1,17 @@
 namespace CatAttack.Input
 {
-	public static class InputControllerCache
+	public class InputControllerCache : UnityEngine.MonoBehaviour
 	{
-	//serialized static fields
+	//serialized fields
 		[UnityEngine.SerializeField]
+		private UnityEngine.GameObject _touchInputPrefab;
 		private static UnityEngine.GameObject touchInputPrefab;
 	//ENDOF serialized static fields
+
+	//MonoBehaviour lifecycle
+		private void Awake ()
+		{ touchInputPrefab = this._touchInputPrefab; }
+	//ENDOF MonoBehaviour		
 
 	//public static properties
 		//is touch input enabled
