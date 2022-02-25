@@ -1,10 +1,7 @@
-using SerializeFieldAttribute = UnityEngine.SerializeField;
+using UnityEngine;
 
-using Debug = UnityEngine.Debug;
-using Animator = UnityEngine.Animator;
-using TouchPhase = UnityEngine.TouchPhase;
-using RectTransform = UnityEngine.RectTransform;
-using Vector2 = UnityEngine.Vector2;
+using ScreenUtils = PHATASS.Utils.ScreenUtils;
+using RectExtensions = PHATASS.Utils.MathUtils.RectExtensions;
 
 namespace CatAttack.Input
 {
@@ -29,7 +26,9 @@ namespace CatAttack.Input
 		private void Awake ()
 		{
 			this.rectTransform = (this.transform as RectTransform);
-			Debug.Log(this.name + " " + this.rectTransform.rect);
+			this.anchorRect = this.RectFromTransformAnchors(this.rectTransform);
+
+			Debug.Log(this.name + " " + this.anchorRect);
 		}
 
 		private void Update ()
@@ -40,7 +39,8 @@ namespace CatAttack.Input
 	//ENDOF MonoBehaviour lifecycle
 
 	//private fields
-		RectTransform rectTransform;
+		private RectTransform rectTransform;
+		private Rect anchorRect;
 	//ENDOF private fields
 
 	//private methods
@@ -73,7 +73,15 @@ namespace CatAttack.Input
 		//determines if a touched position is within the rect of this button
 		private bool PositionIsWithinRect (Vector2 position)
 		{
-			return this.rectTransform.rect.Contains(position);
+			Vector2 normalizedPosition = ScreenUtils.PixelToNormalizedScreenPosition(position);
+			return this.anchorRect.Contains(normalizedPosition);
+		}
+
+		//creates a rect delimiting the anchors of this RectTransform
+		private Rect RectFromTransformAnchors (RectTransform rectTransform)
+		{
+			Vector2[] anchors = {rectTransform.anchorMin, rectTransform.anchorMax};
+			return RectExtensions.RectFromPoints(anchors);
 		}
 	//ENDOF private methods
 	}
