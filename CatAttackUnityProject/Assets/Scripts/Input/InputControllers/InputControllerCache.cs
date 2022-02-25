@@ -10,7 +10,10 @@ namespace CatAttack.Input
 
 	//MonoBehaviour lifecycle
 		private void Awake ()
-		{ touchInputPrefab = this._touchInputPrefab; }
+		{
+			touchInputPrefab = this._touchInputPrefab;
+			touchController = null;
+		}
 	//ENDOF MonoBehaviour		
 
 	//public static properties
