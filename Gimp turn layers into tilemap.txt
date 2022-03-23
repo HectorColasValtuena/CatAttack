@@ -1,0 +1,8 @@
+Filters > Python-Fu > Console and copy/paste this:
+
+COLUMNS = 5
+img = gimp.image_list()[0]
+width, height = img.layers[0].width, img.layers[0].height
+for i, layer in enumerate(img.layers):
+    row, column = divmod(i, COLUMNS)
+    layer.set_offsets(column*width, row*height)
