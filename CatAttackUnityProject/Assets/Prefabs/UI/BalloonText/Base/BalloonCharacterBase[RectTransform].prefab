@@ -62,7 +62,6 @@ GameObject:
   - component: {fileID: 2325327045713138838}
   - component: {fileID: 1860336894994480593}
   - component: {fileID: 7869441834348394363}
-  - component: {fileID: 5518562787485533369}
   m_Layer: 0
   m_Name: BalloonSprite
   m_TagString: Untagged
@@ -172,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa2fe90c78a0224d90dfd3dd7ad60ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 2325327045713138838}
   _hueRange:
     minimum: 0
     maximum: 1
@@ -185,18 +184,3 @@ MonoBehaviour:
   _alphaRange:
     minimum: 1
     maximum: 1
---- !u!114 &5518562787485533369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8104548698479130742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99557758c2bcf43468105cf652004705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: 0
-  speed: 0.1
-  spriteRenderer: {fileID: 0}
