@@ -33,7 +33,7 @@ namespace CatAttack.FX
 		{
 			//try to find sprite
 			if (this.spriteRenderer == null)
-			{ this.spriteRenderer = this.GetComponent<SpriteRenderer>(); }
+			{ this.spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>(); }
 
 			this.spriteRenderer.color = this.GenerateColor();
 		}
