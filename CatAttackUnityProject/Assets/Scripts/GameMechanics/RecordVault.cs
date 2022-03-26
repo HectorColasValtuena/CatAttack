@@ -19,6 +19,7 @@ namespace CatAttack
 	//public methods
 		public static bool IsRecord (float seconds)
 		{
+			if (!HasRecord) { return true; }
 			return (seconds < Record);
 		}
 
