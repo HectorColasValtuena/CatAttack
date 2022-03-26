@@ -1,17 +1,12 @@
 using UnityEngine;
 
-using TimeFormatter = CatAttack.Timing.TimeFormatter;
-
-namespace CatAttack
+namespace CatAttack.Miscellaneous
 {
 	public class WinLevelTimeDisplay : MonoBehaviour
 	{
 	//serialized fields
 		[SerializeField]
 		private Animator animator;
-
-		[SerializeField]
-		private UI.WorldTextLineInstantiator timeField;
 	//ENDOF serialized fields		
 
 	//private properties
@@ -27,35 +22,36 @@ namespace CatAttack
 			}
 		}
 
-		private bool TimeAvailable
-		{ get { return RunManager.FullRunAvailable || RecordVault.HasRecord; }}
+		private bool FullRun
+		{ get { return RunManager.FullRunAvailable; }}
 
+		private bool AllSecrets
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		//[TO-DO]
+		{ get { return false ; }}
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	//ENDOF private properties
 
 	//MonoBehaviour lifecycle
-		public void Start ()
+		public void Awake ()
 		{
 			if (this.animator == null) { this.animator = this.GetComponent<Animator>(); }
 
-			this.animator.SetBool("RecordMode", this.IsRecord);
-			this.animator.SetBool("TimeAvailable", this.TimeAvailable);
+			this.animator.SetBool("Record", this.IsRecord);
+			this.animator.SetBool("FullRun", this.FullRun);
+			this.animator.SetBool("PerfectRun", this.AllSecrets);
 
-			if (this.TimeAvailable)
+			if (this.FullRun)
 			{
-				this.timeField.Write(this.SecondsToTimeString(this.RunTime));
 				RecordVault.RegisterTime(this.RunTime);
 			}
+			/* //previous record is no longer displayed in this level
 			else if (RecordVault.HasRecord)
 			{
 				this.timeField.Write(this.SecondsToTimeString(RecordVault.Record));
 			}
+			*/
 		}
 	//ENDOF MonoBehaviour lifecycle
-
-	//private methods
-		//formats a time in seconds to an MM:ss.mmm
-		private string SecondsToTimeString (float seconds)
-		{ return new TimeFormatter(this.RunTime).toString; }
-	//ENDOF private methods
 	}
 }

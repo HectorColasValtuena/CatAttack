@@ -7,21 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2793396573690847243, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
-        type: 3}
-      propertyPath: characterRepresented
-      value: 37
-      objectReference: {fileID: 0}
     - target: {fileID: 651869693745930267, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5375012687278258672, guid: 16e00d65f36c22544be9a962fa044ae2,
+      objectReference: {fileID: 5143726653929420737, guid: 16e00d65f36c22544be9a962fa044ae2,
         type: 3}
-    - target: {fileID: 7622623838084963587, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
+    - target: {fileID: 2793396573690847243, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
         type: 3}
-      propertyPath: m_Name
-      value: _[percent]_ BalloonCharacter
+      propertyPath: characterRepresented
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 5433472792393177122, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
         type: 3}
@@ -52,6 +47,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622623838084963587, guid: c2cb2b94d9aee574e96dcf207a7c47cc,
+        type: 3}
+      propertyPath: m_Name
+      value: '[RB]_[percent]_ BalloonCharacter'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2cb2b94d9aee574e96dcf207a7c47cc, type: 3}
