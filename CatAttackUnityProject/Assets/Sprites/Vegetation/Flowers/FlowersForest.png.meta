@@ -19,7 +19,7 @@ TextureImporter:
     second: FlowerPatch_Cyan
   - first:
       213: -8062231738484412182
-    second: FlowerHanging
+    second: FlowerHanging[F1]
   - first:
       213: -268047569888106297
     second: FlowerWhite
@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 5389890186700561196
     second: FlowerRose[F2]
+  - first:
+      213: 947848908407809
+    second: FlowerHanging[F2]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -250,12 +253,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowerHanging
+      name: FlowerHanging[F1]
       rect:
         serializedVersion: 2
-        x: 99
+        x: 38
         y: 24
-        width: 10
+        width: 14
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -350,6 +353,27 @@ TextureImporter:
       bones: []
       spriteID: c2b96a4619cbcca40800000000000000
       internalID: 5389890186700561196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerHanging[F2]
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 14
+        height: 13
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1048c75401e530000800000000000000
+      internalID: 947848908407809
       vertices: []
       indices: 
       edges: []
