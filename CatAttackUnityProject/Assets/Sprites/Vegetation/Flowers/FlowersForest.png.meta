@@ -4,28 +4,34 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7233947689271728773
-    second: FlowersForest_0
+    second: FlowerBlue[F1]
   - first:
       213: -4284813228652256189
-    second: FlowersForest_1
+    second: FlowerRose[F1]
   - first:
       213: 411479474080562006
-    second: FlowersForest_2
+    second: FlowerPatch_Yellow
   - first:
       213: 4328793441361422399
-    second: FlowersForest_3
+    second: FlowerPatch_Purple
   - first:
       213: -2292519801328266180
-    second: FlowersForest_4
+    second: FlowerPatch_Cyan
   - first:
       213: -8062231738484412182
-    second: FlowersForest_5
+    second: FlowerHanging
   - first:
       213: -268047569888106297
-    second: FlowersForest_6
+    second: FlowerWhite
   - first:
       213: -208193336642501901
-    second: FlowersForest_7
+    second: Flower_OrangePuff
+  - first:
+      213: -8847607789319936334
+    second: FlowerBlue[F2]
+  - first:
+      213: 5389890186700561196
+    second: FlowerRose[F2]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,12 +145,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FlowersForest_0
+      name: FlowerBlue[F1]
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 14
+        x: 0
+        y: 24
+        width: 16
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -160,12 +166,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_1
+      name: FlowerRose[F1]
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 18
+        x: 17
+        y: 24
+        width: 20
         height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -181,11 +187,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_2
+      name: FlowerPatch_Yellow
       rect:
         serializedVersion: 2
-        x: 35
-        y: 0
+        x: 58
+        y: 24
         width: 12
         height: 13
       alignment: 7
@@ -202,11 +208,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_3
+      name: FlowerPatch_Purple
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
+        x: 71
+        y: 24
         width: 13
         height: 14
       alignment: 7
@@ -223,11 +229,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_4
+      name: FlowerPatch_Cyan
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 85
+        y: 24
         width: 13
         height: 16
       alignment: 7
@@ -244,11 +250,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_5
+      name: FlowerHanging
       rect:
         serializedVersion: 2
-        x: 78
-        y: 0
+        x: 99
+        y: 24
         width: 10
         height: 13
       alignment: 7
@@ -265,11 +271,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_6
+      name: FlowerWhite
       rect:
         serializedVersion: 2
-        x: 89
-        y: 0
+        x: 122
+        y: 24
         width: 6
         height: 12
       alignment: 7
@@ -286,11 +292,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowersForest_7
+      name: Flower_OrangePuff
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 111
+        y: 24
         width: 10
         height: 15
       alignment: 7
@@ -302,6 +308,48 @@ TextureImporter:
       bones: []
       spriteID: 3f202dc63495c1df0800000000000000
       internalID: -208193336642501901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerBlue[F2]
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b62b9d979bf63580800000000000000
+      internalID: -8847607789319936334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerRose[F2]
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 20
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b96a4619cbcca40800000000000000
+      internalID: 5389890186700561196
       vertices: []
       indices: 
       edges: []
