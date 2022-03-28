@@ -35,6 +35,12 @@ TextureImporter:
   - first:
       213: 947848908407809
     second: FlowerHanging[F2]
+  - first:
+      213: -4454331484892932281
+    second: Sunflower[F2]
+  - first:
+      213: 4994107917410179108
+    second: Sunflower[F1]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -193,8 +199,8 @@ TextureImporter:
       name: FlowerPatch_Yellow
       rect:
         serializedVersion: 2
-        x: 58
-        y: 24
+        x: 116
+        y: 0
         width: 12
         height: 13
       alignment: 7
@@ -214,8 +220,8 @@ TextureImporter:
       name: FlowerPatch_Purple
       rect:
         serializedVersion: 2
-        x: 71
-        y: 24
+        x: 102
+        y: 0
         width: 13
         height: 14
       alignment: 7
@@ -235,7 +241,7 @@ TextureImporter:
       name: FlowerPatch_Cyan
       rect:
         serializedVersion: 2
-        x: 85
+        x: 97
         y: 24
         width: 13
         height: 16
@@ -374,6 +380,48 @@ TextureImporter:
       bones: []
       spriteID: 1048c75401e530000800000000000000
       internalID: 947848908407809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunflower[F2]
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7475e135d190f22c0800000000000000
+      internalID: -4454331484892932281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sunflower[F1]
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 24
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4281333e0b2ae4540800000000000000
+      internalID: 4994107917410179108
       vertices: []
       indices: 
       edges: []
