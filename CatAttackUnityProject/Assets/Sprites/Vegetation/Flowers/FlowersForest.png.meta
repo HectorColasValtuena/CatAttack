@@ -22,10 +22,10 @@ TextureImporter:
     second: FlowerHanging[F1]
   - first:
       213: -268047569888106297
-    second: FlowerWhite
+    second: FlowerWhite[F1]
   - first:
       213: -208193336642501901
-    second: Flower_OrangePuff
+    second: Flower_OrangePuff[F1]
   - first:
       213: -8847607789319936334
     second: FlowerBlue[F2]
@@ -41,6 +41,21 @@ TextureImporter:
   - first:
       213: 4994107917410179108
     second: Sunflower[F1]
+  - first:
+      213: 2570468621148754660
+    second: FlowerWhite[F2]
+  - first:
+      213: 1696507802374149756
+    second: Flower_OrangePuff[F2]
+  - first:
+      213: -7190587393522643037
+    second: FlowerPatch_White
+  - first:
+      213: -8495975810350201358
+    second: FlowerTulip[F1]
+  - first:
+      213: -6756946083738369924
+    second: FlowerTulip[F2]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -241,7 +256,7 @@ TextureImporter:
       name: FlowerPatch_Cyan
       rect:
         serializedVersion: 2
-        x: 97
+        x: 115
         y: 24
         width: 13
         height: 16
@@ -280,11 +295,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FlowerWhite
+      name: FlowerWhite[F1]
       rect:
         serializedVersion: 2
-        x: 122
-        y: 24
+        x: 74
+        y: 36
         width: 6
         height: 12
       alignment: 7
@@ -301,12 +316,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flower_OrangePuff
+      name: Flower_OrangePuff[F1]
       rect:
         serializedVersion: 2
-        x: 111
+        x: 84
         y: 24
-        width: 10
+        width: 12
         height: 15
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -422,6 +437,111 @@ TextureImporter:
       bones: []
       spriteID: 4281333e0b2ae4540800000000000000
       internalID: 4994107917410179108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerWhite[F2]
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 24
+        width: 6
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e21cdd87932ca320800000000000000
+      internalID: 2570468621148754660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flower_OrangePuff[F2]
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 12
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7690379bd43b8710800000000000000
+      internalID: 1696507802374149756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerPatch_White
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 24
+        width: 11
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af4eaaecd6e53c90800000000000000
+      internalID: -7190587393522643037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerTulip[F1]
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 12
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5c3cb930b381a80800000000000000
+      internalID: -8495975810350201358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlowerTulip[F2]
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 10
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70ce4036518a32a0800000000000000
+      internalID: -6756946083738369924
       vertices: []
       indices: 
       edges: []
