@@ -592,7 +592,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -676,7 +675,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -937,7 +935,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1131,7 +1128,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1193,6 +1189,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1385264205}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &52093614 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 294830099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &52699133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,7 +1237,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1604,7 +1605,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1687,7 +1687,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1785,7 +1784,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1855,7 +1853,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1930,6 +1927,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 29.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -1985,33 +2002,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 29.000004
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &75232725 stripped
+--- !u!4 &86164014 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
     type: 3}
-  m_PrefabInstance: {fileID: 75232724}
+  m_PrefabInstance: {fileID: 224545363}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &93796073
 GameObject:
@@ -2041,7 +2038,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2185,7 +2181,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2580,7 +2575,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2664,7 +2658,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3475,7 +3468,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3665,7 +3657,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3768,7 +3759,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3810,12 +3800,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &166505137 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 957953243}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &169636859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: ca446439bf1187f4b857cd76d7fd5122,
@@ -3996,12 +3980,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: ca446439bf1187f4b857cd76d7fd5122,
     type: 3}
   m_PrefabInstance: {fileID: 175409383}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &188846125 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 883083624}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &189775987
 PrefabInstance:
@@ -4314,7 +4292,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4363,6 +4340,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -4417,26 +4414,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -4850,7 +4827,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4892,6 +4868,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &222297830 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1027797188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &224545363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4899,6 +4881,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -4953,26 +4955,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (25)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -5069,7 +5051,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5111,6 +5092,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &242984107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566399779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &243437819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,7 +5126,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5202,6 +5188,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -5256,26 +5262,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -5596,7 +5582,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6289,7 +6274,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6351,6 +6335,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 7.527729
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -6406,34 +6410,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 7.527729
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &294830100 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 294830099}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &296951969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6776,7 +6754,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7197,6 +7174,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 139558070}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &326890846 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1767091541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &328767754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7368,7 +7351,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7452,7 +7434,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7536,7 +7517,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -7599,6 +7579,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -7654,34 +7654,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &359640586 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 359640585}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &360304100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7789,6 +7763,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.74999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -51
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -7844,34 +7838,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (31)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.74999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -51
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &361331703 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 361331702}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &367869177
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,7 +7868,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8090,7 +8057,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8174,7 +8140,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8489,7 +8454,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8573,7 +8537,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8761,7 +8724,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8962,12 +8924,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 530510295992573309, guid: f1966fcfd2b9c0d4bb6f101b7542bcd8,
     type: 3}
   m_PrefabInstance: {fileID: 643140769}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &456349217 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 545498406}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &457579448
 PrefabInstance:
@@ -9245,7 +9201,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9418,7 +9373,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -9480,6 +9434,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1726211231}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &470312773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 359640585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &471754581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9487,6 +9447,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -9542,34 +9522,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 21
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &471754582 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 471754581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &477329824
 GameObject:
   m_ObjectHideFlags: 0
@@ -9598,7 +9552,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10119,7 +10072,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10258,7 +10210,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10761,6 +10712,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -10816,28 +10787,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 19
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
+--- !u!4 &554457551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 638129128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &560106861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10907,6 +10864,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c6e02934c1ead742a1401a6eeb67e54, type: 3}
+--- !u!4 &563163707 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 573671983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &565922895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11129,6 +11092,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8.978951
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -11184,34 +11167,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (28)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 10.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 8.978951
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &573671984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 573671983}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &574098228
 GameObject:
   m_ObjectHideFlags: 0
@@ -11240,7 +11197,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11503,7 +11459,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11858,7 +11813,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -11942,7 +11896,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12279,6 +12232,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.7499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -12333,26 +12306,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -12500,7 +12453,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12584,7 +12536,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12645,6 +12596,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5522127371313334619, guid: 668d671e1a5d1944aa626776d0d1391d,
     type: 3}
   m_PrefabInstance: {fileID: 36316000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &667379298 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719504529}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &672263348
 PrefabInstance:
@@ -12768,7 +12725,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -12947,7 +12903,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13243,7 +13198,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13327,7 +13281,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13411,7 +13364,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13495,7 +13447,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13579,7 +13530,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13757,7 +13707,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13855,7 +13804,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -13924,7 +13872,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14014,7 +13961,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14098,7 +14044,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14182,7 +14127,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14266,7 +14210,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14542,12 +14485,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 803421620}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &804413612 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1126845818}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &805578569
 GameObject:
   m_ObjectHideFlags: 0
@@ -14576,7 +14513,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14639,6 +14575,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 8.98563
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -14694,34 +14650,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (29)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 8.98563
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &809595357 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1767091541}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &813188596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14830,6 +14760,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -14884,26 +14834,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 3.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -15061,7 +14991,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15110,6 +15039,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -15165,29 +15109,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &848581336 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 848581335}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &851442464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5582570873910784988, guid: b17cb01bf41408e4c82b439d24b9e81e,
@@ -15248,7 +15171,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15318,7 +15240,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15374,6 +15295,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 155
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &866481501 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 471754581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &868612606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3933433572126680598, guid: 19d9149bb8b891845b1a911f027f61f4,
@@ -15387,6 +15314,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -15442,26 +15389,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 4.9999995
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
 --- !u!1 &883313374
@@ -15492,7 +15419,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15590,7 +15516,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15660,7 +15585,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15744,7 +15668,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16158,12 +16081,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 898c04ecfc25c8c49b91c12d2cbdcb78, type: 3}
---- !u!4 &914778406 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1947540640}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &916773574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16347,11 +16264,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d9149bb8b891845b1a911f027f61f4, type: 3}
---- !u!4 &927564778 stripped
+--- !u!4 &926997305 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
     type: 3}
-  m_PrefabInstance: {fileID: 805693027}
+  m_PrefabInstance: {fileID: 249840057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &938062416 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 831223878}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &950188444
 GameObject:
@@ -16381,7 +16304,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16574,7 +16496,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -16843,6 +16764,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.2499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -16898,34 +16839,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (26)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.2499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 11.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &959811177 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 638129128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &961599171
 GameObject:
   m_ObjectHideFlags: 0
@@ -16968,7 +16883,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17038,7 +16952,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17121,7 +17034,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17219,7 +17131,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17361,6 +17272,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 978812355}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &982601917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1522775981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &982735302
 GameObject:
   m_ObjectHideFlags: 0
@@ -17389,7 +17306,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17452,6 +17368,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -17507,26 +17443,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.49999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
 --- !u!4 &991863515 stripped
@@ -17569,7 +17485,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17667,7 +17582,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17737,7 +17651,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17820,7 +17733,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17918,7 +17830,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -17960,6 +17871,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1017023737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1712523365}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017981324
 GameObject:
   m_ObjectHideFlags: 0
@@ -18002,7 +17919,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18086,7 +18002,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18156,7 +18071,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18212,6 +18126,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.5}
+--- !u!4 &1022742947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665213941}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1027797188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18219,6 +18139,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.49999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -18274,34 +18214,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (27)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.4999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.49999982
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &1027797189 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1027797188}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1028736548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18309,6 +18223,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -18363,26 +18297,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -18689,7 +18603,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18745,12 +18658,6 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1073951047 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1719504529}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076126854
 GameObject:
   m_ObjectHideFlags: 0
@@ -18779,7 +18686,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18877,7 +18783,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -18919,12 +18824,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1088833490 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1028736548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1090289827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19014,12 +18913,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d9149bb8b891845b1a911f027f61f4, type: 3}
---- !u!4 &1096899265 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1522775981}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1110260359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 530510295992573309, guid: f1966fcfd2b9c0d4bb6f101b7542bcd8,
@@ -19068,7 +18961,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19138,7 +19030,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19193,6 +19084,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1118024953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1947540640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121738299
 GameObject:
   m_ObjectHideFlags: 0
@@ -19235,7 +19132,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19284,6 +19180,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -19338,26 +19254,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -19491,7 +19387,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19547,6 +19442,18 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1141323835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 982911212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1143654788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1827840084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1145042696
 GameObject:
   m_ObjectHideFlags: 0
@@ -19575,7 +19482,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19669,44 +19575,44 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 456349217}
-  - {fileID: 848581336}
-  - {fileID: 2023653547}
-  - {fileID: 1765642202}
-  - {fileID: 1096899265}
-  - {fileID: 1273176190}
-  - {fileID: 1088833490}
-  - {fileID: 359640586}
-  - {fileID: 1217633024}
-  - {fileID: 2097667473}
+  - {fileID: 2074314805}
+  - {fileID: 1851466647}
+  - {fileID: 1505644901}
+  - {fileID: 242984107}
+  - {fileID: 982601917}
+  - {fileID: 1143654788}
+  - {fileID: 1474083911}
+  - {fileID: 470312773}
+  - {fileID: 1692001042}
+  - {fileID: 2015532096}
   - {fileID: 833837071}
   - {fileID: 1243156233}
-  - {fileID: 804413612}
+  - {fileID: 1255588545}
   - {fileID: 951063824}
-  - {fileID: 1930212165}
+  - {fileID: 926997305}
   - {fileID: 1956650964}
   - {fileID: 419638827}
-  - {fileID: 914778406}
+  - {fileID: 1118024953}
   - {fileID: 226244550}
   - {fileID: 306621921}
   - {fileID: 113814234}
   - {fileID: 232813916}
   - {fileID: 1768010671}
-  - {fileID: 294830100}
+  - {fileID: 52093614}
   - {fileID: 533079483}
   - {fileID: 615815486}
-  - {fileID: 1500553148}
+  - {fileID: 1141323835}
   - {fileID: 1642904599}
   - {fileID: 1244325940}
   - {fileID: 501477297}
   - {fileID: 44719266}
-  - {fileID: 959811177}
+  - {fileID: 554457551}
   - {fileID: 2114053704}
-  - {fileID: 1436822399}
-  - {fileID: 809595357}
+  - {fileID: 938062416}
+  - {fileID: 326890846}
   - {fileID: 1110260359}
   - {fileID: 1133225943}
-  - {fileID: 471754582}
+  - {fileID: 866481501}
   - {fileID: 2000071165}
   - {fileID: 1327202962}
   - {fileID: 490093834}
@@ -19725,30 +19631,30 @@ Transform:
   - {fileID: 2076224133}
   - {fileID: 978812356}
   - {fileID: 1402628683}
-  - {fileID: 1810324826}
+  - {fileID: 1419330123}
   - {fileID: 160481162}
   - {fileID: 169636859}
-  - {fileID: 1292781817}
-  - {fileID: 1073951047}
-  - {fileID: 1462452429}
-  - {fileID: 166505137}
+  - {fileID: 1017023737}
+  - {fileID: 667379298}
+  - {fileID: 86164014}
+  - {fileID: 2127004477}
   - {fileID: 630855588}
-  - {fileID: 1027797189}
+  - {fileID: 222297830}
   - {fileID: 208628390}
-  - {fileID: 75232725}
-  - {fileID: 573671984}
+  - {fileID: 1580238409}
+  - {fileID: 563163707}
   - {fileID: 1134894975}
   - {fileID: 844443245}
   - {fileID: 1974051898}
-  - {fileID: 1665213942}
-  - {fileID: 188846125}
+  - {fileID: 1022742947}
+  - {fileID: 2050015536}
   - {fileID: 374004699}
   - {fileID: 175409384}
   - {fileID: 1595225843}
-  - {fileID: 361331703}
+  - {fileID: 1986947735}
   - {fileID: 360304101}
   - {fileID: 1599615197}
-  - {fileID: 927564778}
+  - {fileID: 1333581905}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19780,7 +19686,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19864,7 +19769,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -19954,7 +19858,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20126,7 +20029,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20224,7 +20126,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20273,6 +20174,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -20328,34 +20249,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &1217633024 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1217633023}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1222467211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 29944152619262433, guid: 898c04ecfc25c8c49b91c12d2cbdcb78,
@@ -20477,7 +20372,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20561,7 +20455,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -20705,6 +20598,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d9149bb8b891845b1a911f027f61f4, type: 3}
+--- !u!4 &1255588545 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1126845818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1255950076
 GameObject:
   m_ObjectHideFlags: 0
@@ -21039,7 +20938,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21289,12 +21187,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1966fcfd2b9c0d4bb6f101b7542bcd8, type: 3}
---- !u!4 &1273176190 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1827840084}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1275234870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21438,7 +21330,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21486,12 +21377,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 61934378}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1292781817 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1712523365}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1298106991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 627171168701285549, guid: 14e74821ab926824ea78331d9a76e283,
@@ -21526,7 +21411,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21610,7 +21494,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21708,7 +21591,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21778,7 +21660,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21876,7 +21757,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -21999,6 +21879,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2042426948}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1333581905 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 805693027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351871544
 GameObject:
   m_ObjectHideFlags: 0
@@ -22027,7 +21913,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22111,7 +21996,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22215,7 +22099,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22458,7 +22341,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22542,7 +22424,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22632,7 +22513,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22821,7 +22701,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -22966,6 +22845,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d9149bb8b891845b1a911f027f61f4, type: 3}
+--- !u!4 &1419330123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1810324825}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1426937361
 GameObject:
   m_ObjectHideFlags: 0
@@ -22994,7 +22879,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23364,12 +23248,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca446439bf1187f4b857cd76d7fd5122, type: 3}
---- !u!4 &1436822399 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 831223878}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445485413
 GameObject:
   m_ObjectHideFlags: 0
@@ -23398,7 +23276,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23481,7 +23358,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23553,7 +23429,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 29e5ee9cbaf002242a6ec432bc4be2e3, type: 3}
+      objectReference: {fileID: 8300000, guid: bb7b5bd87737b244a8c678a923228401, type: 3}
     - target: {fileID: 6025559288432109013, guid: aaad29387a34fec43906f783b7c7b18d,
         type: 3}
       propertyPath: m_Name
@@ -23616,12 +23492,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaad29387a34fec43906f783b7c7b18d, type: 3}
---- !u!4 &1462452429 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 224545363}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1463599785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23703,6 +23573,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 296951969}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1474083911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1028736548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1476570795
 GameObject:
   m_ObjectHideFlags: 0
@@ -23763,7 +23639,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -23847,7 +23722,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24002,12 +23876,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 898c04ecfc25c8c49b91c12d2cbdcb78, type: 3}
---- !u!4 &1500553148 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 982911212}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1502875456
 GameObject:
   m_ObjectHideFlags: 0
@@ -24036,7 +23904,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24126,7 +23993,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24182,6 +24048,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1505644901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023653546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507606923
 GameObject:
   m_ObjectHideFlags: 0
@@ -24210,7 +24082,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24313,7 +24184,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -24443,6 +24313,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -24497,26 +24387,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 5.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -25000,7 +24870,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25298,7 +25167,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25570,7 +25438,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -25633,6 +25500,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -34
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -25687,26 +25574,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -25900,6 +25767,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 457579448}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1580238409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 75232724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1590675031
 GameObject:
   m_ObjectHideFlags: 0
@@ -25928,7 +25801,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26296,7 +26168,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26393,7 +26264,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26557,7 +26427,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26877,7 +26746,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -26961,7 +26829,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27045,7 +26912,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27500,7 +27366,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27584,7 +27449,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -27647,6 +27511,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.2499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -27702,34 +27586,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (30)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.2499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &1665213942 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1665213941}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1670120195
 GameObject:
   m_ObjectHideFlags: 0
@@ -27772,7 +27630,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28007,6 +27864,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca446439bf1187f4b857cd76d7fd5122, type: 3}
+--- !u!4 &1692001042 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1217633023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1712523365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28014,6 +27877,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -28069,26 +27952,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
 --- !u!1 &1714107995
@@ -28119,7 +27982,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -28292,6 +28154,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 13.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -28346,26 +28228,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 13.999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -29316,7 +29178,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29400,7 +29261,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29483,7 +29343,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29567,7 +29426,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -29628,12 +29486,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3933433572126680598, guid: 19d9149bb8b891845b1a911f027f61f4,
     type: 3}
   m_PrefabInstance: {fileID: 1765793098}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1765642202 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1566399779}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1765793098
 PrefabInstance:
@@ -29731,6 +29583,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5.2499995
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -29785,26 +29657,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 5.2499995
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -30025,7 +29877,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30221,7 +30072,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30305,7 +30155,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30368,6 +30217,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -30423,34 +30292,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 16
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &1810324826 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 1810324825}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811293582
 GameObject:
   m_ObjectHideFlags: 0
@@ -30479,7 +30322,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30671,7 +30513,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30741,7 +30582,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -30804,6 +30644,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -110
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -30858,26 +30718,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 5.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
@@ -31004,7 +30844,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31088,7 +30927,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31441,7 +31279,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31497,6 +31334,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1851466647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 848581335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1863401379
 GameObject:
   m_ObjectHideFlags: 0
@@ -31525,7 +31368,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -31623,7 +31465,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32029,7 +31870,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32152,7 +31992,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32330,7 +32169,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32386,12 +32224,6 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1930212165 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 249840057}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1930870985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5522127371313334619, guid: eef0e92acf78f8b4697b61acf2b17c12,
@@ -32461,7 +32293,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32524,6 +32355,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -65
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -32579,26 +32430,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -65
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
 --- !u!4 &1950822542 stripped
@@ -32647,7 +32478,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32931,7 +32761,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -32987,6 +32816,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1986947735 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 361331702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1988460151
 GameObject:
   m_ObjectHideFlags: 0
@@ -33015,7 +32850,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33183,7 +33017,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33267,7 +33100,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33356,7 +33188,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33440,7 +33271,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33495,6 +33325,12 @@ Transform:
   m_Father: {fileID: 1255950077}
   m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2015532096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 197770862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2023653546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33502,6 +33338,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150644513}
     m_Modifications:
+    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Name
+      value: DirtBlockSmall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
         type: 3}
       propertyPath: m_RootOrder
@@ -33557,34 +33413,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169352, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Name
-      value: DirtBlockSmall (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 555254019728169355, guid: 4f2d68e7e55af104585071dbf529f888,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: -18
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f2d68e7e55af104585071dbf529f888, type: 3}
---- !u!4 &2023653547 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 2023653546}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2035996703
 GameObject:
   m_ObjectHideFlags: 0
@@ -33613,7 +33443,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33762,6 +33591,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca446439bf1187f4b857cd76d7fd5122, type: 3}
+--- !u!4 &2050015536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 883083624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050765776
 GameObject:
   m_ObjectHideFlags: 0
@@ -33790,7 +33625,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -33888,7 +33722,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34144,6 +33977,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b17cb01bf41408e4c82b439d24b9e81e, type: 3}
+--- !u!4 &2074314805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 545498406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2076224132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34272,7 +34111,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34415,12 +34253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9dba894cc75a4499399920620ca1aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &2097667473 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5649875733458727425, guid: 4f2d68e7e55af104585071dbf529f888,
-    type: 3}
-  m_PrefabInstance: {fileID: 197770862}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099843892
 GameObject:
   m_ObjectHideFlags: 0
@@ -34449,7 +34281,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34546,7 +34377,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34843,7 +34673,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -34933,7 +34762,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -35264,6 +35092,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5582570873910784988, guid: b17cb01bf41408e4c82b439d24b9e81e,
     type: 3}
   m_PrefabInstance: {fileID: 2126119527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2127004477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 555254019728169356, guid: 4f2d68e7e55af104585071dbf529f888,
+    type: 3}
+  m_PrefabInstance: {fileID: 957953243}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2129006773 stripped
 Transform:
