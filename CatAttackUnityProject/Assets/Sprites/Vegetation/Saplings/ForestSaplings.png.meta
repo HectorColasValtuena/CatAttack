@@ -44,6 +44,12 @@ TextureImporter:
   - first:
       213: -8217358401670889032
     second: ForestCrookedSapling[F2]
+  - first:
+      213: 5592411172429778608
+    second: FallenTrunk[Front]
+  - first:
+      213: 7817548807039731332
+    second: FallenTrunk[Back]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -446,6 +452,48 @@ TextureImporter:
       bones: []
       spriteID: 8b1c554321416fd80800000000000000
       internalID: -8217358401670889032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenTrunk[Front]
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 32
+        width: 42
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be4a9ad45c3c9d40800000000000000
+      internalID: 5592411172429778608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FallenTrunk[Back]
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 0
+        width: 42
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486c1e988338d7c60800000000000000
+      internalID: 7817548807039731332
       vertices: []
       indices: 
       edges: []
