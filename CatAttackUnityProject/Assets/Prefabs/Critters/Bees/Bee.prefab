@@ -44,7 +44,6 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -74,12 +73,13 @@ SpriteRenderer:
   m_SortingLayerID: 1642032665
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a9bcaa8b4fdf75047911a1723436d2c4, type: 3}
+  m_Sprite: {fileID: 5730871202256058108, guid: 465233c5a291e3a45b9cc1dbf36fb754,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.1, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -101,9 +101,9 @@ MonoBehaviour:
   routeNodes: []
   loop: 1
   activeNodeIndex: 0
-  lateralImpulseRange:
-    _minimum: -4
-    _maximum: 4
+  _lateralImpulseRange:
+    minimum: 0
+    maximum: 0
   lateralDecelerationRate: 0.01
 --- !u!95 &8955433007788912049
 Animator:
