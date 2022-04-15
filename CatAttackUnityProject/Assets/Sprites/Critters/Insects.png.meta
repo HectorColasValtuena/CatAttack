@@ -8,6 +8,15 @@ TextureImporter:
   - first:
       213: -6488168205231133148
     second: Bee[F2]
+  - first:
+      213: -5122908355272371015
+    second: Butterfly[Body]
+  - first:
+      213: 7533277980412490524
+    second: Butterfly[F1]
+  - first:
+      213: 2102491241476907604
+    second: Butterfly[F2]
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,7 +138,7 @@ TextureImporter:
         width: 5
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +159,7 @@ TextureImporter:
         width: 5
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,6 +167,69 @@ TextureImporter:
       bones: []
       spriteID: 42ee634a46565f5a0800000000000000
       internalID: -6488168205231133148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butterfly[Body]
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b41c134ef5c7e8b0800000000000000
+      internalID: -5122908355272371015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butterfly[F1]
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 8
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1332c009649b8860800000000000000
+      internalID: 7533277980412490524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Butterfly[F2]
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452e99705ac8d2d10800000000000000
+      internalID: 2102491241476907604
       vertices: []
       indices: 
       edges: []
