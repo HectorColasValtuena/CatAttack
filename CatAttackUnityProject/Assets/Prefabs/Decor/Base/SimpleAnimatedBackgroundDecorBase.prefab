@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3730682976729058060}
   - component: {fileID: 4735365146272969342}
   - component: {fileID: 8249245483371118695}
+  - component: {fileID: 2623175955247754863}
   m_Layer: 0
   m_Name: SimpleAnimatedBackgroundDecorBase
   m_TagString: Untagged
@@ -103,3 +104,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2623175955247754863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5932879828615232847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26bce454ac51704dbf21e1bae38895a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8249245483371118695}
+  _speedModifierRange:
+    minimum: 0.75
+    maximum: 1.25
