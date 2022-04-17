@@ -8,8 +8,10 @@ namespace CatAttack.Extensions
 		public static void ELookAt2D (this Transform transform, Transform targetTransform)
 		{ transform.ELookAt2D(targetTransform.position); }
 		public static void ELookAt2D (this Transform transform, Vector3 target)
+		{ transform.ELookAt2D((Vector2) target); }
+		public static void ELookAt2D (this Transform transform, Vector2 target)
 		{
-			transform.right = target - transform.position;
+			transform.right = new Vector3 (x: target.x, y: target.y, z: 0f) - transform.position;
 		}
 	}
 }
