@@ -31,6 +31,7 @@ namespace CatAttack.NodeRouteWalkers
 	//ENDOF private properties
 
 	//overrides
+	/*
 		protected override void MoveTowardsNode ()
 		{
 			base.MoveTowardsNode();
@@ -44,6 +45,7 @@ namespace CatAttack.NodeRouteWalkers
 			//base.OnNodeReached();
 			this.lateralVelocity = this.lateralImpulseRange.random;
 		}
+	*/
 	//ENDOF overrides
 
 	//private methods

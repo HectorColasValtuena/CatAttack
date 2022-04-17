@@ -1,7 +1,5 @@
 using UnityEngine;
 
-using static CatAttack.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
-
 namespace CatAttack.NodeRouteWalkers
 {
 	//this is the base for NodeRouteWalkers
@@ -10,9 +8,6 @@ namespace CatAttack.NodeRouteWalkers
 		MonoBehaviour
 	{
 	//serialized fields
-		[SerializeField]
-		private float speed;
-
 		[SerializeField]
 		private RouteNode[] routeNodes;
 
@@ -48,11 +43,6 @@ namespace CatAttack.NodeRouteWalkers
 		//returns currently active node
 		private IRouteNode activeNode { get { return this.routeNodes[this.activeNodeIndex]; }}
 
-		//returns distance between this object and target node
-		private float distanceToNode { get { return (this.transform.position - this.activeNode.transform.position).magnitude; }}
-
-		//returns maximum movement for current frame
-		private float frameMovement { get { return this.speed * Time.deltaTime; }}
 	//ENDOF private properties
 
 	//private fields
@@ -72,32 +62,6 @@ namespace CatAttack.NodeRouteWalkers
 				else { this.activeNodeIndex = this.routeNodes.Length - 1; }
 			}
 		}
-
-		//move the character towards next target
-		private void Move ()
-		{
-			if (this.distanceToNode > this.frameMovement)
-			{ this.MoveTowardsNode(); }
-			else
-			{
-				this.CopyNodePosition();
-				this.OnNodeReached();
-			}
-		}
-
-		protected virtual void MoveTowardsNode ()
-		{
-			this.transform.ELookAt2D(this.activeNode.transform);
-			this.transform.Translate(x: this.frameMovement, y: 0, z: 0);
-		}
-
-		private void CopyNodePosition ()
-		{
-			this.transform.rotation = this.activeNode.transform.rotation;
-			this.transform.position = this.activeNode.transform.position;
-		}
-
-		protected virtual void OnNodeReached () {}
 	//ENDOF private methods
 	}
 }
