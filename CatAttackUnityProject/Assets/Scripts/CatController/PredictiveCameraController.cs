@@ -4,7 +4,9 @@ namespace CatAttack.UI
 {
 	public class PredictiveCameraController : MonoBehaviour
 	{
-		private Vector3 alternativeFocusPosition = new Vector3(0, 0, -10);
+		private const float CAMERA_DEPTH = 0f;
+
+		private Vector3 alternativeFocusPosition = new Vector3(0, 0, CAMERA_DEPTH);
 
 		//private Transform target;
 		private Camera myCamera;
@@ -47,7 +49,7 @@ namespace CatAttack.UI
 				(
 					CapValue(LevelManager.playerRigidbody.velocity.x*maxAdvanceRate.x, maxAdvanceDistance.x),
 					CapValue(LevelManager.playerRigidbody.velocity.y*maxAdvanceRate.y, maxAdvanceDistance.y),
-					-10
+					CAMERA_DEPTH
 				);
 				//calculate size per speed
 				targetSize = minSize + (sizePerSpeed * LevelManager.playerRigidbody.velocity.magnitude);
