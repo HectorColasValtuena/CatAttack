@@ -35,7 +35,7 @@ namespace CatAttack.FX
 
 		private void Update ()
 		{
-			Debug.Log(this.currentHueDelta);
+			//Debug.Log(this.currentHueDelta);
 			this.spriteRenderer.color = this.spriteRenderer.color.EChangeHue(this.currentHueDelta);
 		}
 	//ENDOF MonoBehaviour
