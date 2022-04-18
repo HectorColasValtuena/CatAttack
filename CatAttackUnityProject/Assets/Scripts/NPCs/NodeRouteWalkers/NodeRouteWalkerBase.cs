@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using IMovementController = CatAttack.MovementControllers.IMovementController;
+
 namespace CatAttack.NodeRouteWalkers
 {
 	//this is the base for NodeRouteWalkers
@@ -19,22 +21,24 @@ namespace CatAttack.NodeRouteWalkers
 	//ENDOF serialized
 
 	//MonoBehaviour lifecycle
+		private void Start ()
+		{
+			this.movementController = this.GetComponent<IMovementController>();
+			
+			this.UpdateActiveNode();
+		}
+
 		private void Update ()
 		{ this.UpdateWalker(); }
 		private void UpdateWalker()
 		{
 			//check if we are over the target and for how long
-			if (this.transform.position == this.activeNode.transform.position)
+			if (this.movementController.arrived) // this.activeNode.transform.position)
 			{
 				if (this.waitTimeElapsed >= this.activeNode.waitTime)
 				{ this.StepActiveNode(); }
 				else
 				{ this.waitTimeElapsed += Time.deltaTime; }
-			}
-			//otherwise continue moving
-			else
-			{
-				this.Move();
 			}
 		}
 	//ENDOF MonoBehaviour
@@ -42,10 +46,11 @@ namespace CatAttack.NodeRouteWalkers
 	//private properties
 		//returns currently active node
 		private IRouteNode activeNode { get { return this.routeNodes[this.activeNodeIndex]; }}
-
 	//ENDOF private properties
 
 	//private fields
+		private IMovementController movementController;
+
 		//this is the counter for time elapsed waiting at a node. When reaching node wait time we move towards next route node
 		private float waitTimeElapsed = 0f;
 	//ENDOF private fields
@@ -54,12 +59,27 @@ namespace CatAttack.NodeRouteWalkers
 		//steps to the next activeNodeIndex
 		private void StepActiveNode ()
 		{
-			this.waitTimeElapsed = 0.0f;
 			this.activeNodeIndex++;
 			if (this.activeNodeIndex >= this.routeNodes.Length)
 			{
 				if (this.loop) { this.activeNodeIndex = 0; }
-				else { this.activeNodeIndex = this.routeNodes.Length - 1; }
+				else { this.activeNodeIndex = -1; }
+			}
+			this.UpdateActiveNode();
+		}
+
+		//sets node to given target node
+		private void UpdateActiveNode ()
+		{
+			this.waitTimeElapsed = 0.0f;
+			if (this.activeNodeIndex < 0 || this.activeNodeIndex >= this.routeNodes.Length)
+			{
+				this.movementController.enabled = false;
+			}
+			else 
+			{
+				this.movementController.enabled = true;
+				this.movementController.destination = this.activeNode.transform.position;
 			}
 		}
 	//ENDOF private methods
