@@ -28,6 +28,13 @@ namespace CatAttack.MovementControllers
 		{ get { return this.arrived; }}
 	//ENDOF IMovementController
 
+	//MonoBehaviour lifecycle
+		private void Update ()
+		{
+			this.Move();
+		}
+	//ENDOF MonoBehaviour
+
 	//private properties
 		//returns distance between this object and target node
 		private float distanceToDestination
