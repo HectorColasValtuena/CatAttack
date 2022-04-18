@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3736898300163849372}
   - component: {fileID: 8955433007788912049}
   - component: {fileID: 2278123489966884536}
+  - component: {fileID: 3708657602781376911}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -98,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3cc3647200f8f341b5f6ecf82be7dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
   routeNodes: []
   loop: 1
   activeNodeIndex: 0
@@ -258,3 +258,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3708657602781376911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736898300163849378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e5266b3bc28674eb9b057bf6260ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
