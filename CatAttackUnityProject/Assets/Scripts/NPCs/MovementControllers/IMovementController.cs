@@ -5,9 +5,11 @@ namespace CatAttack.MovementControllers
 {
 	public interface IMovementController
 	{
-		bool enabled { get; set; }
+		bool enabled { get; set; }	// Enable/disable this movement controller
 
-		UnityEngine.Vector2 destination { set; }
-		bool arrived { get; }
+		UnityEngine.Vector2? targetPosition { set; }		// Position to move to. NULL = free movement (none/idle)
+		UnityEngine.Quaternion? targetRotation { set; }		// Desired rotation AT THE END of the movement. NULL = free rotation
+
+		bool arrived { get; }	// Returns true if desired position is reached
 	}
 }
