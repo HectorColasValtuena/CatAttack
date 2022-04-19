@@ -26,10 +26,15 @@ namespace CatAttack.NodeRouteWalkers
 			this.movementController = this.GetComponent<IMovementController>();
 			
 			this.UpdateActiveNode();
+
+			if (this.routeNodes.Length == 0)
+			{ this.SelfDisable(); }
 		}
 
 		private void Update ()
-		{ this.UpdateWalker(); }
+		{ 
+			this.UpdateWalker();
+		}
 		private void UpdateWalker()
 		{
 			//check if we are over the target and for how long
@@ -63,7 +68,11 @@ namespace CatAttack.NodeRouteWalkers
 			if (this.activeNodeIndex >= this.routeNodes.Length)
 			{
 				if (this.loop) { this.activeNodeIndex = 0; }
-				else { this.activeNodeIndex = -1; }
+				else
+				{
+					this.SelfDisable();
+					return;
+				}
 			}
 			this.UpdateActiveNode();
 		}
@@ -72,15 +81,22 @@ namespace CatAttack.NodeRouteWalkers
 		private void UpdateActiveNode ()
 		{
 			this.waitTimeElapsed = 0.0f;
-			if (this.activeNodeIndex < 0 || this.activeNodeIndex >= this.routeNodes.Length)
+			if (this.activeNodeIndex >= this.routeNodes.Length)
 			{
-				this.movementController.enabled = false;
+				this.movementController.targetPosition = null;
+				this.movementController.targetRotation = null;
 			}
 			else 
 			{
-				this.movementController.enabled = true;
-				this.movementController.destination = this.activeNode.transform.position;
+				this.movementController.targetPosition = this.activeNode.transform.position;
+				this.movementController.targetRotation = this.activeNode.transform.rotation;
 			}
+		}
+
+		//disables this node route walker
+		private void SelfDisable ()
+		{
+			this.enabled = false;
 		}
 	//ENDOF private methods
 	}
