@@ -3,6 +3,7 @@
 */
 
 using static PHATASS.Utils.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
+using static PHATASS.Utils.Extensions.Vector2Extensions;
 
 using SerializeField = UnityEngine.SerializeField;
 using Vector2 = UnityEngine.Vector2;
@@ -31,7 +32,7 @@ namespace CatAttack.MovementControllers
 		{ set { this.targetPosition = value; }}
 
 		Quaternion? IMovementController.targetRotation
-		{ set { this.targetRotation; }}
+		{ set { this.targetRotation = value; }}
 
 		bool IMovementController.arrived
 		{ get { return this.arrived; }}
@@ -48,9 +49,12 @@ namespace CatAttack.MovementControllers
 		//desired position
 		private Vector2? targetPosition = null;
 
+		//desired rotation
+		private Quaternion? targetRotation = null;
+
 		//returns distance between this object and target node
 		private float distanceToDestination
-		{ get { return (((Vector2) this.transform.position) - this.destination).magnitude; }}
+		{ get { return this.transform.position.EDistanceTo2D((Vector2) this.targetPosition); }}
 
 		//returns maximum movement for current frame
 		private float frameSpeed
@@ -58,7 +62,7 @@ namespace CatAttack.MovementControllers
 
 		//returns true if this object is already at its destination
 		private bool arrived
-		{ get { return (this.distanceToDestination <= this.frameSpeed); }}
+		{ get { return (this.targetPosition == null || this.distanceToDestination <= this.frameSpeed); }}
 	//ENDOF private properties
 
 	//private methods
@@ -68,23 +72,25 @@ namespace CatAttack.MovementControllers
 			if (this.arrived)
 			{
 				this.SetDestinationPosition();
-				this.OnDestinationReached();
+				this.OnDestinationReached(); 
 			}
 			else { this.MoveTowardsDestination(); }
 		}
 
 		protected virtual void MoveTowardsDestination ()
 		{
-			if (this.lookAtDestination) { this.transform.ELookAt2D(this.destination); }
-			this.transform.EMoveTowards2D(this.destination, this.frameSpeed);
+			if (this.targetPosition == null) { return; }
+			if (this.lookAtDestination) { this.transform.ELookAt2D((Vector2) this.targetPosition); }
+			this.transform.EMoveTowards2D((Vector2) this.targetPosition, this.frameSpeed);
 		}
 
 		private void SetDestinationPosition ()
 		{
-			//this.transform.rotation = this.activeNode.transform.rotation;
-			this.transform.position = this.destination;
+			if (this.targetRotation != null) { this.transform.rotation = (Quaternion) this.targetRotation; }
+			if (this.targetPosition != null) { this.transform.position = (Vector2) this.targetPosition; }
 		}
 
+		//Shall I remove you?
 		protected virtual void OnDestinationReached () {}
 	//ENDOF private methods
 	}
