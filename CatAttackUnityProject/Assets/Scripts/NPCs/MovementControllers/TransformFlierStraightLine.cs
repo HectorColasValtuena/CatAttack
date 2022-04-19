@@ -16,6 +16,9 @@ namespace CatAttack.MovementControllers
 	{
 	//serialized properties
 		[SerializeField]
+		private bool lookAtDestination = true;
+
+		[SerializeField]
 		private float speed = 1.0f;
 	//ENDOF serialized
 
@@ -41,12 +44,12 @@ namespace CatAttack.MovementControllers
 		{ get { return (((Vector2) this.transform.position) - this.destination).magnitude; }}
 
 		//returns maximum movement for current frame
-		private float frameMovement
+		private float frameSpeed
 		{ get { return this.speed * UnityEngine.Time.deltaTime; }}
 
 		//returns true if this object is already at its destination
 		private bool arrived
-		{ get { return (this.distanceToDestination <= this.frameMovement); }}
+		{ get { return (this.distanceToDestination <= this.frameSpeed); }}
 	//ENDOF private properties
 
 	//private methods
@@ -63,8 +66,8 @@ namespace CatAttack.MovementControllers
 
 		protected virtual void MoveTowardsDestination ()
 		{
-			this.transform.ELookAt2D(this.destination);
-			this.transform.Translate(x: this.frameMovement, y: 0, z: 0);
+			if (this.lookAtDestination) { this.transform.ELookAt2D(this.destination); }
+			this.transform.EMoveTowards2D(this.destination, this.frameSpeed);
 		}
 
 		private void SetDestinationPosition ()
