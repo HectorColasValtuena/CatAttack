@@ -1,6 +1,6 @@
 using UnityEngine;
 
-using static CatAttack.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
+using static PHATASS.Utils.Transform2DExtensions;	//Transform.ELookAt2D(target)
 
 namespace CatAttack.NodeRouteWalkers
 {

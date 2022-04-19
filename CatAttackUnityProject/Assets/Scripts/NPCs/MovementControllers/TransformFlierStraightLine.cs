@@ -2,7 +2,7 @@
 * Movement controller that moves in a straight line ignoring any environment
 */
 
-using static CatAttack.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
+using static PHATASS.Utils.Transform2DExtensions;	//Transform.ELookAt2D(target)
 
 using SerializeField = UnityEngine.SerializeField;
 using Vector2 = UnityEngine.Vector2;
