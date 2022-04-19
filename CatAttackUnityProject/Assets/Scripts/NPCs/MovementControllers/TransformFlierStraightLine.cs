@@ -10,7 +10,7 @@ using Vector2 = UnityEngine.Vector2;
 namespace CatAttack.MovementControllers
 {
 
-	public class FlierStraightLine :
+	public class TransformFlierStraightLine :
 		UnityEngine.MonoBehaviour,
 		IMovementController
 	{
