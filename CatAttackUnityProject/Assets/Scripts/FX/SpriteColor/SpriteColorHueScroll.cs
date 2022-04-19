@@ -1,7 +1,7 @@
 using UnityEngine;
 
-using static PHATASS.Utils.MathUtils.IntExtensions;
-using static PHATASS.Utils.MathUtils.ColorExtensions;
+using static PHATASS.Utils.Extensions.IntExtensions;
+using static PHATASS.Utils.Extensions.ColorExtensions;
 
 using PHATASS.Utils.RandomUtils;
 

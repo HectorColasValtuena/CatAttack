@@ -2,10 +2,11 @@
 * Movement controller that moves in a straight line ignoring any environment
 */
 
-using static PHATASS.Utils.Transform2DExtensions;	//Transform.ELookAt2D(target)
+using static PHATASS.Utils.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
 
 using SerializeField = UnityEngine.SerializeField;
 using Vector2 = UnityEngine.Vector2;
+using Quaternion = UnityEngine.Quaternion;
 
 namespace CatAttack.MovementControllers
 {
@@ -23,9 +24,14 @@ namespace CatAttack.MovementControllers
 	//ENDOF serialized
 
 	//IMovementController implementation
-		Vector2 IMovementController.destination
-		{ set { this.destination = value; }}
-		private Vector2 destination;
+		bool IMovementController.enabled
+		{ set { this.enabled = value; } get { return this.enabled; }}
+
+		Vector2? IMovementController.targetPosition
+		{ set { this.targetPosition = value; }}
+
+		Quaternion? IMovementController.targetRotation
+		{ set { this.targetRotation; }}
 
 		bool IMovementController.arrived
 		{ get { return this.arrived; }}
@@ -39,6 +45,9 @@ namespace CatAttack.MovementControllers
 	//ENDOF MonoBehaviour
 
 	//private properties
+		//desired position
+		private Vector2? targetPosition = null;
+
 		//returns distance between this object and target node
 		private float distanceToDestination
 		{ get { return (((Vector2) this.transform.position) - this.destination).magnitude; }}

@@ -2,7 +2,7 @@ using Time = UnityEngine.Time;
 
 using SerializeField = UnityEngine.SerializeField;
 
-using static PHATASS.Utils.MathUtils.FloatExtensions;
+using static PHATASS.Utils.Extensions.FloatExtensions;
 
 using IValueMutableFloat = PHATASS.Utils.MathUtils.IValueMutable<float>;
 

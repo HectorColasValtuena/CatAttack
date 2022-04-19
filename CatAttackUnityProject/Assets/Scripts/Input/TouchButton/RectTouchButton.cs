@@ -1,7 +1,8 @@
 using UnityEngine;
 
+using RectExtensions = PHATASS.Utils.Extensions.RectExtensions;
+
 using ScreenUtils = PHATASS.Utils.ScreenUtils;
-using RectExtensions = PHATASS.Utils.MathUtils.RectExtensions;
 
 namespace CatAttack.Input
 {
