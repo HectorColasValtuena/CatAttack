@@ -20,15 +20,15 @@ namespace CatAttack.Critters
 	public class ScaredyCritterController : MonoBehaviour
 	{
 	//serialized fields
-		//list of transforms representing the various resting places the critter will stay when idle
+		[Tooltip("list of transforms representing the various resting places the critter will stay when idle")]
 		[SerializeField]
 		private Transform[] restingPlaces;
 
-		//list of transforms representing the points the critter will flee towards when scared
+		[Tooltip("list of transforms representing the points the critter will flee towards when scared")]
 		[SerializeField]
 		private Transform[] safePlaces;
 
-		//time to stay scared after no longer detecting the player
+		[Tooltip("Time to stay scared after no longer detecting the player")]
 		[SerializeField]
 		private RandomFloatRange _scaredTimeRange;
 		private ILimitedRangeFloat scaredTimeRange { get { return this._scaredTimeRange; }}
