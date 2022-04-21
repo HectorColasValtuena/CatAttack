@@ -45,13 +45,15 @@ namespace CatAttack.MovementControllers
 		}
 	//ENDOF MonoBehaviour
 
-	//private properties
+	//private fields
 		//desired position
 		private Vector2? targetPosition = null;
 
 		//desired rotation
 		private Quaternion? targetRotation = null;
+	//ENDOF private fields
 
+	//private properties
 		//returns distance between this object and target node
 		private float distanceToDestination
 		{ get { return this.transform.position.EDistanceTo2D((Vector2) this.targetPosition); }}
