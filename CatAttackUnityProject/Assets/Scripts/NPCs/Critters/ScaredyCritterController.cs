@@ -11,6 +11,7 @@ using UnityEngine;
 using static PHATASS.Utils.Extensions.IListExtensions;
 
 using ILimitedRangeFloat = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
+using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
 
 using IMovementController = CatAttack.MovementControllers.IMovementController;
 
@@ -29,7 +30,7 @@ namespace CatAttack.Critters
 
 		//time to stay scared after no longer detecting the player
 		[SerializeField]
-		private PHATASS.Utils.MathUtils.Ranges.RandomFloatRange _scaredTimeRange;
+		private RandomFloatRange _scaredTimeRange;
 		private ILimitedRangeFloat scaredTimeRange { get { return this._scaredTimeRange; }}
 	//ENDOF serialized
 
