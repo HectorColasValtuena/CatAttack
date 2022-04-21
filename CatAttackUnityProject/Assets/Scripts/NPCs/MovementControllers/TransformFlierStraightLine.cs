@@ -46,10 +46,8 @@ namespace CatAttack.MovementControllers
 	//ENDOF MonoBehaviour
 
 	//private fields
-		//desired position
 		private Vector2? targetPosition = null;
 
-		//desired rotation
 		private Quaternion? targetRotation = null;
 	//ENDOF private fields
 
