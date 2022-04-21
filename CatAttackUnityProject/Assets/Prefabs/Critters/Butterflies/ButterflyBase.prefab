@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 8160446271582815226}
   - component: {fileID: 4109180899791081772}
   - component: {fileID: 6079677417606635893}
-  m_Layer: 0
+  - component: {fileID: 2778906957485480076}
+  - component: {fileID: -3660271678036962963}
+  - component: {fileID: 5968477434164607727}
+  m_Layer: 9
   m_Name: ButterflyBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,6 +107,53 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2778906957485480076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e5266b3bc28674eb9b057bf6260ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookAtDestination: 1
+  speed: 1
+--- !u!114 &-3660271678036962963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fb0ae14956f9c458f61cc32c182df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restingPlaces: []
+  safePlaces: []
+  _scaredTimeRange:
+    minimum: 0
+    maximum: 0
+--- !u!58 &5968477434164607727
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &7882541646305816178
 GameObject:
   m_ObjectHideFlags: 0
