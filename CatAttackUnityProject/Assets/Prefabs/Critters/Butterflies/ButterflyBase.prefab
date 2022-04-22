@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 8160446271582815226}
   - component: {fileID: 4109180899791081772}
   - component: {fileID: 6079677417606635893}
-  - component: {fileID: 2778906957485480076}
-  - component: {fileID: -3660271678036962963}
   - component: {fileID: 5968477434164607727}
+  - component: {fileID: 6823792956746618599}
+  - component: {fileID: -3660271678036962963}
+  - component: {fileID: 8842276487170785941}
+  - component: {fileID: 5463882641901805919}
   m_Layer: 9
   m_Name: ButterflyBase
   m_TagString: Untagged
@@ -107,37 +109,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2778906957485480076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7725669109960992973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76e5266b3bc28674eb9b057bf6260ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookAtDestination: 1
-  speed: 1
---- !u!114 &-3660271678036962963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7725669109960992973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14fb0ae14956f9c458f61cc32c182df8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restingPlaces: []
-  safePlaces: []
-  _scaredTimeRange:
-    minimum: 0
-    maximum: 0
 --- !u!58 &5968477434164607727
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,6 +125,92 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!50 &6823792956746618599
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0.5
+  m_AngularDrag: 0.1
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-3660271678036962963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fb0ae14956f9c458f61cc32c182df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restingPlaces: []
+  safePlaces: []
+  _scaredTimeRange:
+    minimum: 5
+    maximum: 6
+--- !u!114 &8842276487170785941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f0631f17c17524b9fa16f971d769eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flapInterval:
+    minimum: 0.35
+    maximum: 0.5
+  _angularRandomRange:
+    minimum: -30
+    maximum: 30
+  _flapForceRange:
+    minimum: 0.5
+    maximum: 1
+  closeApproximationDistance: 1
+  flapAnimationTriggerName: Flap
+--- !u!114 &5463882641901805919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa2fe90c78a0224d90dfd3dd7ad60ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  _hueRange:
+    minimum: 0
+    maximum: 1
+  _saturationRange:
+    minimum: 0.8
+    maximum: 1
+  _brightnessRange:
+    minimum: 0.8
+    maximum: 1
+  _alphaRange:
+    minimum: 0.8
+    maximum: 0.9
 --- !u!1 &7882541646305816178
 GameObject:
   m_ObjectHideFlags: 0
