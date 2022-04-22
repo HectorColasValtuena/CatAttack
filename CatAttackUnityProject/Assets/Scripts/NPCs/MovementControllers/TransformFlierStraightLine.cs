@@ -17,11 +17,13 @@ namespace CatAttack.MovementControllers
 		IMovementController
 	{
 	//serialized properties
-		[SerializeField]
-		private bool lookAtDestination = true;
-
+		[Tooltip("Movement in world units per second")]
 		[SerializeField]
 		private float speed = 1.0f;
+
+		[Tooltip("If true this character's right vector will always look towards destination")]
+		[SerializeField]
+		private bool lookAtDestination = true;
 	//ENDOF serialized
 
 	//IMovementController implementation
