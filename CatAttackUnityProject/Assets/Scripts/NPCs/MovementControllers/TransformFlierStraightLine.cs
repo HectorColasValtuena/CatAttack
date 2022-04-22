@@ -5,7 +5,11 @@
 using static PHATASS.Utils.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
 using static PHATASS.Utils.Extensions.Vector2Extensions;
 
+//Unity attributes
+using TooltipAttribute = UnityEngine.TooltipAttribute;
 using SerializeField = UnityEngine.SerializeField;
+
+//Unity types
 using Vector2 = UnityEngine.Vector2;
 using Quaternion = UnityEngine.Quaternion;
 
