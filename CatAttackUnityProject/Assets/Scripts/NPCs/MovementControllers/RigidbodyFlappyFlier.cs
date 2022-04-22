@@ -18,6 +18,10 @@ namespace CatAttack.MovementControllers
 		MonoBehaviour,
 		IMovementController
 	{
+	//constants
+		private const float minimumArrivalDistance = 0.1f;
+	//ENDOF constants
+
 	//serialized fields
 		[Tooltip("Time between flaps")]
 		[SerializeField]
@@ -35,7 +39,8 @@ namespace CatAttack.MovementControllers
 		private ILimitedRangeFloat flapForceRange { get { return this._flapForceRange; }}
 
 		[Tooltip("Flaps made closer than this distance to the target will diminish in force and randomization")]
-		private float closeApproximationDistance = 0.2f;
+		[SerializeField]
+		private float closeApproximationDistance = 1f;
 
 		[Tooltip("Animator trigger name to set to true on each flap - none if empty")]
 		[SerializeField]
@@ -75,7 +80,7 @@ namespace CatAttack.MovementControllers
 		{ get { return !this.arrived && this.enabled; }}
 		//returns true if this object is already at its destination
 		private bool arrived
-		{ get { return (this.targetPosition == null || this.distanceToDestination <= this.closeApproximationDistance); }}
+		{ get { return (this.targetPosition == null || this.distanceToDestination <= minimumArrivalDistance); }}
 
 		//returns distance between this object and target node
 		private float distanceToDestination
@@ -89,7 +94,7 @@ namespace CatAttack.MovementControllers
 				(new RandomFloatRange(0f, this.closeApproximationDistance) as ILimitedRangeFloat)
 				.ToNormalized(this.distanceToDestination);
 
-			return 1 - normalizedProximityMod;
+			return normalizedProximityMod;
 		}}
 	//ENDOF private properties
 
@@ -119,6 +124,8 @@ namespace CatAttack.MovementControllers
 			if (this.animator != null)
 			{ this.animator.SetTrigger(this.flapAnimationTriggerName); }
 
+				//Vector2 forceVector = this.GetFlappingForceVector();
+				//Debug.Log("Flap force vector: " + forceVector);
 			this.rigidbody.AddForce(this.GetFlappingForceVector(), ForceMode2D.Impulse);
 			
 			this.flapTimer = this.flapInterval.random;
@@ -129,13 +136,14 @@ namespace CatAttack.MovementControllers
 		{
 			if (this.targetPosition == null)
 			{
-				Debug.Log("RigidbodyFlappyFlier.GetFlappingForceVector() no target position");
+				//Debug.Log("RigidbodyFlappyFlier.GetFlappingForceVector() no target position");
 				return Vector2.zero;
 			}
 
 			Vector2 destinationVector = (Vector2) this.targetPosition;
 
 			float modifier = this.flapModifierByDistance;
+			//Debug.Log("modifier: " + modifier);
 
 			//calculate angle with a random deviation
 			float angle = ((Vector2) this.transform.position).EFromToDegrees2D(destinationVector);
