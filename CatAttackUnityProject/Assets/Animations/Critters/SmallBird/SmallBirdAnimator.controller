@@ -9,7 +9,7 @@ AnimatorController:
   m_Name: SmallBirdAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Flight
+  - m_Name: Flying
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -64,7 +64,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Flight
+    m_ConditionEvent: Flying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5595328462565091010}
@@ -88,7 +88,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Flight
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 2043343545060422344}
@@ -143,7 +143,7 @@ AnimatorTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Flight
+    m_ConditionEvent: Flying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5595328462565091010}
@@ -160,7 +160,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Flight
+    m_ConditionEvent: Flying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4172301620071561241}
@@ -185,7 +185,7 @@ AnimatorTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Flight
+    m_ConditionEvent: Flying
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4172301620071561241}
