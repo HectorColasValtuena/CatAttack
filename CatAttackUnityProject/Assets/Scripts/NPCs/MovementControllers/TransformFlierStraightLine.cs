@@ -12,6 +12,7 @@ using SerializeField = UnityEngine.SerializeField;
 //Unity types
 using Vector2 = UnityEngine.Vector2;
 using Quaternion = UnityEngine.Quaternion;
+using Animator = UnityEngine.Animator;
 
 namespace CatAttack.MovementControllers
 {
@@ -28,6 +29,10 @@ namespace CatAttack.MovementControllers
 		[Tooltip("If true this character's right vector will always look towards destination")]
 		[SerializeField]
 		private bool lookAtDestination = true;
+
+		[Tooltip("Animator bool name to set to true while flying - none if empty")]
+		[SerializeField]
+		private string flightAnimationBoolName = "Flying";
 	//ENDOF serialized
 
 	//IMovementController implementation
@@ -45,13 +50,22 @@ namespace CatAttack.MovementControllers
 	//ENDOF IMovementController
 
 	//MonoBehaviour lifecycle
+		private void Start ()
+		{
+			if (this.flightAnimationBoolName != "")
+			{ this.animator = this.GetComponent<Animator>(); }
+		}
+
 		private void Update ()
 		{
+			this.UpdateAnimator();
 			this.Move();
 		}
 	//ENDOF MonoBehaviour
 
 	//private fields
+		private Animator animator;
+
 		private Vector2? targetPosition = null;
 
 		private Quaternion? targetRotation = null;
@@ -98,6 +112,17 @@ namespace CatAttack.MovementControllers
 
 		//Shall I remove you?
 		protected virtual void OnDestinationReached () {}
+
+		private void UpdateAnimator ()
+		{
+			if (this.animator != null)
+			{
+				SetFlightAnimation(!this.arrived);
+			}
+
+			void SetFlightAnimation (bool state)
+			{ this.animator.SetBool(this.flightAnimationBoolName, state); }
+		}
 	//ENDOF private methods
 	}
 }
