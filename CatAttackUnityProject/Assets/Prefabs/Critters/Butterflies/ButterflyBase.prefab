@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -3660271678036962963}
   - component: {fileID: 8842276487170785941}
   - component: {fileID: 5463882641901805919}
+  - component: {fileID: 3503258644133047494}
   m_Layer: 9
   m_Name: ButterflyBase
   m_TagString: Untagged
@@ -179,8 +180,8 @@ MonoBehaviour:
     minimum: 0.35
     maximum: 0.5
   _angularRandomRange:
-    minimum: -30
-    maximum: 30
+    minimum: -60
+    maximum: 60
   _flapForceRange:
     minimum: 0.5
     maximum: 1
@@ -211,6 +212,22 @@ MonoBehaviour:
   _alphaRange:
     minimum: 0.8
     maximum: 0.9
+--- !u!114 &3503258644133047494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725669109960992973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26bce454ac51704dbf21e1bae38895a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  _speedModifierRange:
+    minimum: 0.75
+    maximum: 1.25
 --- !u!1 &7882541646305816178
 GameObject:
   m_ObjectHideFlags: 0
