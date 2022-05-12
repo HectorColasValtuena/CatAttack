@@ -338,6 +338,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8837090635330598024}
   - component: {fileID: 3018503552009418826}
+  - component: {fileID: 6602871643928603210}
+  - component: {fileID: 5622919917896460205}
   m_Layer: 0
   m_Name: Crown
   m_TagString: Untagged
@@ -412,6 +414,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6602871643928603210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844064839313095481}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 00bd2dc2f6c31494cb0df240da7bc372, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5622919917896460205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4844064839313095481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26bce454ac51704dbf21e1bae38895a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  _speedModifierRange:
+    minimum: 0.9
+    maximum: 1.1
 --- !u!1 &5201388273696245833
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +460,8 @@ GameObject:
   - component: {fileID: 7520406716562181446}
   - component: {fileID: 7737574085464940999}
   - component: {fileID: 2696568627897817015}
+  - component: {fileID: 1416337097527617524}
+  - component: {fileID: 3440096813623220897}
   m_Layer: 0
   m_Name: Wings
   m_TagString: Untagged
@@ -511,6 +550,41 @@ MonoBehaviour:
   direction: 1
   speed: 0.35
   spriteRenderer: {fileID: 7737574085464940999}
+--- !u!95 &1416337097527617524
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201388273696245833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d5f20cde6c3ac24d8bb48f9758bf755, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3440096813623220897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201388273696245833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26bce454ac51704dbf21e1bae38895a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  _speedModifierRange:
+    minimum: 0.9
+    maximum: 1.1
 --- !u!1 &5526170155430724679
 GameObject:
   m_ObjectHideFlags: 0
