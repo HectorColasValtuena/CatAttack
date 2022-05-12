@@ -8,13 +8,13 @@ namespace CatAttack.Quests
 	public class FetchQuestController : QuestControllerBase
 	{
 	//serialized fields
-		//list of items required by the quest - will be removed from the inventory
+		[Tooltip("list of items required by the quest - will be removed from the inventory")]
 		[SerializeField]
 		private EItemID[] requiredItems;
 
-		//dialog informing of the item request
+		[Tooltip("Disables these objects when quest is completed, like popup dialog or related triggers")]
 		[SerializeField]
-		private GameObject dialog;
+		private GameObject[] disableOnCompleted;
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
@@ -40,7 +40,8 @@ namespace CatAttack.Quests
 	//overrides
 		protected override void OnCompleted ()
 		{
-			this.dialog.SetActive(false);
+			foreach (GameObject disableItem in this.disableOnCompleted)
+			{ disableItem.SetActive(false); }
 		}
 	//ENDOF overrides
 
