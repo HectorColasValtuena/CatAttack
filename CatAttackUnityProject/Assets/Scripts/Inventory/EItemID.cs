@@ -3,10 +3,14 @@ namespace CatAttack.Inventory
 	//enumerator defining items and their identifiers
 	public enum EItemID
 	{
-	//Unlockables
+	//Permanent unlockables
 		Stopwatch = 0,
+	//ENDOF Permanent unlockables
+
+	//Secret Unlockables
 		Sombrero = 1,
-	//ENDOF Unlockables
+		ButterflyWings = 2,
+	//ENDOF Secret Unlockables
 
 	//Quest items (start at 100)
 		TNTStick = 100,
