@@ -735,6 +735,7 @@ GameObject:
   - component: {fileID: 2482529379285708599}
   - component: {fileID: 2235446903361202871}
   - component: {fileID: 6389051316173564354}
+  - component: {fileID: 6816034188530465499}
   m_Layer: 0
   m_Name: TNT-Accessory
   m_TagString: Untagged
@@ -779,7 +780,7 @@ MonoBehaviour:
       type: 3}
     _localPosition: {x: 0, y: 0.18, z: 0}
     _eulerAngles: {x: 0, y: 0, z: 0}
-    _accessorySprite: {fileID: 21300000, guid: 91a212252bcfd0c44b901d9d1f1ccff6, type: 3}
+    _accessorySprite: {fileID: 21300000, guid: 116dae98c9620c5429e208630ab317ab, type: 3}
   - _masterSprite: {fileID: 7508270772525786254, guid: b80ca74ed2bc1fa40a9f9ad0ee009abc,
       type: 3}
     _localPosition: {x: 0, y: 0.18, z: 0}
@@ -847,7 +848,19 @@ MonoBehaviour:
   removeItemOnDeath: 1
   onCarrierDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6816034188530465499}
+        m_TargetAssemblyTypeName: CatAttack.Triggers.InstantiateOnTrigger, Assembly-CSharp
+        m_MethodName: Trigger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   spriteRenderer: {fileID: 6389051316173564354}
 --- !u!212 &6389051316173564354
 SpriteRenderer:
@@ -900,3 +913,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6816034188530465499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8990759348797327411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09783b0febcfd2a4ca8c20683ee4cb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instantiatePrefabList:
+  - {fileID: 6090530458895565808, guid: f2e655865466c7445a20e3b1c7156289, type: 3}
+  spawnSpot: {fileID: 2546551925355966776}
+  spawnParent: {fileID: 0}
