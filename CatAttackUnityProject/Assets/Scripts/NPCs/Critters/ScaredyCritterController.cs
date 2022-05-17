@@ -32,6 +32,11 @@ namespace CatAttack.Critters
 		[SerializeField]
 		private RandomFloatRange _scaredTimeRange;
 		private ILimitedRangeFloat scaredTimeRange { get { return this._scaredTimeRange; }}
+
+		[Tooltip("Interval (seconds) between each self-scare check")]
+		[SerializeField]
+		private RandomFloatRange _selfScareCheckInterval;
+		private ILimitedRangeFloat selfScareCheckInterval { get { return this._selfScareCheckInterval; }}
 	//ENDOF serialized
 
 	//private fields
@@ -39,6 +44,7 @@ namespace CatAttack.Critters
 
 		//remaining time scared
 		private float scaredTimer = 0.0f;
+		private float selfScareCheckTimer = 0.0f;
 	//ENDOF private fields
 
 	//MonoBehaviour
@@ -51,6 +57,7 @@ namespace CatAttack.Critters
 		{
 			//ensure a target is chosen at the start
 			this.NewTarget();
+			this.selfScareCheckTimer = this.selfScareCheckInterval.random;
 		}
 
 		private void Update ()
@@ -65,6 +72,10 @@ namespace CatAttack.Critters
 				{
 					this.NewTarget();
 				}
+			}
+			else
+			{
+				TrySelfScare();
 			}
 		}
 
@@ -81,6 +92,21 @@ namespace CatAttack.Critters
 	//ENDOF private properties
 
 	//private methods
+		//scare self every x seconds, and decrement the timer only if arrived at target
+		private void TrySelfScare ()
+		{
+			if (this.selfScareCheckTimer <= 0)
+			{
+				this.Scare();
+				this.selfScareCheckTimer = this.selfScareCheckInterval.random;
+			}
+			else
+			{
+				if (this.movementController.arrived)
+				{ this.selfScareCheckTimer -= Time.deltaTime; }
+			}
+		}
+
 		private void Scare ()
 		{
 			this.scaredTimer = this.scaredTimeRange.random;
