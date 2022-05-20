@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6463748721997126121}
   - component: {fileID: 6463748721997126120}
   - component: {fileID: 6233062433617420238}
+  - component: {fileID: 1677896623693579360}
   m_Layer: 8
   m_Name: WaterLarge(Hazard)
   m_TagString: Untagged
@@ -50,6 +51,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -72,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1138589773
-  m_SortingLayer: -5
+  m_SortingLayer: -6
   m_SortingOrder: 100
-  m_Sprite: {fileID: 2950568719106477930, guid: 52d0fef4aa2b31a4b92e31f970d25b75,
+  m_Sprite: {fileID: -7327818076814472044, guid: 2523f495a1e0eab4cad8e80ef3368863,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122,9 +124,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.08, y: 0.08, z: 0.08, w: 0.08}
+    border: {x: 0, y: 0, z: 0, w: 0.08}
     pivot: {x: 0.5, y: 1}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 10, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -157,3 +159,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029b546fca12ad044a8504ff7e480bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1677896623693579360
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6463748721997126123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04c14ea5a3f0f7f43bfdd66131ced4fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
