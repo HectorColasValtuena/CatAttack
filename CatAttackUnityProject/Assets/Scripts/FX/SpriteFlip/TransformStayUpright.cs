@@ -34,7 +34,7 @@ namespace CatAttack.FX
 		private bool isInverted 
 		{ get {
 			float angle = this.zAxisRotation;
-			Debug.Log("angle: " + angle);
+			//Debug.Log("angle: " + angle);
 			//[TO-DO] optimize this
 			if (angle > 270 || angle < -270) { return false; }
 			if (angle > 90 || angle < -90) { return true; }
