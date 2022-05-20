@@ -10326,7 +10326,7 @@ PrefabInstance:
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
@@ -28534,7 +28534,7 @@ PrefabInstance:
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
@@ -41244,7 +41244,7 @@ PrefabInstance:
     - target: {fileID: 6463748721997126121, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 12
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6463748721997126121, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
@@ -43485,7 +43485,7 @@ PrefabInstance:
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 6463748721997126119, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
@@ -43495,7 +43495,7 @@ PrefabInstance:
     - target: {fileID: 6463748721997126121, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 29.777975
+      value: 76.527985
       objectReference: {fileID: 0}
     - target: {fileID: 6463748721997126121, guid: 95c769e4c134835428cdfd17520d9190,
         type: 3}
@@ -56500,6 +56500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6463748721539980447}
   - component: {fileID: 6463748721539980444}
+  - component: {fileID: 6463748721539980433}
   m_Layer: 8
   m_Name: WaterLarge(Hazard)
   m_TagString: Untagged
@@ -56507,6 +56508,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &6463748721539980433
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6463748721539980432}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04c14ea5a3f0f7f43bfdd66131ced4fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &6463748721539980444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -56547,7 +56567,7 @@ SpriteRenderer:
   m_SortingLayerID: 1138589773
   m_SortingLayer: -6
   m_SortingOrder: -10
-  m_Sprite: {fileID: 2950568719106477930, guid: 52d0fef4aa2b31a4b92e31f970d25b75,
+  m_Sprite: {fileID: -7327818076814472044, guid: 2523f495a1e0eab4cad8e80ef3368863,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
