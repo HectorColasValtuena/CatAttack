@@ -1,6 +1,6 @@
 using UnityEngine;
 
-using RectExtensions = PHATASS.Utils.Extensions.RectExtensions;
+using static PHATASS.Utils.Extensions.RectExtensions;
 
 using ScreenUtils = PHATASS.Utils.ScreenUtils;
 
@@ -82,7 +82,7 @@ namespace CatAttack.Input
 		private Rect RectFromTransformAnchors (RectTransform rectTransform)
 		{
 			Vector2[] anchors = {rectTransform.anchorMin, rectTransform.anchorMax};
-			return RectExtensions.RectFromPoints(anchors);
+			return anchors.ERectFromPoints();
 		}
 	//ENDOF private methods
 	}
