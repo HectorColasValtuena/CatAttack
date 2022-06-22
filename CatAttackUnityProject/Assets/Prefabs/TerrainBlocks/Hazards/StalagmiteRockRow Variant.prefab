@@ -9,6 +9,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -24,27 +39,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
-        type: 3}
-      propertyPath: m_LocalRotation.z
+      propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
-        type: 3}
-      propertyPath: m_RootOrder
+      propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
@@ -60,18 +60,28 @@ PrefabInstance:
     - target: {fileID: 1947306927748769603, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1947306927748769604, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1164628861494523756, guid: ced1b1ee6f511db4ba52a34fb79b3751,
+      objectReference: {fileID: 21300000, guid: 50f10041f97418540bfa78d43be0dc5f,
         type: 3}
+    - target: {fileID: 1947306927748769606, guid: 4869a125589a7864eb820f61724f5f75,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947306927748769606, guid: 4869a125589a7864eb820f61724f5f75,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
     - target: {fileID: 1947306927748769607, guid: 4869a125589a7864eb820f61724f5f75,
         type: 3}
       propertyPath: m_Name
-      value: StalagmiteRockRow
+      value: StalagmiteRockRow Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4869a125589a7864eb820f61724f5f75, type: 3}
