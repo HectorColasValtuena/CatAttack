@@ -2,7 +2,7 @@ using UnityEngine;
 
 using static PHATASS.Utils.Extensions.RectExtensions;
 
-using ScreenUtils = PHATASS.Utils.ScreenUtils;
+using ScreenSize = PHATASS.Utils.ScreenUtils.ScreenSize;
 
 namespace CatAttack.Input
 {
@@ -74,7 +74,7 @@ namespace CatAttack.Input
 		//determines if a touched position is within the rect of this button
 		private bool PositionIsWithinRect (Vector2 position)
 		{
-			Vector2 normalizedPosition = ScreenUtils.PixelToNormalizedScreenPosition(position);
+			Vector2 normalizedPosition = ScreenSize.PixelToNormalizedScreenPosition(position);
 			return this.anchorRect.Contains(normalizedPosition);
 		}
 
