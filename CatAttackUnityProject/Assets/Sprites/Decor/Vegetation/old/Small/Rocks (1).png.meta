@@ -123,7 +123,7 @@ TextureImporter:
       213: 8653559805962858812
     second: oreoreore
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -143,8 +143,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -154,8 +152,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -176,13 +174,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -440,7 +434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 570ddcf036a20b500800000000000000
-      internalID: -1914033562234228639
+      internalID: 409874171045990517
       vertices: []
       indices: 
       edges: []
@@ -461,7 +455,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1607adabd9cff65e0800000000000000
-      internalID: 409874171045990517
+      internalID: -1914033562234228639
       vertices: []
       indices: 
       edges: []
@@ -482,7 +476,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1f4bf0c499946f490800000000000000
-      internalID: 1206499870958031925
+      internalID: -7712896389070473999
       vertices: []
       indices: 
       edges: []
@@ -503,7 +497,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 53412068d395eb010800000000000000
-      internalID: -1004618240272207968
+      internalID: 1206499870958031925
       vertices: []
       indices: 
       edges: []
@@ -524,7 +518,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a75d44b135975850800000000000000
-      internalID: 3224316705654282525
+      internalID: 6365720639022389155
       vertices: []
       indices: 
       edges: []
@@ -566,7 +560,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb346b2aecd4207a0800000000000000
-      internalID: -1290185960728117521
+      internalID: -6412477369533709378
       vertices: []
       indices: 
       edges: []
@@ -896,38 +890,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      GemCrystal4: 7673469576727719969
-      Rocks (1)_11: 1876353938233929491
-      Rocks (1)_8: 3224316705654282525
-      GemCrystal2: -6999344592459420446
-      GemBoulders: -1914033562234228639
-      Rocks (1)_3: 8377955413177961960
-      Rocks (1)_1: 1569417571950275516
-      RockSword: -8588467528141539916
-      Rocks (1)_10: 7172054530672469960
-      MossyStone: 1206499870958031925
-      MossyStone4: 6167446381855814628
-      Skeleton_2: -5288520097218292585
-      Branches: -6195562954729590777
-      Branches3: -5972911670546619099
-      MossyStone6: -958260001832349278
-      GemCrystal: 1155584605246013023
-      DarkBush: 829237324661356735
-      Skeleton_3: 3012469304257856284
-      Branches0: -6522871871116305203
-      MossyStone2: -1004618240272207968
-      Rocks (1)_0: 8523975043751710978
-      MossyBoulder: -1290185960728117521
-      oreore: -948105040362165517
-      ore: -3309556850875686290
-      Boulders: 409874171045990517
-      Rocks (1)_2: -9102784109324328847
-      Branches2: 5451449941940831916
-      Rocks (1)_5: -5510849870896814284
-      DarkBush2: 2261024479905452328
-      Skeleton_1: -4819469852501861000
-      oreoreore: 8653559805962858812
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

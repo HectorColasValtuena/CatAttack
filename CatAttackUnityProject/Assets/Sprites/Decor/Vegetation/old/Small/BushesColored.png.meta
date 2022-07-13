@@ -111,7 +111,7 @@ TextureImporter:
       213: 1893706824244330483
     second: BushesColored_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -131,8 +131,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -142,8 +140,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -164,13 +162,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -695,29 +689,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      BushesColored_2: -1392863936031370435
-      BushesColored_3: 251316465306641348
-      BushesColored_11: -4509166167169268937
-      BushesColored_18: 3267350609867920600
-      BushesColored_20: 8395491204236736393
-      BushesColored_12: -8228315537011276221
-      BushesColored_14: 7167287218224961269
-      BushesColored_4: -1576920199171538943
-      BushesColored_9: 8935841447650728574
-      BushesColored_15: -2877976149657749870
-      BushesColored_0: 1396363895272715461
-      BushesColored_13: -6129992797648240975
-      BushesColored_1: -4323827660632826499
-      BushesColored_6: 3497554622515528331
-      BushesColored_7: 8851653679016676117
-      BushesColored_21: 6948851223607957656
-      BushesColored_10: 8868462126248171494
-      BushesColored_19: 5251030363247432775
-      BushesColored_5: -2201002406159403065
-      BushesColored_8: 5879736727341029668
-      BushesColored_17: -4880230124640512693
-      BushesColored_16: 3534726657828763156
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -78,7 +78,7 @@ TextureImporter:
       213: -5157163765294445130
     second: CopperVein2
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -98,8 +98,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -109,8 +107,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -131,13 +129,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -599,26 +593,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      MineRocks2: -3178287344934488235
-      Rocks (2)_0: -9208631723151571291
-      GoldVein: -7420562572957896069
-      CopperVein2: -5157163765294445130
-      GoldVein2: -7315849782071153468
-      CopperVein1: 6641942283934497790
-      IceRocks3: 4891526701245988584
-      IceRocks6: 7556891306547358630
-      SilverVein1: 60513046920433027
-      SilverVein2: 673468505010095165
-      MineRocks1: -8745475111334388379
-      MineRocksPickaxe: 6158380962219168286
-      Rocks (2)_1: 6158535860358379383
-      IceRocks: 6441140117381046733
-      RocksShrooms2: 8058906691020180427
-      RocksShrooms1: -2418644127860108990
-      IceRocks2: 2895844074139687921
-      IceRocks5: 812020254218430957
-      IceRocks4: 3170922917545649473
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

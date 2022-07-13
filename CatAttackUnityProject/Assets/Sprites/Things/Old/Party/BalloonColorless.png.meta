@@ -3,7 +3,7 @@ guid: b39978da16fc4c241ac76d7b08415461
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,8 +23,6 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -34,8 +32,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
-    mipBias: 0
+    aniso: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -56,13 +54,9 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,7 +125,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1260ab810ef5298a0800000000000000
-      internalID: -206107958502301109
+      internalID: -6299867512645745119
       vertices: []
       indices: 
       edges: []
@@ -152,7 +146,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0714900dda1cdd7c0800000000000000
-      internalID: 838546477525256585
+      internalID: -4044863938045066896
       vertices: []
       indices: 
       edges: []
@@ -173,7 +167,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 80b0e6beca40e57f0800000000000000
-      internalID: 8731639966342604513
+      internalID: -622054557799806200
       vertices: []
       indices: 
       edges: []
@@ -194,7 +188,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6ca555e355ea864c0800000000000000
-      internalID: -2762147974918108758
+      internalID: -4293990563556533562
       vertices: []
       indices: 
       edges: []
@@ -209,11 +203,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      BalloonColorless_3: -2762147974918108758
-      BalloonColorless_1: 838546477525256585
-      BalloonColorless_0: -206107958502301109
-      BalloonColorless_2: 8731639966342604513
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
