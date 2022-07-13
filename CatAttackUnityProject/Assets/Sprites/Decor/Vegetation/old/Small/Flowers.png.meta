@@ -48,7 +48,7 @@ TextureImporter:
       213: -4697998537724640817
     second: Flowers_14
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -68,6 +68,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -77,8 +79,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -99,9 +101,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -479,6 +485,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Flowers_6: 1875809120407446195
+      Flowers_0: 4632598083906848925
+      Flowers_10: 5200552784765383606
+      Flowers_1: -8599076897651075110
+      Flowers_13: -5948900462338509839
+      Flowers_8: -2757444085851235607
+      Flowers_5: -1905306971469373461
+      Flowers_11: 1236421647502666424
+      Flowers_12: -1919258233132508157
+      Flowers_4: -3049244359801467698
+      Flowers_3: 6532252411737238267
+      Flowers_2: -1380961279234335697
+      Flowers_9: 388093049040395086
+      Flowers_7: -3155580625666305983
+      Flowers_14: -4697998537724640817
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
