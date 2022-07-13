@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1481,14 +1482,10 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 184249386890025189, guid: 94677964a06e26c48a1717536acebed7,
-        type: 3}
-    - sprite: {fileID: 8571565818057524491, guid: 94677964a06e26c48a1717536acebed7,
-        type: 3}
-    - sprite: {fileID: -6521305812944079653, guid: 94677964a06e26c48a1717536acebed7,
-        type: 3}
-    - sprite: {fileID: 7975474775540431744, guid: 94677964a06e26c48a1717536acebed7,
-        type: 3}
+    - sprite: {fileID: -1278035537, guid: 88d339f4be6b74c42982039a9c677b1d, type: 3}
+    - sprite: {fileID: -1638577068, guid: 88d339f4be6b74c42982039a9c677b1d, type: 3}
+    - sprite: {fileID: -1778862787, guid: 88d339f4be6b74c42982039a9c677b1d, type: 3}
+    - sprite: {fileID: -1825625265, guid: 88d339f4be6b74c42982039a9c677b1d, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4799,9 +4796,10 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -891998179
-  m_SortingLayer: -4
+  m_SortingLayer: -5
   m_SortingOrder: -1000
   m_RenderMode: 0
+  m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -4825,4 +4823,8 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
+  m_MeshWeighting: 1
+  m_MeshWeighting1: 1
+  m_MeshWeighting2: 1
+  m_MeshWeighting3: 1
   m_MaskInteraction: 0
