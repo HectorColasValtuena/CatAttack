@@ -105,7 +105,7 @@ TextureImporter:
       213: -4382531356834644373
     second: Arrows_Wood_33
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -125,6 +125,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,8 +136,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -156,9 +158,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -872,6 +878,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Arrows_Wood_29: -4338909436672374593
+      Arrows_Wood_UpRight: -3679851269725493301
+      Arrows_Wood_11: 3307121281596898530
+      Arrows_Wood_5: 4970841018565743588
+      Arrows_Wood_UpLeft: -7216590319155212344
+      Arrows_Wood_0: -3992676231391721578
+      Arrows_Wood_12: 7692971129428802040
+      Arrows_Wood_20: -6851762018733496644
+      Arrows_Wood_DownLeft: -2443082713497281063
+      Arrows_Wood_Down: 8018019136228504402
+      Arrows_Wood_Left: -1505445452505504942
+      Arrows_Wood_7: -483398657047125272
+      Arrows_Wood_DownRight: 861830615119480917
+      Arrows_Wood_19: 2788133167030422236
+      Arrows_Wood_Up_wallMount: -4144753518854709185
+      Arrows_Wood_9: 931007953692422757
+      Arrows_Wood_Up: -3570137842701254850
+      Arrows_Wood_17: 8025468794409975588
+      Arrows_Wood_2: 3756552298030519813
+      Arrows_Wood__Down_Chain: -7919182022763893583
+      Arrows_Wood_Right: -955871781378759696
+      Arrows_Wood_26: -6288486421590797438
+      Arrows_Wood_8: -4968448170383359485
+      Arrows_Wood_3: -3485384802936999813
+      Arrows_Wood_21: -1380584971249656317
+      Arrows_Wood_14: 5210176231315730146
+      Arrows_Wood_18: -3715307886377462654
+      Arrows_Wood_27: 2438012994929808200
+      Arrows_Wood_24: -4021738910061697111
+      Arrows_Wood_13: -4806247365068532879
+      Arrows_Wood_28: -2793762589472978970
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

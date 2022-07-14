@@ -153,7 +153,7 @@ TextureImporter:
       213: -6088058528020546314
     second: TallGrassFlowers_49
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -173,6 +173,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,8 +184,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -204,9 +206,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -542,6 +548,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TallGrassFlowers_42: -5782408623203086546
+      TallGrassFlowers_27: -8879342715469831410
+      TallGrassFlowers_18: 6934943034710472406
+      TallGrassFlowers_38: 6304781143225937673
+      TallGrassFlowers_47: 5654712582705252703
+      TallGrassFlowers_23: -5501074717481750698
+      TallGrassFlowers_9: 8227636559699541774
+      TallGrassFlowers_13: -2526145884482203344
+      TallGrassFlowers_45: -6965444102115784106
+      TallGrassFlowers_31: -8581790688461358827
+      TallGrassFlowers_34: 5327857969997024184
+      TallGrassFlowers_21: 1037009756544958135
+      TallGrassFlowers_28: 5350351484662409319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
