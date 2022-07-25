@@ -103,6 +103,9 @@ namespace CatAttack.MovementControllers
 			this.rigidbody = this.GetComponent<Rigidbody2D>();
 			this.animator = this.GetComponent<Animator>();
 			this.RandomizeContinuousFlightForce();
+
+			if (this.animator != null && this.flightAnimationBoolName != "")
+			{ this.animator.SetBool(this.flightAnimationBoolName, true); }
 		}
 
 		private void FixedUpdate ()
@@ -139,7 +142,8 @@ namespace CatAttack.MovementControllers
 
 		//vector representing currently desired flight direction
 		private Angle2D flightDirection
-		{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
+		{ get { return this.desiredFlightDirection; }}
+		//{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
 
 		private Vector2 flightDirectionVector
 		{ get { return this.flightDirection.EAngle2DToVector2(); }}
