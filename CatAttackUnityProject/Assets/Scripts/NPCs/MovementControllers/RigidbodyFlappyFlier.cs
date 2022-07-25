@@ -146,7 +146,7 @@ namespace CatAttack.MovementControllers
 			//Debug.Log("modifier: " + modifier);
 
 			//calculate angle with a random deviation
-			float angle = ((Vector2) this.transform.position).EFromToDegrees2D(destinationVector);
+			float angle = ((Vector2) this.transform.position).EFromToDegrees(destinationVector);
 			angle += (this.angularDeviationRange.random * modifier);
 
 			//transform degrees into a force and scale it with modifier and force

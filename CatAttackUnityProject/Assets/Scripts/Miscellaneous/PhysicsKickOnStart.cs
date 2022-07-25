@@ -41,7 +41,7 @@ namespace CatAttack.Miscellaneous
 
 	//Private properties
 		private Vector2 randomForceVector
-		{ get { return this.directionRange.random.EAngleToVector2() * this.forceRange.random; }}
+		{ get { return this.directionRange.random.EDegreesToVector2() * this.forceRange.random; }}
 	//ENDOF Private properties
 
 	//Private methods
