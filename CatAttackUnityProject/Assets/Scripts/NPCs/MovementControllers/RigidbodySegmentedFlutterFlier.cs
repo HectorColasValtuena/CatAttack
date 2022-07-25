@@ -10,6 +10,8 @@ using static PHATASS.Utils.Extensions.Vector2Extensions;
 using ILimitedRangeFloat = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
 using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
 
+using Angle2D = PHATASS.Utils.MathUtils.Angle2D;
+
 
 namespace CatAttack.MovementControllers
 {
@@ -124,9 +126,23 @@ namespace CatAttack.MovementControllers
 		}}
 
 		//vector representing currently desired flight direction
-		/*private Angle2D flightDirection {
-			get { return }
-		}*/
+		private Angle2D flightDirection
+		{
+			get { return this.desiredFlightDirection + this.flightAngularDeviation; }
+		}
+
+		private Angle2D flightAngularDeviation
+		{
+			get
+			{
+				if (this._flightAngularDeviation.degrees > 180)
+				{ return (this._flightAngularDeviation * this.modifierByDistance) + Angle2D.FromDegrees(180); }
+				else
+				{ return this._flightAngularDeviation * this.modifierByDistance; }
+			}
+			set { this._flightAngularDeviation = value; }
+		}
+		private Angle2D _flightAngularDeviation;
 	//ENDOF private properties
 
 	//private fields
@@ -139,19 +155,21 @@ namespace CatAttack.MovementControllers
 		private float segmentTimer = 0.0f;
 
 		private float continuousFlightForce = 0.0f;
+
+		private Angle2D desiredFlightDirection;
 	//ENDOF private fields
 
 	//private methods
 		private void UpdateFlight ()
 		{
-			if (this.flying)
+			if (!this.flying)
+			{ return; }
+
+			if (this.segmentTimer <= 0)
 			{
-				if (this.segmentTimer <= 0)
-				{
-					this.ResetFlightSegment();
-				}
-				this.segmentTimer -= Time.deltaTime;
+				this.ResetFlightSegment();
 			}
+			this.segmentTimer -= Time.deltaTime;
 		}
 
 		private void ResetFlightSegment ()
