@@ -66,6 +66,14 @@ namespace CatAttack.MovementControllers
 		[SerializeField]
 		private float minimumArrivalDistance = 0.1f;
 
+		[Tooltip("If true, when very near the target this object will be snapped to target and its forces reset")]
+		[SerializeField]
+		private bool snapToDestination = false;
+
+		[Tooltip("When closer to target than this, position will be snapped and forces reset")]
+		[SerializeField]
+		private float snapDistance = 0.02f;
+
 		[Tooltip("Animator trigger name to set to true on each fluttering segment - none if empty")]
 		[SerializeField]
 		private string flapAnimationTriggerName = "Flap";
@@ -93,7 +101,7 @@ namespace CatAttack.MovementControllers
 		private void Awake ()
 		{
 			this.rigidbody = this.GetComponent<Rigidbody2D>();
-			if (this.flapAnimationTriggerName != "") { this.animator = this.GetComponent<Animator>(); }
+			this.animator = this.GetComponent<Animator>();
 			this.RandomizeContinuousFlightForce();
 		}
 
@@ -116,6 +124,10 @@ namespace CatAttack.MovementControllers
 		private float distanceToDestination
 		{ get { return this.transform.position.EDistanceTo2D((Vector2) this.targetPosition); }}
 
+		//returns this transform's position, as a Vector2
+		private Vector2 transformPosition
+		{ get { return (Vector2) this.transform.position; }}
+
 		//returns a multiplier affecting flapping effects based on distance
 		//when straight over the target return 0, at minimum distance or beyond return 1
 		private float modifierByDistance
@@ -127,9 +139,11 @@ namespace CatAttack.MovementControllers
 
 		//vector representing currently desired flight direction
 		private Angle2D flightDirection
-		{
-			get { return this.desiredFlightDirection + this.flightAngularDeviation; }
-		}
+		{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
+
+		private Vector2 flightDirectionVector
+		{ get { return this.flightDirection.EAngle2DToVector2(); }}
+
 
 		private Angle2D flightAngularDeviation
 		{
@@ -157,65 +171,104 @@ namespace CatAttack.MovementControllers
 		private float continuousFlightForce = 0.0f;
 
 		private Angle2D desiredFlightDirection;
+
+		private bool wasInFlight = true;
 	//ENDOF private fields
 
 	//private methods
 		private void UpdateFlight ()
 		{
-			if (!this.flying)
-			{ return; }
-
-			if (this.segmentTimer <= 0)
+			if (this.flying)
 			{
-				this.ResetFlightSegment();
+				if (!this.wasInFlight) { this.TakeOff(); }
+
+				if (this.segmentTimer <= 0)	{ this.ResetFlightSegment(); }
+				else if (this.flightDirectionContinuousUpdate) { this.UpdateDesiredFlightDirection(); }
+
+				this.ApplyContinuousFlightForce();
+
+				this.TrySnap();
+
+				this.segmentTimer -= Time.deltaTime;
 			}
-			this.segmentTimer -= Time.deltaTime;
+			else if (this.wasInFlight) { this.Landing(); }
+
+			this.wasInFlight = this.flying;
+		}
+
+		private void TakeOff ()
+		{
+			this.segmentTimer = 0;
+			this.rigidbody.AddForce(new Vector2(0, this.takeoffVerticalForce.random), ForceMode2D.Impulse);
+
+			if (this.animator != null && this.flightAnimationBoolName !="")
+			{ this.animator.SetBool(this.flightAnimationBoolName, true); }
+		}
+
+		private void Landing ()
+		{
+			if (this.animator != null && this.flightAnimationBoolName !="")
+			{ this.animator.SetBool(this.flightAnimationBoolName, false); }
 		}
 
 		private void ResetFlightSegment ()
 		{
 			this.segmentTimer = this.flutterSegmentInterval.random;
 
+			if (this.rerollForceEachSegment) { this.RandomizeContinuousFlightForce(); }
+
+			this.UpdateDesiredFlightDirection();
+			this.RandomizeFlightDeviation();
+
+			this.Flap();
+		}
+
+		private void UpdateDesiredFlightDirection ()
+		{
+			if (this.targetPosition == null) { return; }
+
+			this.desiredFlightDirection = this.transformPosition.EFromToAngle2D((Vector2) this.targetPosition);
+		}
+
+		private void RandomizeFlightDeviation ()
+		{
+			this.flightAngularDeviation = Angle2D.FromDegrees(this.angularDeviationRange.random);
 		}
 
 		private void Flap ()
 		{
-			if (this.animator != null)
+			if (this.animator != null && this.flapAnimationTriggerName != "")
 			{ this.animator.SetTrigger(this.flapAnimationTriggerName); }
 
-				//Vector2 forceVector = this.GetFlappingForceVector();
-				//Debug.Log("Flap force vector: " + forceVector);
-			this.rigidbody.AddForce(this.GetFlappingForceVector(), ForceMode2D.Impulse);
-			
+			this.rigidbody.AddForce(
+				force: this.flightDirectionVector * this.flapForceRange.random * this.modifierByDistance,
+				mode: ForceMode2D.Impulse
+			);
 		}
 
-		//Creates a vector2 representing the desired forces for current flap
-		private Vector2 GetFlappingForceVector ()
+		private void ApplyContinuousFlightForce ()
 		{
-			if (this.targetPosition == null)
-			{
-				//Debug.Log("RigidbodyFlappyFlier.GetFlappingForceVector() no target position");
-				return Vector2.zero;
-			}
-
-			Vector2 destinationVector = (Vector2) this.targetPosition;
-
-			float modifier = this.modifierByDistance;
-			//Debug.Log("modifier: " + modifier);
-
-			//calculate angle with a random deviation
-			float angle = ((Vector2) this.transform.position).EFromToDegrees2D(destinationVector);
-			angle += (this.angularDeviationRange.random * modifier);
-
-			//transform degrees into a force and scale it with modifier and force
-			Vector2 forceVector = angle.EDegreesToVector2() * modifier * this.flapForceRange.random;
-
-			return forceVector;
+			this.rigidbody.AddForce(
+				force: this.flightDirectionVector * this.continuousFlightForce * this.modifierByDistance,
+				mode: ForceMode2D.Force
+			);
 		}
 
 		//Caches a new random continuousFlightForce
 		private void RandomizeContinuousFlightForce ()
 		{ this.continuousFlightForce = this.flightContinuousForceRange.random; }
+
+		//tries to snap to destination position if we are close enough
+		private void TrySnap ()
+		{
+			if (!this.snapToDestination || this.targetPosition == null) { return; }
+
+			if (this.distanceToDestination < this.snapDistance)
+			{
+				this.rigidbody.position = (Vector2) this.targetPosition;
+				this.rigidbody.velocity = Vector2.zero;
+			}
+		}
 	//ENDOF private methods
 	}
 }
