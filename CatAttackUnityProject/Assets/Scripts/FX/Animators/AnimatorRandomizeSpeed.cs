@@ -3,8 +3,8 @@ using SerializeField = UnityEngine.SerializeField;
 using Animator = UnityEngine.Animator;
 using Random = UnityEngine.Random;
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
-using ILimitedRangeFloat = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
+using ILimitedRangeFloat = PHATASS.Utils.Types.Ranges.ILimitedRange<float>;
 
 namespace CatAttack.FX
 {

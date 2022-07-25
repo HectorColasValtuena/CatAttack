@@ -1,8 +1,8 @@
 using UnityEngine;
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
 
-using IFloatRange = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<System.Single>;
+using IFloatRange = PHATASS.Utils.Types.Ranges.ILimitedRange<System.Single>;
 namespace CatAttack.FX
 {
 	class SpriteColorRandomizer : MonoBehaviour

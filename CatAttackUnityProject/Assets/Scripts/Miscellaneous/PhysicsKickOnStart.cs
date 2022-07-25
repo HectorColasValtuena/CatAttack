@@ -2,8 +2,8 @@ using static PHATASS.Utils.Extensions.Vector2Extensions;
 
 using UnityEngine;
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
-using IFloatRange = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<System.Single>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
+using IFloatRange = PHATASS.Utils.Types.Ranges.ILimitedRange<System.Single>;
 
 namespace CatAttack.Miscellaneous
 {

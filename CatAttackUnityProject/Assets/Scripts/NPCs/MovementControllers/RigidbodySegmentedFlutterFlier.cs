@@ -7,10 +7,11 @@ using UnityEngine;
 
 using static PHATASS.Utils.Extensions.Vector2Extensions;
 
-using ILimitedRangeFloat = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
+using ILimitedRangeFloat = PHATASS.Utils.Types.Ranges.ILimitedRange<float>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
 
-using Angle2D = PHATASS.Utils.MathUtils.Angle2D;
+using IAngle2D = PHATASS.Utils.Types.IAngle2D;
+using static PHATASS.Utils.Types.IAngle2DFactory;
 
 
 namespace CatAttack.MovementControllers
@@ -141,7 +142,7 @@ namespace CatAttack.MovementControllers
 		}}
 
 		//vector representing currently desired flight direction
-		private Angle2D flightDirection
+		private IAngle2D flightDirection
 		{ get { return this.desiredFlightDirection; }}
 		//{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
 
@@ -149,18 +150,18 @@ namespace CatAttack.MovementControllers
 		{ get { return this.flightDirection.EAngle2DToVector2(); }}
 
 
-		private Angle2D flightAngularDeviation
+		private IAngle2D flightAngularDeviation
 		{
 			get
 			{
 				if (this._flightAngularDeviation.degrees > 180)
-				{ return (this._flightAngularDeviation * this.modifierByDistance) + Angle2D.FromDegrees(180); }
+				{ return (this._flightAngularDeviation * this.modifierByDistance) + (180f).AsDegrees(); }
 				else
 				{ return this._flightAngularDeviation * this.modifierByDistance; }
 			}
 			set { this._flightAngularDeviation = value; }
 		}
-		private Angle2D _flightAngularDeviation;
+		private IAngle2D _flightAngularDeviation;
 	//ENDOF private properties
 
 	//private fields
@@ -174,7 +175,7 @@ namespace CatAttack.MovementControllers
 
 		private float continuousFlightForce = 0.0f;
 
-		private Angle2D desiredFlightDirection;
+		private IAngle2D desiredFlightDirection;
 
 		private bool wasInFlight = true;
 	//ENDOF private fields
@@ -236,7 +237,7 @@ namespace CatAttack.MovementControllers
 
 		private void RandomizeFlightDeviation ()
 		{
-			this.flightAngularDeviation = Angle2D.FromDegrees(this.angularDeviationRange.random);
+			this.flightAngularDeviation = this.angularDeviationRange.random.AsDegrees();
 		}
 
 		private void Flap ()

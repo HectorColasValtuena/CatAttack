@@ -4,8 +4,8 @@ using UnityEngine;
 using InputControllerCache = CatAttack.Input.InputControllerCache;
 
 using IUpdatable = CatAttack.Interfaces.IUpdatable;
-using IValueMutableFloat = PHATASS.Utils.MathUtils.IValueMutable<float>;
-using IValueFloat = PHATASS.Utils.MathUtils.IValue<float>;
+using IValueMutableFloat = PHATASS.Utils.Types.IValueMutable<float>;
+using IValueFloat = PHATASS.Utils.Types.IValue<float>;
 
 namespace CatAttack
 {

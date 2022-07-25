@@ -4,9 +4,9 @@ using SerializeField = UnityEngine.SerializeField;
 
 using static PHATASS.Utils.Extensions.FloatExtensions;
 
-using IValueMutableFloat = PHATASS.Utils.MathUtils.IValueMutable<float>;
+using IValueMutableFloat = PHATASS.Utils.Types.IValueMutable<float>;
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
 using IUpdatable = CatAttack.Interfaces.IUpdatable;
 
 namespace CatAttack.Input

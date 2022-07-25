@@ -2,8 +2,8 @@ using UnityEngine;
 
 using static PHATASS.Utils.Extensions.Transform2DExtensions;	//Transform.ELookAt2D(target)
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
-using IFloatRange = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<System.Single>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
+using IFloatRange = PHATASS.Utils.Types.Ranges.ILimitedRange<System.Single>;
 
 
 namespace CatAttack.NodeRouteWalkers

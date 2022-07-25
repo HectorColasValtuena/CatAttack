@@ -1,7 +1,7 @@
 using UnityEngine;
 
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
-using IFloatRange = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
+using IFloatRange = PHATASS.Utils.Types.Ranges.ILimitedRange<float>;
 
 namespace CatAttack.FX
 {

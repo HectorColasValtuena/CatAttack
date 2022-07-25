@@ -10,8 +10,8 @@ using UnityEngine;
 
 using static PHATASS.Utils.Extensions.IListExtensions;
 
-using ILimitedRangeFloat = PHATASS.Utils.MathUtils.Ranges.ILimitedRange<float>;
-using RandomFloatRange = PHATASS.Utils.MathUtils.Ranges.RandomFloatRange;
+using ILimitedRangeFloat = PHATASS.Utils.Types.Ranges.ILimitedRange<float>;
+using RandomFloatRange = PHATASS.Utils.Types.Ranges.RandomFloatRange;
 
 using IMovementController = CatAttack.MovementControllers.IMovementController;
 
