@@ -71,10 +71,6 @@ namespace CatAttack.MovementControllers
 		[SerializeField]
 		private bool snapToDestination = false;
 
-		[Tooltip("When closer to target than this, position will be snapped and forces reset")]
-		[SerializeField]
-		private float snapDistance = 0.02f;
-
 		[Tooltip("Animator trigger name to set to true on each fluttering segment - none if empty")]
 		[SerializeField]
 		private string flapAnimationTriggerName = "Flap";
@@ -136,7 +132,7 @@ namespace CatAttack.MovementControllers
 		//when straight over the target return 0, at minimum distance or beyond return 1
 		private float modifierByDistance
 		{ get {
-			return //1 when on target, 0 at minimum distance or beyond
+			return
 				(new RandomFloatRange(0f, this.closeApproximationDistance) as ILimitedRangeFloat)
 				.ToNormalized(this.distanceToDestination);
 		}}
@@ -188,15 +184,19 @@ namespace CatAttack.MovementControllers
 				if (!this.wasInFlight) { this.TakeOff(); }
 
 				if (this.segmentTimer <= 0)	{ this.ResetFlightSegment(); }
-				else if (this.flightDirectionContinuousUpdate) { this.UpdateDesiredFlightDirection(); }
+				else if (this.flightDirectionContinuousUpdate || this.distanceToDestination < this.closeApproximationDistance)
+				{ this.UpdateDesiredFlightDirection(); }
 
 				this.ApplyContinuousFlightForce();
 
-				this.TrySnap();
 
 				this.segmentTimer -= Time.deltaTime;
 			}
-			else if (this.wasInFlight) { this.Landing(); }
+			else
+			{
+				if (this.wasInFlight) { this.Landing(); }
+				this.TrySnap();
+			}
 
 			this.wasInFlight = this.flying;
 		}
@@ -254,7 +254,7 @@ namespace CatAttack.MovementControllers
 		private void ApplyContinuousFlightForce ()
 		{
 			this.rigidbody.AddForce(
-				force: this.flightDirectionVector * this.continuousFlightForce * this.modifierByDistance,
+				force: this.flightDirectionVector * this.continuousFlightForce * (0.5f + 0.5f * this.modifierByDistance),
 				mode: ForceMode2D.Force
 			);
 		}
@@ -268,7 +268,7 @@ namespace CatAttack.MovementControllers
 		{
 			if (!this.snapToDestination || this.targetPosition == null) { return; }
 
-			if (this.distanceToDestination < this.snapDistance)
+			if (this.distanceToDestination < this.minimumArrivalDistance)
 			{
 				this.rigidbody.position = (Vector2) this.targetPosition;
 				this.rigidbody.velocity = Vector2.zero;
