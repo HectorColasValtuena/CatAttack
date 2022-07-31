@@ -139,22 +139,16 @@ namespace CatAttack.MovementControllers
 
 		//vector representing currently desired flight direction
 		private IAngle2D flightDirection
-		{ get { return this.desiredFlightDirection; }}
-		//{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
+		{ get { return this.desiredFlightDirection + this.flightAngularDeviation; }}
 
 		private Vector2 flightDirectionVector
 		{ get { return this.flightDirection.EAngle2DToVector2(); }}
 
 
+		//returns angular deviation, scaled by modifierByDistance
 		private IAngle2D flightAngularDeviation
 		{
-			get
-			{
-				if (this._flightAngularDeviation.degrees > 180)
-				{ return (this._flightAngularDeviation * this.modifierByDistance) + (180f).AsDegrees(); }
-				else
-				{ return this._flightAngularDeviation * this.modifierByDistance; }
-			}
+			get { return 0f.AsDegrees().Lerp(this._flightAngularDeviation, this.modifierByDistance); }
 			set { this._flightAngularDeviation = value; }
 		}
 		private IAngle2D _flightAngularDeviation;
