@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flapInterval:
-    minimum: 0.1
+    minimum: 0.15
     maximum: 0.25
   _angularRandomRange:
     minimum: -60
@@ -191,7 +191,7 @@ MonoBehaviour:
   _flapForceRange:
     minimum: 0.75
     maximum: 1.5
-  closeApproximationDistance: 1
+  closeApproximationDistance: 0.6
   flapAnimationTriggerName: Flap
 --- !u!114 &5463882641901805919
 MonoBehaviour:
