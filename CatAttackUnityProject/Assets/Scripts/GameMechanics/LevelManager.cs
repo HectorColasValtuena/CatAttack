@@ -15,6 +15,10 @@ namespace CatAttack
 		public float lethalDropoffHeight = -100f;	//dropping below this vertical position means death
 	//ENDOF public fields
 
+	//public properties
+		public static levelTimer LevelTimer { get { return instance.levelTimer; }}
+	//ENDOF public properties
+
 	//private fields
 		private LevelTimer levelTimer;
 	//ENDOF private fields
