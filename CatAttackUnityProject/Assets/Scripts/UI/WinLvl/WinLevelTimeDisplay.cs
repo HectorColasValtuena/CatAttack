@@ -11,7 +11,7 @@ namespace CatAttack.Miscellaneous
 
 	//private properties
 		private float RunTime
-		{ get { return RunManager.FullRunCombinedTime; }}
+		{ get { return RunManager.RunCombinedTime; }}
 		
 		private bool IsRecord
 		{

@@ -25,19 +25,18 @@ namespace CatAttack
 			}
 		}
 
-		public static float FullRunCombinedTime
+		public static float RunCombinedTime
 		{
 			get
 			{
-				if (!FullRunAvailable) {}
 				float total = 0f;
 				foreach (int level in REQUIRED_LEVELS)
 				{
-					total += levelTimes[level];
+					if (this.levelTimes.ContainsKey(level))
+					{ total += levelTimes[level]; }
 				}
-				return total;
-			}
-		}		
+				return total;			}
+		}
 
 		public static void RegisterLevelTime (int level, float seconds)
 		{

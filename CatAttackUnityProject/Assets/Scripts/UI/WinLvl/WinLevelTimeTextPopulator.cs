@@ -26,7 +26,7 @@ namespace CatAttack.Miscellaneous
 
 	//private properties
 		private float RunTime
-		{ get { return RunManager.FullRunCombinedTime; }}
+		{ get { return RunManager.RunCombinedTime; }}
 	//ENDOF private properties
 
 	//private methods
