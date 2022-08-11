@@ -32,7 +32,7 @@ namespace CatAttack
 				float total = 0f;
 				foreach (int level in REQUIRED_LEVELS)
 				{
-					if (this.levelTimes.ContainsKey(level))
+					if (levelTimes.ContainsKey(level))
 					{ total += levelTimes[level]; }
 				}
 				return total;			}
