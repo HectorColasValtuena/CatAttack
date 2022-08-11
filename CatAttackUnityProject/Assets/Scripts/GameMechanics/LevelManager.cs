@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using TimeFormatter = CatAttack.Timing.TimeFormatter;
+
 namespace CatAttack
 {		
 	public class LevelManager : MonoBehaviour
@@ -16,7 +18,8 @@ namespace CatAttack
 	//ENDOF public fields
 
 	//public properties
-		public static levelTimer LevelTimer { get { return instance.levelTimer; }}
+		public static LevelTimer LevelTimer { get { return instance.levelTimer; }}
+		public static TimeFormatter FormattedTime { get { return new TimeFormatter(instance.levelTimer.levelTime); }}
 	//ENDOF public properties
 
 	//private fields
