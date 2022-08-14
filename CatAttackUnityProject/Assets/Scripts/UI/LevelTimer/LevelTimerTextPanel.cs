@@ -31,12 +31,15 @@ namespace CatAttack.UI
 
 	//private properties
 		private LevelTimer levelTimer { get { return LevelManager.LevelTimer; }}
+
+		private bool stopwatchIsDisabled { get { return UnlockablesManager.Stopwatch != EUnlockableState.Enabled; }}
 	//ENDOF private properties
 
 	//private methods
 		private void UpdateDeployment ()
 		{
-			this.animator.SetBool("Hidden", UnlockablesManager.Stopwatch == EUnlockableState.Enabled);
+			this.animator.SetBool("Hidden", this.stopwatchIsDisabled);
+			if (this.stopwatchIsDisabled) { this.gameObject.SetActive(false); }
 		}
 
 		private void SetText (string text)
