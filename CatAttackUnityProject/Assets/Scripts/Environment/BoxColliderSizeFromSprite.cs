@@ -9,7 +9,7 @@ namespace CatAttack
 	[RequireComponent(typeof(Rigidbody2D))]
 	[RequireComponent(typeof(SpriteRenderer))]
 
-	public class ColliderSizeFromSprite : MonoBehaviour
+	public class BoxColliderSizeFromSprite : MonoBehaviour
 	{
 	//const
 		private static Vector2 sizeToOffsetVector = new Vector2(0f, -0.5f);
@@ -60,8 +60,36 @@ namespace CatAttack
 	//private properties
 		private Vector2 spritePivot { get { return this.spriteRenderer.sprite.ENormalizedPivot(); }}
 
-		private float verticalMargin { get { return this.marginTop + this.marginDown; }}
-		private float horizontalMargin
+		private float verticalMargins { get { return this.marginTop + this.marginDown; }}
+		private float horizontalMargins { get { return this.marginLeft + this.marginRight; }}
+
+		private Vector2 colliderSize
+		{
+			get
+			{
+				Vector3 boundsSize = this.spriteRenderer.size;
+				return new Vector2 (x: boundsSize.x + this.horizontalMargins, y: boundsSize.y + this.verticalMargins);
+			}
+		}
+
+		private Vector2 offsetVector
+		{
+			get
+			{
+				return (this.spriteRenderer.size * (Vector2.one - this.spritePivot)) - (this.spriteRenderer.size / 2);
+			}
+		}
+
+		private Vector2 marginOffsetCorrectionVector
+		{
+			get
+			{
+				return new Vector2(
+					x: (this.marginRight - this.marginLeft) / 2,
+					y: (this.marginTop - this.marginDown) / 2
+				);
+			}
+		}
 	//ENDOF properties
 
 	//private methods
@@ -75,12 +103,12 @@ namespace CatAttack
 			if (this.boxCollider2D == null || this.rigidbody2D == null || this.spriteRenderer == null)
 			{ Debug.Log("ColliderSizeFromSprite required components not found!"); return; }
 
-			Sprite sprite 
+			//Sprite sprite 
 
 			//Debug.Log(spriteRenderer.size);
 
-			this.boxCollider2D.offset = this.spriteRenderer.size * sizeToOffsetVector;
-			this.boxCollider2D.size = this.spriteRenderer.size;
+			this.boxCollider2D.offset = this.offsetVector + this.marginOffsetCorrectionVector; //!!
+			this.boxCollider2D.size = this.colliderSize;
 		}
 
 		private void TrySelfDestruct ()
