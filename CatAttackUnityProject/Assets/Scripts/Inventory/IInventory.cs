@@ -4,14 +4,16 @@ namespace CatAttack.Inventory
 	//can query, add, and remove inventory items
 	public interface IInventory
 	{
-		//returns true if item exists in inventory
+		//returns true if every item(s) exist in inventory. Returns false if any of the item(s) is missing.
 		bool Contains (EItemID itemID);
+		bool Contains (IList<EItemID> itemIDs);
 
-		//adds item to inventory
+		//adds item(s) to inventory
 		void Add (EItemID itemID);
+		void Add (IList<EItemID> itemIDs);
 
-		//removes item from inventory
-		//returns true if item was removed, false if item didn't exist in inventory
-		bool Remove (EItemID itemID);
+		//removes item(s) from inventory
+		void Remove (EItemID itemID);
+		void Remove (IList<EItemID> itemIDs);
 	}
 }
