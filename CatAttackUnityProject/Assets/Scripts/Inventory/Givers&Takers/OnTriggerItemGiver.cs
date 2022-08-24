@@ -5,19 +5,23 @@ namespace CatAttack.Inventory
 	public class OnTriggerItemGiver : OnTriggerInventoryInteractor
 	{
 	//serialized fields
-		//list of items given to the player
+		[Tooltip("List of items given to the player")]
 		[SerializeField]
 		private EItemID[] givenItems;
 
-		//this gameObject will be disabled once item is picked up
+		[Tooltip("These UnityEngine.Object will be disabled once item is picked up")]
 		[SerializeField]
-		private GameObject disableOnPickup;
+		private UnityEngine.Object[] disableOnPickup;
+
+		[Tooltip("Will spawn a copy of these objects when items are added to an inventory")]
+		[SerializeField]
+		private GameObject[] spawnObjects;
 	//ENDOF serialized
 
 	//MonoBehaviour lifecycle
 		private void Awake ()
 		{
-			if (this.givenItems.Length == 0)
+			if (this.givenItems == null || this.givenItems.Length == 0)
 			{ Debug.LogWarning(string.Format("{0}.OnTriggerItemGiver no items given defined!!", this.gameObject.name)); }
 		}
 	//ENDOF MonoBehaviour
@@ -25,10 +29,31 @@ namespace CatAttack.Inventory
 	//protected methods
 		protected override void InteractWithInventory (IInventory inventory)
 		{
-			foreach (EItemID item in this.givenItems)
-			{ inventory.Add(item); }
-			this.disableOnPickup?.SetActive(false);
+			if (!inventory.Contains(this.givenItems))
+			{
+				inventory.Add(givenItems);
+				this.DisableObjects();
+				this.SpawnObjects();
+			}
 		}
-	//ENDOF private methods
+	//ENDOF protected methods
+
+	//private methods
+		private void DisableObjects ()
+		{
+			foreach (UnityEngine.Object disableObject in this.disableOnPickup)
+			{
+				disableObject.SetActive(false);
+			}
+		}
+
+		private void SpawnObjects ()
+		{
+			foreach (GameObject spawnObject in this.spawnObjects)
+			{
+				UnityEngine.Object.Instantiate(spawnObject, this.transform, this.transform.position);
+			}
+		}
+	//ENDOF private methods		
 	}
 }
