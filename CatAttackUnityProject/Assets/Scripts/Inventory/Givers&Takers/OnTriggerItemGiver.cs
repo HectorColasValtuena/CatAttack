@@ -11,7 +11,7 @@ namespace CatAttack.Inventory
 
 		[Tooltip("These UnityEngine.Object will be disabled once item is picked up")]
 		[SerializeField]
-		private UnityEngine.Object[] disableOnPickup;
+		private GameObject[] disableOnPickup;
 
 		[Tooltip("Will spawn a copy of these objects when items are added to an inventory")]
 		[SerializeField]
@@ -41,7 +41,7 @@ namespace CatAttack.Inventory
 	//private methods
 		private void DisableObjects ()
 		{
-			foreach (UnityEngine.Object disableObject in this.disableOnPickup)
+			foreach (GameObject disableObject in this.disableOnPickup)
 			{
 				disableObject.SetActive(false);
 			}
@@ -51,7 +51,12 @@ namespace CatAttack.Inventory
 		{
 			foreach (GameObject spawnObject in this.spawnObjects)
 			{
-				UnityEngine.Object.Instantiate(spawnObject, this.transform, this.transform.position);
+				UnityEngine.Object.Instantiate(
+					original: spawnObject,
+					position: this.transform.position,
+					rotation: Quaternion.identity,
+					parent: this.transform
+				);
 			}
 		}
 	//ENDOF private methods		
