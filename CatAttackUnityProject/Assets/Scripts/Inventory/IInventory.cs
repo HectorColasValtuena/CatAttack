@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CatAttack.Inventory
 {
 	//interface representing an inventory manager
