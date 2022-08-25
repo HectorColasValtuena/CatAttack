@@ -37,7 +37,7 @@ namespace CatAttack
 
 	//private variables
 		private BoxCollider2D boxCollider2D;
-		private Rigidbody2D rigidbody2D;
+		private new Rigidbody2D rigidbody2D;
 		private SpriteRenderer spriteRenderer;
 
 		private Sprite lastSprite;
