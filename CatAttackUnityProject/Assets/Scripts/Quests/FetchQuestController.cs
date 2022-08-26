@@ -15,6 +15,10 @@ namespace CatAttack.Quests
 		[Tooltip("Disables these objects when quest is completed, like popup dialog or related triggers")]
 		[SerializeField]
 		private GameObject[] disableOnCompleted;
+
+		[Tooltip("Instantiates copies of these objects when quest is completed, like FX prefabs")]
+		[SerializeField]
+		private GameObject[] instantiateOnCompleted;
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle
@@ -42,6 +46,16 @@ namespace CatAttack.Quests
 		{
 			foreach (GameObject disableItem in this.disableOnCompleted)
 			{ disableItem.SetActive(false); }
+
+			foreach (GameObject instantiateObjec in this.instantiateOnCompleted)
+			{ 	
+				UnityEngine.Object.Instantiate(
+					original: instantiateObjec,
+					position: this.transform.position,
+					rotation: Quaternion.identity,
+					parent: null
+				);
+			}
 		}
 	//ENDOF overrides
 

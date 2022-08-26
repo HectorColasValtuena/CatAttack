@@ -55,7 +55,7 @@ namespace CatAttack.Inventory
 					original: spawnObject,
 					position: this.transform.position,
 					rotation: Quaternion.identity,
-					parent: this.transform
+					parent: null
 				);
 			}
 		}
