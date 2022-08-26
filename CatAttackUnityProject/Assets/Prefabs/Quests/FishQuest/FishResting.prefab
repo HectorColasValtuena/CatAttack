@@ -122,7 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   givenItems: 64000000
-  disableOnPickup: {fileID: 8279344277235019393}
+  disableOnPickup:
+  - {fileID: 8279344277235019393}
+  spawnObjects:
+  - {fileID: 7683560295954689192, guid: 56d994c16983ec8409d4bdc9b67f7526, type: 3}
 --- !u!50 &7860548822477125667
 Rigidbody2D:
   serializedVersion: 4
