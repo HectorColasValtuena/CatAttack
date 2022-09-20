@@ -131,8 +131,8 @@ TextureImporter:
       name: Pulpitor[F1]
       rect:
         serializedVersion: 2
-        x: 1
-        y: 9
+        x: 0
+        y: 11
         width: 22
         height: 21
       alignment: 7
@@ -152,8 +152,8 @@ TextureImporter:
       name: Pulpitor[F2]
       rect:
         serializedVersion: 2
-        x: 25
-        y: 9
+        x: 23
+        y: 11
         width: 22
         height: 21
       alignment: 7
@@ -173,8 +173,8 @@ TextureImporter:
       name: SombreroPulpitor
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1
+        x: 48
+        y: 25
         width: 16
         height: 7
       alignment: 7
@@ -190,6 +190,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FishOnPulpitor[F1]
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232234412be13f94e89a4f9223535818
+      internalID: -1832928660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishOnPulpitor[F2]
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422239ebbe6c707419211f6a109fa352
+      internalID: 3941307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CoconutDrink
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2115e1e45043ec4a85abd38516b06bf
+      internalID: 2081540004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowDrink
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d7bbab91e631742bb46f1470f52996
+      internalID: 388450088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -201,9 +285,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      YellowDrink: 388450088
+      FishOnPulpitor[F1]: -1832928660
       Pulpitor[F1]: -885560341
+      CoconutDrink: 2081540004
       SombreroPulpitor: 175839556
       Pulpitor[F2]: 2139223204
+      FishOnPulpitor[F2]: 3941307
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
