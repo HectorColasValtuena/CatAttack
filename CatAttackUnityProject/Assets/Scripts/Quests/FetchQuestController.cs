@@ -16,6 +16,10 @@ namespace CatAttack.Quests
 		[SerializeField]
 		private GameObject[] disableOnCompleted;
 
+		[Tooltip("Enables these objects when quest is completed")]
+		[SerializeField]
+		private GameObject[] enableOnCompleted;
+
 		[Tooltip("Instantiates copies of these objects when quest is completed, like FX prefabs")]
 		[SerializeField]
 		private GameObject[] instantiateOnCompleted;
@@ -46,6 +50,9 @@ namespace CatAttack.Quests
 		{
 			foreach (GameObject disableItem in this.disableOnCompleted)
 			{ disableItem.SetActive(false); }
+
+			foreach (GameObject enableItem in this.enableOnCompleted)
+			{ enableItem.SetActive(true); }
 
 			foreach (GameObject instantiateObjec in this.instantiateOnCompleted)
 			{ 	
