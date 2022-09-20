@@ -54,10 +54,10 @@ namespace CatAttack.Quests
 			foreach (GameObject enableItem in this.enableOnCompleted)
 			{ enableItem.SetActive(true); }
 
-			foreach (GameObject instantiateObjec in this.instantiateOnCompleted)
+			foreach (GameObject instantiateObject in this.instantiateOnCompleted)
 			{ 	
 				UnityEngine.Object.Instantiate(
-					original: instantiateObjec,
+					original: instantiateObject,
 					position: this.transform.position,
 					rotation: Quaternion.identity,
 					parent: null
