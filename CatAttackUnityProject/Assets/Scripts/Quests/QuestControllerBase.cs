@@ -17,6 +17,9 @@ namespace CatAttack.Quests
 		//animator used to play completion animation
 		[SerializeField]
 		private Animator animator;
+
+		[SerializeField]
+		private string questCompletedAnimatorBoolName = "QuestCompleted";
 	//ENDOF serialized fields
 
 	//IQuest
@@ -35,6 +38,7 @@ namespace CatAttack.Quests
 	//protected class methods
 		protected void SetCompleted (IInventory inventory)
 		{
+			Debug.Log("SetCompleted, completed is: " + this.Completed);
 			if(!this.Completed)
 			{
 				this.Completed = true;
@@ -58,7 +62,7 @@ namespace CatAttack.Quests
 		private void PlayCompletedAnimation ()
 		{
 			if (this.animator == null) { this.animator = this.gameObject.GetComponent<Animator>(); }
-			animator?.SetBool("QuestCompleted", true);
+			if (!string.IsNullOrEmpty(this.questCompletedAnimatorBoolName)) { animator?.SetBool(this.questCompletedAnimatorBoolName, true); }
 		}
 	//ENDOF private methods
 	}
