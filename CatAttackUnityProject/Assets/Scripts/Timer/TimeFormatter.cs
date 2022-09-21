@@ -24,7 +24,7 @@ namespace CatAttack.Timing
 			get 
 			{
 				double decimals = this.secondsAndMilliseconds - this.trimmedSeconds;
-				UnityEngine.Debug.Log(string.Format("Decimals: {0}", decimals));
+				//UnityEngine.Debug.Log(string.Format("Decimals: {0}", decimals));
 				return (int) Math.Round(decimals * 1000);
 			}
 		}
