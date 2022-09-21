@@ -81,7 +81,7 @@ namespace CatAttack.Critters
 
 		private void OnTriggerEnter2D (Collider2D other)
 		{
-			Debug.Log("" + other.gameObject.name + " scared me!");
+			//Debug.Log("" + other.gameObject.name + " scared me!");
 			this.Scare();
 		}
 	//ENDOF MonoBehaviour
