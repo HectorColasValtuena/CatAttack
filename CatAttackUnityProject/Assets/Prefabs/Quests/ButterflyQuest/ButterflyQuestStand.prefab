@@ -52,9 +52,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewards: 02000000
   animator: {fileID: 0}
+  questCompletedAnimatorBoolName: 
   requiredItems: 65000000
   disableOnCompleted:
   - {fileID: 1187720108715459061}
+  enableOnCompleted: []
   instantiateOnCompleted:
   - {fileID: 7683560295954689192, guid: a9506446604a53847aeabf8b10c09fba, type: 3}
 --- !u!95 &6106455019257387529
