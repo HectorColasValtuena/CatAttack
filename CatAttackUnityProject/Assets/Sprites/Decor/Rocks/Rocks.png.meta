@@ -340,7 +340,7 @@ TextureImporter:
         width: 32
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,6 +348,27 @@ TextureImporter:
       bones: []
       spriteID: ff8fde4e51aeac94da8fbd25bc98c6a2
       internalID: 245593068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockGrayHuge_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 16
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff60f0eb4c4a1114fa303779ad50b2a5
+      internalID: -799824946
       vertices: []
       indices: 
       edges: []
@@ -372,6 +393,7 @@ TextureImporter:
       RockGraySmall_0: -4209556597541047147
       RockBrownLarge_2: -5091828049805951605
       RockBrownSmall_1: 2007986136508003152
+      RockGrayHuge_1: -799824946
       RockGrayMedium_1: -1677260544633098824
   spritePackingTag: 
   pSDRemoveMatte: 0
