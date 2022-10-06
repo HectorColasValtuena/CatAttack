@@ -120,8 +120,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
+        y: 192
+        width: 64
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
+        y: 128
+        width: 64
         height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -153,6 +153,27 @@ TextureImporter:
       bones: []
       spriteID: 769567c1f47f7d04baeca5e7187e256a
       internalID: 1427985282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PalmTree[F3]
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25455dec5fe8a5049b5fdd924bcb5a43
+      internalID: 392188886
       vertices: []
       indices: 
       edges: []
@@ -169,6 +190,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       PalmTree[F1]: 716455468
+      PalmTree[F3]: 392188886
       PalmTree[F2]: 1427985282
   spritePackingTag: 
   pSDRemoveMatte: 0
