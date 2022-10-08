@@ -79,7 +79,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -165,10 +165,36 @@ PrefabInstance:
     - target: {fileID: 5649875733458727429, guid: 3ed7a87d80fc156438cf60af485f73c7,
         type: 3}
       propertyPath: m_Name
-      value: COLORLESSBreakableDarkFoliage
+      value: BreakableDarkFoliage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ed7a87d80fc156438cf60af485f73c7, type: 3}
+--- !u!1 &7562156251513106249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5649875733458727429, guid: 3ed7a87d80fc156438cf60af485f73c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2781615988072258892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1250051588312085381
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7562156251513106249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a0e20eef84b31948a2ce4976a367675, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &7562156251513106250 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5649875733458727430, guid: 3ed7a87d80fc156438cf60af485f73c7,
