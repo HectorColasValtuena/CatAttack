@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 108636189083318208}
   - component: {fileID: 2018333822053688054}
   - component: {fileID: 6040423853133456858}
+  - component: {fileID: 6420650492247035122}
   m_Layer: 8
   m_Name: BaseBreakableBlock
   m_TagString: Untagged
@@ -44,7 +45,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4629873241049376216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -173,6 +174,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6420650492247035122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629873241049376216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96bda2e5770cf584ebc6fc24f7a2fe40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  despawnAnimationTimeScale: 1
+  respawnBlockTimeOnTrigger: 0.1
+  respawnDelay: 3
+  consideredLayers:
+    serializedVersion: 2
+    m_Bits: 1024
+  animator: {fileID: 6040423853133456858}
+  isCrackingAnimatorVarName: IsCracking
+  isBrokenAnimatorVarName: IsBroken
+  blockCollider: {fileID: 108636189083318208}
 --- !u!1 &5170761704416524853
 GameObject:
   m_ObjectHideFlags: 0
