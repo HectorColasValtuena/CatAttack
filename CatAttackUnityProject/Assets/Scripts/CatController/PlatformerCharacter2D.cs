@@ -39,6 +39,7 @@ namespace CatAttack
 
 		//[SerializeField] private bool m_AirControl = false;				 // Whether or not a player can steer while jumping;
 		[SerializeField] private LayerMask m_WhatIsGround;				  // A mask determining what is ground to the character
+		private ContactFilter2D groundContactFilter;
 
 		[SerializeField] private Transform[] m_GroundChecks;	 // A position marking where to check if the player is grounded.
 		[SerializeField] private Transform[] m_RightClingChecks; // Positions where to check if the player is laterally touching a wall
@@ -118,6 +119,9 @@ namespace CatAttack
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody2D = GetComponent<Rigidbody2D>();
 			m_StarpowerReservoir = GetComponent<StarpowerReservoir>();
+
+			//prepare our collision filter
+			this.groundContactFilter = this.GetGroundContactFilter();
 		}
 
 		private void FixedUpdate()
@@ -146,20 +150,44 @@ namespace CatAttack
 		}
 
 		//Checks for collisions in a given radius around a given list of origin points
-		private bool CheckRadiusCollisions (Transform[] originPoints, float radius, LayerMask layerMask)
+		private bool CheckRadiusCollisions (Transform[] originPoints, float radius)
 		{
+			Collider2D[] collisionResults = new Collider2D[1];
+			int collisionCount = 0;
+
 			foreach (Transform originPoint in originPoints)
 			{
-				Collider2D collision = Physics2D.OverlapCircle(originPoint.position, radius, layerMask);
-				if (collision != null) { return true; }
+				collisionCount = Physics2D.OverlapCircle(
+					point: originPoint.position,
+					radius: radius,
+					contactFilter: this.groundContactFilter, //!!!! is missing using a proper ContactFilter2D, layerMask: layerMask
+					results: collisionResults
+				);
+
+				if (collisionCount > 0) { return true; }
 			}
 			return false;
+		}
+
+		private ContactFilter2D GetGroundContactFilter ()
+		{
+			ContactFilter2D newFilter = new ContactFilter2D();
+
+			newFilter.layerMask = this.m_WhatIsGround;
+			newFilter.useLayerMask = true;
+
+			newFilter.useTriggers = false;
+
+			newFilter.ClearDepth();
+			newFilter.ClearNormalAngle();
+
+			return newFilter;
 		}
 
 		//checks if the cat is standing on the ground
 		private bool CheckGround ()
 		{
-			return CheckRadiusCollisions(m_GroundChecks, k_GroundedRadius, m_WhatIsGround);
+			return CheckRadiusCollisions(m_GroundChecks, k_GroundedRadius);
 		}
 
 		//returns a value indicating the clinging status
@@ -181,8 +209,7 @@ namespace CatAttack
 				//collisions against right-side or left-side collision checks depending on direction
 				return CheckRadiusCollisions(
 					(facingRight)? m_RightClingChecks : m_LeftClingChecks,
-					k_SideCheckRadius,
-					m_WhatIsGround
+					k_SideCheckRadius
 				);
 			}
 		}
