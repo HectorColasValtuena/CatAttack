@@ -62,6 +62,8 @@ namespace CatAttack
 
 		private void OnCollisionEnter2D (Collision2D collision)
 		{ this.CollidedBy(collision.gameObject); }
+		private void OnCollisionStay2D (Collision2D collision)
+		{ this.CollidedBy(collision.gameObject); }
 
 		private void OnTriggerEnter2D (Collider2D other)
 		{ this.TriggeredBy(other.gameObject); }
