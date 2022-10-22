@@ -7,9 +7,11 @@ namespace CatAttack
 	public class BreakableBlock : MonoBehaviour
 	{
 	//Serialized fields
+		/*
 		[Tooltip("Will multiply the despawning animation's duration by this value")]
 		[SerializeField]
 		private float despawnAnimationTimeScale = 1.0f;
+		*/
 
 		[Tooltip("Time in seconds that respawning will be disabled when a character is detected in the disabled collider's space")]
 		[SerializeField]
