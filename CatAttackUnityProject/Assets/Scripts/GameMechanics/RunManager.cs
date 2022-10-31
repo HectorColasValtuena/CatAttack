@@ -7,7 +7,7 @@ namespace CatAttack
 	public static class RunManager
 	{
 	//const	
-		private static int[] REQUIRED_LEVELS = {2,3,4,5};
+		private static int[] REQUIRED_LEVELS = {3, 4, 5, 6};
 	//ENDOF const
 
 	//public static members

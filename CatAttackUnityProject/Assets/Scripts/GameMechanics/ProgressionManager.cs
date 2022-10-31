@@ -7,7 +7,7 @@ namespace CatAttack
 	{
 	//constants
 		private const string levelUnlockedKey = "levelUnlocked";
-		private const int defaultUnlockedLevel = 2;
+		private const int defaultUnlockedLevel = 3;
 	//ENDOF constants
 
 	//public fields
