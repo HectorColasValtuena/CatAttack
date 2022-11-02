@@ -10,7 +10,7 @@ namespace CatAttack.Inventory
 	//MonoBehaviour lifecycle
 		private void OnTriggerEnter2D (Collider2D other)
 		{
-			InventoryController inventory = other.GetComponent<InventoryController>();
+			IInventory inventory = other.GetComponent<InventoryComponent>();
 			if (inventory == null) { return; }
 			this.InteractWithInventory(inventory);
 		}

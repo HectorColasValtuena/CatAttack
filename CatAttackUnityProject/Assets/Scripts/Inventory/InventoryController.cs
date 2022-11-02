@@ -1,12 +1,18 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 namespace CatAttack.Inventory
 {
 	public class InventoryController :
-		MonoBehaviour,
 		IInventory
 	{
+	//constructor
+		public InventoryController (IList<EItemID> initialCollection = null)
+		{
+			if (initialCollection == null) { this._itemCollection = new List<EItemID>(); }
+			else { this._itemCollection = new List<EItemID>(initialCollection); }
+		}
+	//ENDOF constructor
+
 	//IInventory implementation
 		//returns true if every item(s) exist in inventory. Returns false if any of the item(s) is missing.
 		bool IInventory.Contains (EItemID itemID) { return this.Contains(itemID); }
@@ -37,7 +43,6 @@ namespace CatAttack.Inventory
 		}
 
 		//removes item from inventory
-		//returns true if item was removed, false if item didn't exist in inventory
 		void IInventory.Remove (EItemID itemID) { this.Remove(itemID); }
 		void IInventory.Remove (IList<EItemID> itemIDs) { this.Remove(itemIDs); }
 
@@ -50,20 +55,11 @@ namespace CatAttack.Inventory
 		}
 	//ENDOF IInventory implementation
 	
-	//MonoBehaviour lifecycle
-		/*
-		public void Awake ()
-		{
-		}
-		//*/
-	//ENDOF MonoBehaviour
-
 	//private properties
 		private ICollection<EItemID> Items
 		{
 			get
 			{
-				if (this._itemCollection == null) { this._itemCollection = new List<EItemID>(); }
 				return this._itemCollection;
 			}
 		}

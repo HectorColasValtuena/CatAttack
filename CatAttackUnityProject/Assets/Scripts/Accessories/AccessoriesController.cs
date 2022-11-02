@@ -26,9 +26,7 @@ namespace CatAttack.Accessories
 		private PlatformerCharacter2D _player;
 		private IPlayer Player { get { return this._player; }}
 
-		[SerializeField]
-		private CatAttack.Inventory.InventoryController _inventory;
-		private IInventory Inventory { get { return this._inventory; }}
+		private IInventory Inventory { get { return RunManager.RunInventory; }}
 	//ENDOF serialized fields
 
 	//MonoBehaviour lifecycle

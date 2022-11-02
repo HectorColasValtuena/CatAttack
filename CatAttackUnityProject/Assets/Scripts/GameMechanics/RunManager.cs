@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+using IInventory = CatAttack.Inventory.IInventory;
+
 using Debug = UnityEngine.Debug;
 
 namespace CatAttack
@@ -38,6 +40,8 @@ namespace CatAttack
 				return total;			}
 		}
 
+		public static IInventory RunInventory { get { return RunManager.inventoryController; }}
+
 		public static void RegisterLevelTime (int level, float seconds)
 		{
 			ValidateDictionary();
@@ -61,17 +65,23 @@ namespace CatAttack
 
 		public static void ResetRun ()
 		{
-			ResetTimeDictionary();
+			RunManager.ResetTimeDictionary();
+			RunManager.ResetRunInventory();
 		}
 	//ENDOF public static
 
 	//private static fields
+	  //Time handling
 		//a dictionary matching level # with its stored time
 		private static IDictionary<int, float> levelTimes;
 		private static void ResetTimeDictionary ()
 		{ levelTimes = new Dictionary<int,float>(); }
 		private static void ValidateDictionary()
 		{ if (levelTimes == null) { ResetTimeDictionary(); }}
+
+	  //Inventory handling
+		private static void ResetRunInventory () { RunManager.inventoryController = new CatAttack.Inventory.InventoryController(); }
+		private static IInventory inventoryController;
 	//ENDOF private static
 	}
 }

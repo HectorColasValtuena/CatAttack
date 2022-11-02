@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: -4593591527157779844}
   - component: {fileID: 540483650876491672}
   - component: {fileID: 2420948293580798087}
-  - component: {fileID: 3453468701580398618}
+  - component: {fileID: 7808279554689774720}
   m_Layer: 10
   m_Name: PlayerCat
   m_TagString: Player
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSources:
   - {fileID: 5125305015968838991}
---- !u!114 &3453468701580398618
+--- !u!114 &7808279554689774720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 540483650876491681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecb6930a8768f2e428b9a85e0980d3a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 14533dc951f04ed448384696655a7036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &635280144970286238
@@ -20912,7 +20912,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _inventory
       value: 
-      objectReference: {fileID: 3453468701580398618}
+      objectReference: {fileID: 0}
     - target: {fileID: 3251665905239971182, guid: 3a7c7dc625629d447add2855d76e1e17,
         type: 3}
       propertyPath: spriteRenderer
