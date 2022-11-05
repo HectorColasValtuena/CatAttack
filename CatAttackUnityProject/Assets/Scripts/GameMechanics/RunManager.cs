@@ -40,7 +40,14 @@ namespace CatAttack
 				return total;			}
 		}
 
-		public static IInventory RunInventory { get { return RunManager.inventoryController; }}
+		public static IInventory RunInventory
+		{
+			get
+			{
+				if (RunManager.inventoryController == null) { RunManager.ResetRunInventory(); }
+				return RunManager.inventoryController;
+			}
+		}
 
 		public static void RegisterLevelTime (int level, float seconds)
 		{
